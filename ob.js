@@ -1,4 +1,3 @@
-<script>
 {
 const checkbox = document.getElementById('othercheckbox');
 checkbox.addEventListener('change', () => {
@@ -227,4 +226,3 @@ $('#continue12').hide();
 $('#next12').hide();
 $('#continue12').show();
 }})}
-</script>
