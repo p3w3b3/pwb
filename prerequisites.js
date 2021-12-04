@@ -295,42 +295,7 @@
     }
   });
 }
-{
-  document.getElementById("chef2").addEventListener("change", function () {
-    let chef1value = document.getElementById("chef1").value;
-    let chef2value = document.getElementById("chef2").value;
-    let v = parseInt(document.getElementById("chef2").value);
-    if (v < 1) this.value = 0;
-    if (v > 0) $(".chefbox").show() && $("#headchef").show();
-    if (v === 0) $(".chefbox").hide() && $("#headchef").hide();
-    if (v > chef1value) this.value = chef1value;
-    $("#chef2")
-      .on("change", function () {
-        var noi = $(this).val();
-        var e = $(".chefbox");
-        e.not(":first").remove();
-        for (var i = 0; i < noi - 1; i++) {
-          const newItem = e.first().clone();
-          newItem.children("#mfl")[0].textContent = `Chef ${noi - i}`;
-          newItem.insertAfter("#chefbox");
-        }
-      })
-      .trigger("change");
-    let theArray = Array.from($(".cheffield"));
-    for (let entry of theArray) {
-      entry.addEventListener("change", function () {
-        let hasval = Array.from($(".cheffield")).every((x) => x.value);
-        if (hasval) {
-          document.getElementById("continue11").style.display = "none";
-          document.getElementById("next11").style.display = "block";
-        } else {
-          document.getElementById("continue11").style.display = "block";
-          document.getElementById("next11").style.display = "none";
-        }
-      });
-    }
-  });
-}
+
 {
   document.addEventListener("input", () => {
     const agree1 = document.getElementById("agree1").checked;
