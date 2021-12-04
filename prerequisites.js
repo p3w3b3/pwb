@@ -468,4 +468,4 @@ if( ( v === 9) && cf1f1 && cf1f2 && cf1f3 && cf2f1 && cf2f2 && cf3f1 && cf3f2 &&
       $("#continue12").show();
     }
   });
-}
+}}
