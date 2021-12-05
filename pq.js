@@ -35,47 +35,19 @@
       }
     });
   }
-  const config = {
-    inputClassName: "checkbox-field",
-    displayClassName: "next3",
-  };
-  const inputs = document.getElementsByClassName(config.inputClassName);
-  const displayElements = document.getElementsByClassName(
-    config.displayClassName
-  );
-  for (let i = 0; i < inputs.length; i++) {
-    inputs[i].addEventListener("change", inputValuator);
+    {
+ document.addEventListener("input", () => {
+
+  if ($(this).is(":checked")) {
+    $('.checkboxes').prop("checked", true);
+    $('#continue3').hide()
+    $('#next3').show()
+  } else {
+    $('.checkboxes').prop("checked", false);
+    $('#continue3').show()
+    $('#next3').hide()
   }
-  function inputValuator() {
-    for (let i = 0; i < inputs.length; i++) {
-      if (inputs[i].children[1].checked === true) {
-        for (let i = 0; i < displayElements.length; i++) {
-          displayElements[i].style.display = "flex";
-          document.getElementById("continue3").style.display = "none";
-        }
-        return;
-      }
-    }
-    for (let i = 0; i < displayElements.length; i++) {
-      displayElements[i].style.display = "none";
-      document.getElementById("continue3").style.display = "flex";
-    }
-  }
-}
-{
-  document.addEventListener("input", ({ target }) => {
-    if (["p4-1", "p4-3", "p4-4", "p4-5"].includes(target.id)) {
-      const allHaveValues = Array.from(
-        document.querySelectorAll("#p4-1, #p4-3, #p4-4, #p4-5")
-      ).every(({ value }) => value);
-      document.querySelector("#continue4").style.display = allHaveValues
-        ? "none"
-        : "block";
-      document.querySelector("#next4").style.display = allHaveValues
-        ? "block"
-        : "none";
-    }
-  });
+});
 }
 {
   document.addEventListener("input", ({ target }) => {
@@ -308,4 +280,5 @@
       $("#continue12").show();
     }
   });
+}
 }
