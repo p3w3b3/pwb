@@ -284,3 +284,20 @@
   });
 }
 }
+{
+    let theArray = Array.from($(".checkbox-field"));
+    for (let entry of theArray) {
+      entry.addEventListener("input", function () {
+        let hasval = Array.from($(".checkbox-field"))
+        if (hasval) {
+$('#continue3').hide()
+$('#next3').show()
+
+        } else {
+$('#continue3').show()
+$('#next3').hide()
+
+        }
+      });
+    }
+}
