@@ -288,7 +288,6 @@ prognum7++
 
 let sp =((prognum+prognum2+prognum3+prognum4+prognum5+prognum6+prognum7)/42*100)
 let spn = Math.round(sp)+'%'
-console.log(spn)
 firebase.firestore().doc("users/"+firebase.auth().currentUser.uid)
   .set({SEC:spn}, {merge:true})
 
