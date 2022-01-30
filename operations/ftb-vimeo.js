@@ -214,105 +214,105 @@ setTimeout(() => {
   }
 
   const checkcompleted1 = function () {
-    let progunmf = 0;
+    let prognumf = 0;
     if (document.querySelector("#f1p1x").style.display == "block") {
-      progunmf++;
+      prognumf++;
     }
     if (document.querySelector("#f1p2x").style.display == "block") {
-      progunmf++;
+      prognumf++;
     }
     if (document.querySelector("#f1p3x").style.display == "block") {
-      progunmf++;
+      prognumf++;
     }
     if (document.querySelector("#f1p4x").style.display == "block") {
-      progunmf++;
+      prognumf++;
     }
-    document.querySelector("#progunmf").textContent = progunmf;
+    document.querySelector("#prognumf").textContent = prognumf;
   };
 
   const checkcompleted2 = function () {
-    let progunmf2 = 0;
+    let prognumf2 = 0;
     if (document.querySelector("#f2p1x").style.display == "block") {
-      progunmf2++;
+      prognumf2++;
     }
     if (document.querySelector("#f2p2x").style.display == "block") {
-      progunmf2++;
+      prognumf2++;
     }
     if (document.querySelector("#f2p3x").style.display == "block") {
-      progunmf2++;
+      prognumf2++;
     }
     if (document.querySelector("#f2p4x").style.display == "block") {
-      progunmf2++;
+      prognumf2++;
     }
-    document.querySelector("#progunmf2").textContent = progunmf2;
+    document.querySelector("#prognumf2").textContent = prognumf2;
   };
 
   const checkcompleted3 = function () {
-    let progunmf3 = 0;
+    let prognumf3 = 0;
     if (document.querySelector("#f3p1x").style.display == "block") {
-      progunmf3++;
+      prognumf3++;
     }
     if (document.querySelector("#f3p2x").style.display == "block") {
-      progunmf3++;
+      prognumf3++;
     }
     if (document.querySelector("#f3p3x").style.display == "block") {
-      progunmf3++;
+      prognumf3++;
     }
     if (document.querySelector("#f3p4x").style.display == "block") {
-      progunmf3++;
+      prognumf3++;
     }
     if (document.querySelector("#f3p5x").style.display == "block") {
-      progunmf3++;
+      prognumf3++;
     }
     if (document.querySelector("#f3p6x").style.display == "block") {
-      progunmf3++;
+      prognumf3++;
     }
-    document.querySelector("#progunmf3").textContent = progunmf3;
+    document.querySelector("#prognumf3").textContent = prognumf3;
   };
 
   const checkcompleted4 = function () {
-    let progunmf4 = 0;
+    let prognumf4 = 0;
     if (document.querySelector("#f4p1x").style.display == "block") {
-      progunmf4++;
+      prognumf4++;
     }
     if (document.querySelector("#f4p2x").style.display == "block") {
-      progunmf4++;
+      prognumf4++;
     }
     if (document.querySelector("#f4p3x").style.display == "block") {
-      progunmf4++;
+      prognumf4++;
     }
-    document.querySelector("#progunmf4").textContent = progunmf4;
+    document.querySelector("#prognumf4").textContent = prognumf4;
   };
 
   const checkcompleted5 = function () {
-    let progunmf5 = 0;
+    let prognumf5 = 0;
     if (document.querySelector("#f5p1x").style.display == "block") {
-      progunmf5++;
+      prognumf5++;
     }
     if (document.querySelector("#f5p2x").style.display == "block") {
-      progunmf5++;
+      prognumf5++;
     }
-    document.querySelector("#progunmf5").textContent = progunmf5;
+    document.querySelector("#prognumf5").textContent = prognumf5;
   };
   const checkcompleted6 = function () {
-    let progunmf6 = 0;
+    let prognumf6 = 0;
     if (document.querySelector("#f6p1x").style.display == "block") {
-      progunmf6++;
+      prognumf6++;
     }
     if (document.querySelector("#f6p2x").style.display == "block") {
-      progunmf6++;
+      prognumf6++;
     }
     if (document.querySelector("#f6p3x").style.display == "block") {
-      progunmf6++;
+      prognumf6++;
     }
     if (document.querySelector("#f6p4x").style.display == "block") {
-      progunmf6++;
+      prognumf6++;
     }
     if (document.querySelector("#f6p5x").style.display == "block") {
-      progunmf6++;
+      prognumf6++;
     }
 
-    document.querySelector("#progunmf6").textContent = progunmf6;
+    document.querySelector("#prognumf6").textContent = prognumf6;
   };
 
   {
