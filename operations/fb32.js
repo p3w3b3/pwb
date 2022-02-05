@@ -287,7 +287,9 @@ loader.style.display='none';
   
   
 // if #actions 
-if(currentPath == '/operations/'+sstid+'#actions'){
+if(currentPath == '/operations/'+sstid +'#actions'){
+console.log('actions')
+   
 $('.mobile-menu-button').removeClass( "current")
 $('#mbmenu1').addClass( "current")
 $('.main-section-ops').hide()
