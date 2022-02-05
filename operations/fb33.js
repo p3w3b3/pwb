@@ -287,8 +287,10 @@ loader.style.display='none';
   
   
 // if #actions 
-if(currentPath == '/operations/'+sstid +'#actions'){
-console.log('actions')
+
+// if #actions 
+
+if(window.location.href.indexOf("#actions") != -1){
    
 $('.mobile-menu-button').removeClass( "current")
 $('#mbmenu1').addClass( "current")
