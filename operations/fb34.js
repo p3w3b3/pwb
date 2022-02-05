@@ -1278,3 +1278,41 @@ document.getElementById("retake-f6").addEventListener("click", () => {
   $("#f6-quiz-completed").hide();
 });
 }
+
+{
+{
+let rating = Number($('#rat11').text())
+let rathigh = Number($('#rathigh').text())
+let ratlow = Number($('#ratlow').text())
+if(rating>rathigh) {
+$('#ra3').show()
+$('#ra2').hide()
+$('#ra1').hide()}
+if(rating<ratlow) {
+$('#ra3').hide()
+$('#ra2').show()
+$('#ra1').hide()
+}}{
+let preptime =  Number($('#prep11').text())
+let prephigh =  Number($('#prephigh').text())
+let preplow =  Number($('#preplow').text())
+if(preptime<prephigh) {
+$('#pa3').show()
+$('#pa2').hide()
+$('#pa1').hide()
+}
+if(preptime>preplow) {
+$('#pa3').hide()
+$('#pa2').show()
+$('#pa1').hide()}
+$('#rat11').text($('#rat1').text())
+$('#prep11').text($('#prep1').text()) }
+let rating = document.querySelectorAll('.amredtext')
+rating.forEach((rating) => {
+let r = rating.textContent
+let rr = r.replace(/-/g,'')
+rating.textContent = rr})
+
+
+
+}
