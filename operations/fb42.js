@@ -371,7 +371,7 @@ $('#db-bar-1').css("display", "flex");
 if(window.location.href.indexOf("#training1") != -1){
    
 $('.mobile-menu-button').removeClass( "current")
-$('#mbmenu1').addClass( "current")
+$('#mbtraining2').addClass( "current")
 $('.main-section-ops').hide()
 $('#db7').css("display", "flex");
 $('.dash-sep').hide()
@@ -389,7 +389,7 @@ $('#db-bar-1').css("display", "flex");
 if(window.location.href.indexOf("#training2") != -1){
    
 $('.mobile-menu-button').removeClass( "current")
-$('#mbmenu1').addClass( "current")
+$('#mbtraining1').addClass( "current")
 $('.main-section-ops').hide()
 $('#db6').css("display", "flex");
 $('.dash-sep').hide()
