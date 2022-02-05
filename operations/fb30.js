@@ -256,7 +256,7 @@ let sstid = data['stid'].toLowerCase()
 
 
 // if #actions 
-if(currentPath === '/operations/'+sstid+"#"+'actions'){
+if(currentPath == '/operations/'+sstid+'#actions'){
 $('.mobile-menu-button').removeClass( "current")
 $('#mbmenu1').addClass( "current")
 $('.main-section-ops').hide()
