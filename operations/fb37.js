@@ -274,8 +274,70 @@ $('#userName').html(name);
    
    
 
+
+{
+document.getElementById("#retakesec1").addEventListener("click", () => {
+setTimeout(() => { 
+location.replace('https://www.peckwaterbrands.com/operations/'+sstid+'#training1')
+location.reload()
+}, 5000)})
+}
+{
+document.getElementById("#retakesec2").addEventListener("click", () => {
+setTimeout(() => { 
+location.replace('https://www.peckwaterbrands.com/operations/'+sstid+'#training1')
+location.reload()
+}, 5000)})
+}
+
+{
+document.getElementById("#retakesec3").addEventListener("click", () => {
+setTimeout(() => { 
+location.replace('https://www.peckwaterbrands.com/operations/'+sstid+'#training1')
+location.reload()
+}, 5000)})
+}
+{
+document.getElementById("#retakesec4").addEventListener("click", () => {
+setTimeout(() => { 
+location.replace('https://www.peckwaterbrands.com/operations/'+sstid+'#training1')
+location.reload()
+}, 5000)})
+}
+
+
+{
+document.getElementById("#retakeftb1").addEventListener("click", () => {
+setTimeout(() => { 
+location.replace('https://www.peckwaterbrands.com/operations/'+sstid+'#training2')
+location.reload()
+}, 5000)})
+
+
+
+document.getElementById("#retakeftb2").addEventListener("click", () => {
+setTimeout(() => { 
+location.replace('https://www.peckwaterbrands.com/operations/'+sstid+'#training2')
+location.reload()
+}, 5000)})
+
+
+
+document.getElementById("#retakeftb3").addEventListener("click", () => {
+setTimeout(() => { 
+location.replace('https://www.peckwaterbrands.com/operations/'+sstid+'#training2')
+location.reload()
+}, 5000)})
+
+    
+document.getElementById("#retakeftb4").addEventListener("click", () => {
+setTimeout(() => { 
+location.replace('https://www.peckwaterbrands.com/operations/'+sstid+'#training2')
+location.reload()
+}, 5000)})
+}
    
-   
+
 
 if(currentPath !== '/operations/'+sstid){
 location.href = '/operations/'+sstid
