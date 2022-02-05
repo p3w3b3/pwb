@@ -241,6 +241,8 @@ let currentPath = window.location.pathname;
 if(user) {
 
 
+
+
 let curUser = firebase.auth().currentUser;
 let myFS = firebase.firestore()
 let docRef = myFS.doc("users/" + curUser.uid);
@@ -270,8 +272,21 @@ $('#db-bar-1').css("display", "flex");
 }
    
    
-   
-   
+// if gsign and no name   
+if(!!name) {
+$('#userName').html(name);
+$('#userName2').html(name);
+} else {
+firebase.firestore().doc("users/"+firebase.auth().currentUser.uid)
+.set({Name:user.displayName}, {merge:true})
+{
+setTimeout(() => { 
+window.location.href = '/operations/'+sstid'; 
+}, 2000);
+}
+$('#userName2').html(name);
+$('#userName').html(name);
+}
    
    
 
@@ -779,21 +794,7 @@ document.querySelector('#profile-restaurant').textContent=restaurant;
 firebase.firestore().doc("users/"+firebase.auth().currentUser.uid)
 .set({Timestamp:date}, {merge:true})
 
-
-if(!!name) {
-$('#userName').html(name);
-$('#userName2').html(name);
-} else {
-firebase.firestore().doc("users/"+firebase.auth().currentUser.uid)
-.set({Name:user.displayName}, {merge:true})
-{
-setTimeout(() => { 
-window.location.href = '/operations/'+sstid'; 
-}, 2000);
-}
-$('#userName2').html(name);
-$('#userName').html(name);
-}  
+  
 if(!!emaild) {
 $('#email').html(emaild);
 } else {  
