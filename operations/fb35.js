@@ -284,10 +284,7 @@ maincontent.style.display='flex';
 loader.style.display='none';
 }
 
-  
-  
-// if #actions 
-
+ 
 // if #actions 
 
 if(window.location.href.indexOf("#actions") != -1){
@@ -296,6 +293,43 @@ $('.mobile-menu-button').removeClass( "current")
 $('#mbmenu1').addClass( "current")
 $('.main-section-ops').hide()
 $('#db1').css("display", "flex");
+$('.dash-sep').hide()
+$('#dashpart3').css("display", "flex");
+
+$('.middle-box').hide()
+$('#mbox1').css("display", "flex");
+$('.mobile-menu-wrapper').click()
+$('.bottom-bar-dsb').hide()
+$('#db-bar-1').css("display", "flex");
+}
+
+
+// if training 1 ftb
+
+if(window.location.href.indexOf("#training1") != -1){
+   
+$('.mobile-menu-button').removeClass( "current")
+$('#mbmenu1').addClass( "current")
+$('.main-section-ops').hide()
+$('#db7').css("display", "flex");
+$('.dash-sep').hide()
+$('#dashpart3').css("display", "flex");
+
+$('.middle-box').hide()
+$('#mbox1').css("display", "flex");
+$('.mobile-menu-wrapper').click()
+$('.bottom-bar-dsb').hide()
+$('#db-bar-1').css("display", "flex");
+}
+
+// if training 2 sec
+
+if(window.location.href.indexOf("#training2") != -1){
+   
+$('.mobile-menu-button').removeClass( "current")
+$('#mbmenu1').addClass( "current")
+$('.main-section-ops').hide()
+$('#db6').css("display", "flex");
 $('.dash-sep').hide()
 $('#dashpart3').css("display", "flex");
 
