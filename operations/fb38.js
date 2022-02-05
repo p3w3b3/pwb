@@ -349,7 +349,7 @@ loader.style.display='none';
  
 // if #actions 
 
-if(window.location.href.indexOf("#actions") != -1){
+if( ($(window).width() > 1000) && (window.location.href.indexOf("#actions") != -1) ) {
    
 $('.mobile-menu-button').removeClass( "current")
 $('#mbmenu1').addClass( "current")
