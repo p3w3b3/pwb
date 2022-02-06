@@ -407,11 +407,13 @@ $('#ops7').addClass( "cur")
 if( ($(window).width() > 1000) && (window.location.href.indexOf("#training2") != -1)){
  
 $('.main-section-ops').hide()
-$('#db7').css("display", "flex");
+$('#db6').css("display", "flex");
 $('.sub-nav').hide()
 $('#sb5').css("display", "flex");
 $('.nav-selection').removeClass( "selected")
 $('#mytra').addClass( "selected")
+$('.generic-heading-ops').removeClass( "cur")
+$('#ops6').addClass( "cur")
 }
 
    
