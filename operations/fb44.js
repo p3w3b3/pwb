@@ -382,6 +382,18 @@ $('#mbox1').css("display", "flex");
 $('.mobile-menu-wrapper').click()
 $('.bottom-bar-dsb').hide()
 $('#db-bar-1').css("display", "flex");
+
+
+$('.sub-nav').hide()
+$('#sb5').css("display", "flex");
+
+$('.nav-selection').removeClass( "selected")
+$('#mytra').addClass( "selected")
+
+
+
+$('.generic-heading-ops').removeClass( "cur")
+$('#ops7').addClass( "cur")
 }
 
 // if training 2 sec
@@ -400,6 +412,13 @@ $('#mbox1').css("display", "flex");
 $('.mobile-menu-wrapper').click()
 $('.bottom-bar-dsb').hide()
 $('#db-bar-1').css("display", "flex");
+
+$('.sub-nav').hide()
+$('#sb5').css("display", "flex");
+
+$('.nav-selection').removeClass( "selected")
+$('#mytra').addClass( "selected")
+
 }
   
   
