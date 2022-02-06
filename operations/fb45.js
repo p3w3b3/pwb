@@ -368,7 +368,7 @@ $('#db-bar-1').css("display", "flex");
 
 // if training 1 ftb
 
-if(window.location.href.indexOf("#training1") != -1){
+if( ($(window).width() < 1000) && (window.location.href.indexOf("#training1") != -1)){
    
 $('.mobile-menu-button').removeClass( "current")
 $('#mbtraining2').addClass( "current")
@@ -398,7 +398,7 @@ $('#ops7').addClass( "cur")
 
 // if training 2 sec
 
-if(window.location.href.indexOf("#training2") != -1){
+if( ($(window).width() < 1000) && (window.location.href.indexOf("#training2") != -1)){
    
 $('.mobile-menu-button').removeClass( "current")
 $('#mbtraining1').addClass( "current")
