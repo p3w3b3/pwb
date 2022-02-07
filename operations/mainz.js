@@ -715,7 +715,7 @@ document.querySelector("#daterange").value = ''
 
 {
 document.addEventListener("input", () => {
-if( ($(window).width() > 1000) && (document.querySelector("#cf4").value !== "Other")) {
+if(document.querySelector("#cf4").value !== "Other") {
 $('#cf8').hide()
 } else {
 $('#cf8').show()
