@@ -764,7 +764,7 @@ $("#btt2").hide()
 
 })
 }
-
+if ($(window).width() > 991) {
 {
 let rating = document.querySelectorAll('.leaderboard-rating')
 let nl = (Number($('#numl').text()))
@@ -795,6 +795,6 @@ $('#cf8').show()
 }, 1500);
 
 }
-
+}
 
 
