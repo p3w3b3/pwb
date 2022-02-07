@@ -715,10 +715,10 @@ document.querySelector("#daterange").value = ''
 
 {
 document.addEventListener("input", () => {
-if(document.querySelector("#cf4").value !== "Other") {
-$('#cf8').hide()
-} else {
+if(document.querySelector("#cf4").value == "Other") {
 $('#cf8').show()
+} else {
+$('#cf8').hide()
 }
 
 
