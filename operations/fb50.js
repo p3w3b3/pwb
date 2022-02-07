@@ -65,6 +65,25 @@ $('#db-bar-1').css("display", "flex");
 })
 
 
+
+document.getElementById("mbmenuleader").addEventListener("click", () => {
+$('.mobile-menu-button').removeClass( "current")
+$('#mbmenuleader').addClass( "current")
+
+$('.main-section-ops').hide()
+$('#db2').css("display", "flex");
+$('.dash-sep').hide()
+$('#dashpartlead').css("display", "flex");
+
+$('.middle-box').hide()
+$('#mbox1').css("display", "flex");
+
+
+$('.mobile-menu-wrapper').click()
+$('.bottom-bar-dsb').hide()
+$('#db-bar-lead').css("display", "flex");
+})
+
 document.getElementById("mbmenu2").addEventListener("click", () => {
 $('.mobile-menu-button').removeClass( "current")
 $('#mbmenu2').addClass( "current")
