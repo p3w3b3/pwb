@@ -72,9 +72,6 @@ $('#mbmenuleader').addClass( "current")
 
 $('.main-section-ops').hide()
 $('#db2').css("display", "flex");
-$('.dash-sep').hide()
-$('#dashpartlead').css("display", "flex");
-
 $('.middle-box').hide()
 $('#mbox1').css("display", "flex");
 
