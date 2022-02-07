@@ -1,5 +1,50 @@
 
+{
+var myElement = document.getElementById('dashpart3');
+var mc = new Hammer.Manager(myElement);
+mc.add(new Hammer.Pan({direction:Hammer.DIRECTION_HORIZONTAL, threshold:80, pointers: 0}));
+mc.on("panend", function(ev) {
+  if(ev.direction == Hammer.DIRECTION_RIGHT) 
+  {
+if($('#ab1').css("display") == 'flex') {
+$('#ac22').click() }
 
+else if($('#ab2').css("display") == 'flex') {
+$('#ac33').click() }
+
+else if($('#ab3').css("display") == 'flex') {
+$('#ac44').click() }
+
+else if($('#ab4').css("display") == 'flex') {
+$('#ac55').click() }
+else if($('#ab5').css("display") == 'flex') {
+$('#ac66').click() }
+  
+  }
+
+ if(ev.direction == Hammer.DIRECTION_LEFT) {
+if($('#ab2').css("display") == 'flex') {
+$('#ac11').click() }
+
+else if($('#ab3').css("display") == 'flex') {
+$('#ac22').click() }
+
+else if($('#ab4').css("display") == 'flex') {
+$('#ac33').click() }
+  
+
+else if($('#ab5').css("display") == 'flex') {
+$('#ac44').click() }
+  
+
+else if($('#ab6').css("display") == 'flex') {
+$('#ac55').click() }
+  }
+});
+
+
+
+}
 
 {
 {
