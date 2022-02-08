@@ -70,6 +70,9 @@ Webflow.push(function() {
   
   let admin = data['admin']
   
+  firebase.firestore().doc("users/"+firebase.auth().currentUser.uid)
+  .set({prereq:true}, {merge:true})
+
   if(course1 || course2 || course3 || course4 ) {
   $('#n3').show()
   $('#trainingmob').show()
