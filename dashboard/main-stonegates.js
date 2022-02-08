@@ -60,8 +60,6 @@ let data = docSnap.data()
 let name = data['Name'];
 let emaild = data['Email']; 
 let prereq = data['prereq']; 
-let firstletter = name.substring(0, 1)
-$('.firstletter').html(firstletter);
 let restaurant = data['Restaurant']; 
 let profileuid = curUser.uid
 let pdt1 = data['pdate1']; 
@@ -197,7 +195,11 @@ window.location.href = '/dashboard';
 }, 2000);
 }
 $('#userName2').html(name);
-}  
+}
+
+let firstletter = name.substring(0, 1)
+$('.firstletter').html(firstletter);
+  
 if(!!emaild) {
 $('#email').html(emaild);
 } else {  
