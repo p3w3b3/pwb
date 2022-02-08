@@ -790,5 +790,4 @@ rating.forEach((rating) => {
 let ratingn = (Number(rating.textContent))
 rating.closest(".ranking-bar").style.width = (0.4 + (ratingn - nl) / (nh - nl) * 100 + '%')
 })
-}
-
+}}
