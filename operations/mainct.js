@@ -722,6 +722,14 @@ $('#cf8').hide()
 }
 
 
+
+if( (document.querySelector("#cf4").value == "Other") && ($(window).width() < 991) ){
+$('#otherbox').show()
+} else {
+$('#otherbox').hide()
+}
+
+
 if(
 !!document.querySelector("#cf1").value && 
 !!document.querySelector("#cf2").value &&
@@ -783,18 +791,4 @@ let ratingn = (Number(rating.textContent))
 rating.closest(".ranking-bar").style.width = (0.4 + (ratingn - nl) / (nh - nl) * 100 + '%')
 })
 }
-
-{
-
-setTimeout(() => { 
-if ($(window).width() < 950)
-{
-$('#cf8').show()
-}
-
-}, 1500);
-
-}
-}
-
 
