@@ -213,13 +213,7 @@ Webflow.push(function() {
     } else {
     firebase.firestore().doc("users/"+firebase.auth().currentUser.uid)
     .set({Email:user.email}, {merge:true})
-    {
-    setTimeout(() => { 
-    window.location.href = '/dashboard'; 
-    }, 2000);
     }
-    $('#email').html(emaild);
-    } 
   
   })}
   let currentPath2 = location.href;
