@@ -1,6 +1,6 @@
 
 {
-var myElement = document.getElementById('dashpart3');
+var myElement = document.getElementById('db1');
 var mc = new Hammer.Manager(myElement);
 mc.add(new Hammer.Pan({direction:Hammer.DIRECTION_HORIZONTAL, threshold:80, pointers: 0}));
 mc.on("panend", function(ev) {
