@@ -67,6 +67,10 @@ Webflow.push(function() {
   let pdt3 = data['pdate3']; 
   let pdt4 = data['pdate4']; 
   let pdt5 = data['pdate5']; 
+  let course1 = data['ftbcourse'];
+  let course2 = data['seccourse'];
+  let course3 = data['wbwcourse'];
+  let course4 = data['dlvcourse'];
   
   let admin = data['admin']
   
