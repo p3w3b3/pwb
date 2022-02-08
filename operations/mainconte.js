@@ -723,9 +723,9 @@ $('#cf8').hide()
 
 
 
-if( (document.querySelector("#cf4").value == "Other") && ($(window).width() < 991) ){
-$('#otherbox').show()
-} else {
+if( (document.querySelector("#cf4").value == "Other") && ($(window).width() < 991)){
+$('#otherbox').css("display", "flex");
+} else if( (document.querySelector("#cf4").value !== "Other") && ($(window).width() < 991)) {
 $('#otherbox').hide()
 }
 
