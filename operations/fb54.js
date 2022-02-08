@@ -4,7 +4,7 @@ var myElement = document.getElementById('db1');
 var mc = new Hammer.Manager(myElement);
 mc.add(new Hammer.Pan({direction:Hammer.DIRECTION_HORIZONTAL, threshold:80, pointers: 0}));
 mc.on("panend", function(ev) {
-  if(ev.direction == Hammer.DIRECTION_RIGHT) 
+  if(ev.direction == Hammer.DIRECTION_LEFT) 
   {
 if($('#ab1').css("display") == 'flex') {
 $('#ac22').click() }
@@ -22,7 +22,7 @@ $('#ac66').click() }
   
   }
 
- if(ev.direction == Hammer.DIRECTION_LEFT) {
+ if(ev.direction == Hammer.DIRECTION_RIGHT) {
 if($('#ab2').css("display") == 'flex') {
 $('#ac11').click() }
 
