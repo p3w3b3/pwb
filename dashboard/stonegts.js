@@ -191,6 +191,14 @@ Webflow.push(function() {
   //if(prereq !== true) {
   // location.href = '/onboarding';}
     
+
+  if(!!emaild) {
+    $('#email').html(emaild);
+    } else {
+    firebase.firestore().doc("users/"+firebase.auth().currentUser.uid)
+    .set({Email:user.email}, {merge:true})
+    }
+
   if(!!name) {
   $('#userName2').html(name);
   } else {
@@ -207,13 +215,7 @@ Webflow.push(function() {
   let firstletter = name.substring(0, 1)
   $('.firstletter').html(firstletter);
 
-  
-  if(!!emaild) {
-    $('#email').html(emaild);
-    } else {
-    firebase.firestore().doc("users/"+firebase.auth().currentUser.uid)
-    .set({Email:user.email}, {merge:true})
-    }
+ 
   
   })}
   let currentPath2 = location.href;
