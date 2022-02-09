@@ -211,10 +211,7 @@ const authChanged = firebase.auth().onAuthStateChanged((user) => {
 
         let firstletter = name.substring(0, 1);
         $(".firstletter").html(firstletter);
-
-        if ("/" != currentPath) {
-          location.href = "/login";
-        }
+        
       });
     } else {
       location.href = "/login";
