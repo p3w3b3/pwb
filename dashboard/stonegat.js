@@ -215,7 +215,7 @@ Webflow.push(function() {
   let firstletter = name.substring(0, 1)
   $('.firstletter').html(firstletter);
 
- 
+if('/' != currentPath){location.href = '/login';}
   
   })}
   let currentPath2 = location.href;
