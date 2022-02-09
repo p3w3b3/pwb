@@ -219,21 +219,21 @@ Webflow.push(function() {
   
   })}
   let currentPath2 = location.href;
-  if('https://www.peckwaterbrands.com/dashboard#contact' === currentPath2){
+  if('https://stonegate.peckwaterbrands.com/dashboard#contact' === currentPath2){
   $('#homebox').hide()
   $('.ob-box').hide()
   $('#obsidebar').hide()
   $('#contactbox').show()
   $(".nav-button").css("border-color","transparent");
   $("#n4").css("border-color","white");
-  } else if('https://www.peckwaterbrands.com/dashboard#onboarding' === currentPath2){
+  } else if('https://stonegate.peckwaterbrands.com/dashboard#onboarding' === currentPath2){
   $('#homebox').hide()
   $('.ob-box').hide()
   $('#ob1').show()
   $('#contactbox').hide()
   $(".nav-button").css("border-color","transparent");
   $("#n2").css("border-color","white");
-  } else if('https://www.peckwaterbrands.com/dashboard#onboarding1' === currentPath2){
+  } else if('https://stonegate.peckwaterbrands.com/dashboard#onboarding1' === currentPath2){
   $('#homebox').hide()
   $('.ob-box').hide()
   $('#obsidebar').show()
@@ -241,7 +241,7 @@ Webflow.push(function() {
   $('#contactbox').hide()
   $(".nav-button").css("border-color","transparent");
   $("#n2").css("border-color","white");
-  } else if('https://www.peckwaterbrands.com/dashboard#onboarding2' === currentPath2){
+  } else if('https://stonegate.peckwaterbrands.com/#onboarding2' === currentPath2){
   $('#homebox').hide()
   $('.ob-box').hide()
   $('#ob2').show()
@@ -252,7 +252,7 @@ Webflow.push(function() {
   
   
   
-   else if('https://www.peckwaterbrands.com/dashboard#tracking' === currentPath2){
+   else if('https://stonegate.peckwaterbrands.com/dashboard#tracking' === currentPath2){
   $('#homebox').hide()
   $('.ob-box').hide()
   $('#obsidebar').hide()
