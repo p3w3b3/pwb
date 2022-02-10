@@ -79,6 +79,14 @@
     $("#ops-in").addClass("cur");
   });
 
+  document.querySelector("#ops4").addEventListener("click", function () {
+    $(".main-section-ops").hide();
+    $("#db4").show();
+
+    $(".generic-heading-ops").removeClass("cur");
+    $("#ops4").addClass("cur");
+  });
+
   document.querySelector("#ops6").addEventListener("click", function () {
     $(".main-section-ops").hide();
     $("#db6").show();
