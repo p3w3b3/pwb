@@ -223,14 +223,7 @@
   };
 
   setTimeout(() => {
-    $("#grossmtd").digits();
-    $("#grosslastmonth").digits();
-    $("#grossalltime").digits();
-    $("#ordersalltime").digits();
-    $("#rev1").digits();
-    $("#rev2").digits();
-    $("#grosstot").digits();
-    $(".ranking-gross").digits();
+    $(".currency-sep").digits();
   }, 1500);
 }
 
