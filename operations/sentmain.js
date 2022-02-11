@@ -225,7 +225,7 @@
   setTimeout(() => {
     $(".currency-sep").digits();
     $(".sitesheading").digits();
-
+    $(".ranking-gross").digits();
   }, 1500);
 }
 
