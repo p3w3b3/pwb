@@ -256,7 +256,7 @@
               .addEventListener("click", () => {
                 setTimeout(() => {
                   location.replace(
-                    "https://stonegate.peckwaterbrands.com/enterprise/all"
+                    "https://stonegate.peckwaterbrands.com/enterprise/all#training2"
                   );
                   location.reload();
                 }, 500);
@@ -268,7 +268,7 @@
               .addEventListener("click", () => {
                 setTimeout(() => {
                   location.replace(
-                    "https://stonegate.peckwaterbrands.com/enterprise/all"
+                    "https://stonegate.peckwaterbrands.com/enterprise/all#training2"
                   );
                   location.reload();
                 }, 500);
@@ -281,7 +281,7 @@
               .addEventListener("click", () => {
                 setTimeout(() => {
                   location.replace(
-                    "https://stonegate.peckwaterbrands.com/enterprise/all"
+                    "https://stonegate.peckwaterbrands.com/enterprise/all#training2"
                   );
                   location.reload();
                 }, 500);
@@ -293,7 +293,7 @@
               .addEventListener("click", () => {
                 setTimeout(() => {
                   location.replace(
-                    "https://stonegate.peckwaterbrands.com/enterprise/all"
+                    "https://stonegate.peckwaterbrands.com/enterprise/all#training2"
                   );
                   location.reload();
                 }, 500);
@@ -306,7 +306,7 @@
               .addEventListener("click", () => {
                 setTimeout(() => {
                   location.replace(
-                    "https://stonegate.peckwaterbrands.com/enterprise/all"
+                    "https://stonegate.peckwaterbrands.com/enterprise/all#training1"
                   );
                   location.reload();
                 }, 500);
@@ -317,7 +317,7 @@
               .addEventListener("click", () => {
                 setTimeout(() => {
                   location.replace(
-                    "https://stonegate.peckwaterbrands.com/enterprise/all"
+                    "https://stonegate.peckwaterbrands.com/enterprise/all#training1"
                   );
                   location.reload();
                 }, 500);
@@ -328,7 +328,7 @@
               .addEventListener("click", () => {
                 setTimeout(() => {
                   location.replace(
-                    "https://stonegate.peckwaterbrands.com/enterprise/all"
+                    "https://stonegate.peckwaterbrands.com/enterprise/all#training1"
                   );
                   location.reload();
                 }, 500);
@@ -339,7 +339,7 @@
               .addEventListener("click", () => {
                 setTimeout(() => {
                   location.replace(
-                    "https://stonegate.peckwaterbrands.com/enterprise/all"
+                    "https://stonegate.peckwaterbrands.com/enterprise/all#training1"
                   );
                   location.reload();
                 }, 500);
