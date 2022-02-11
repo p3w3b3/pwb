@@ -224,6 +224,8 @@
 
   setTimeout(() => {
     $(".currency-sep").digits();
+    $(".sitesheading").digits();
+
   }, 1500);
 }
 
