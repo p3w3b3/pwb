@@ -66,23 +66,6 @@
       $("#db-bar-lead").css("display", "flex");
     });
 
-    document.getElementById("mbmenu2").addEventListener("click", () => {
-      $(".mobile-menu-button").removeClass("current");
-      $("#mbmenu2").addClass("current");
-
-      $(".main-section-ops").hide();
-      $("#db3").css("display", "flex");
-      $(".bottom-bar-dsb").hide();
-      $("#db-bar-2").css("display", "flex");
-      $(".dash-sep").hide();
-      $("#dashpart5").css("display", "flex");
-
-      $(".middle-box").hide();
-      $("#mbox2").css("display", "flex");
-
-      $(".mobile-menu-wrapper").click();
-    });
-
     document.getElementById("mbmenu3").addEventListener("click", () => {
       $(".mobile-menu-button").removeClass("current");
       $("#mbmenu3").addClass("current");
