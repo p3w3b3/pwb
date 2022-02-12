@@ -26,13 +26,17 @@
     });
 
     document.getElementById("dash-button-7").addEventListener("click", () => {
+      $(".main-section-ops").hide();
       $(".dash-sep").hide();
-      $("#dashpart6").css("display", "flex");
+      $("#db-insights").css("display", "flex");
     });
 
     document.getElementById("dash-button-8").addEventListener("click", () => {
+      $(".main-section-ops").hide();
       $(".dash-sep").hide();
+      $("#db4").css("display", "flex");
       $("#dashpart7").css("display", "flex");
+      
     });
 
     document.getElementById("mbmenu1").addEventListener("click", () => {
