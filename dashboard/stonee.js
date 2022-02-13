@@ -497,6 +497,20 @@ const authChanged = firebase.auth().onAuthStateChanged((user) => {
                         .firestore()
                         .doc("users/" + tid)
                         .set({ operations: true }, { merge: true });
+
+                      firebase
+                        .firestore()
+                        .doc("users/" + tid)
+                        .set({ prereq: true }, { merge: true });
+
+                      firebase
+                        .firestore()
+                        .doc("users/" + tid)
+                        .set({ enterprise: false }, { merge: true });
+                       firebase
+                        .firestore()
+                        .doc("users/" + tid)
+                        .set({ admin: false }, { merge: true });
                     }
                   
                     if (paccess === "enterprise") {
@@ -508,6 +522,11 @@ const authChanged = firebase.auth().onAuthStateChanged((user) => {
                         .firestore()
                         .doc("users/" + tid)
                         .set({ operations: false }, { merge: true });
+
+                      firebase
+                        .firestore()
+                        .doc("users/" + tid)
+                        .set({ prereq: true }, { merge: true });
                     }
 
                     if (paccess === "preq") {
@@ -519,6 +538,14 @@ const authChanged = firebase.auth().onAuthStateChanged((user) => {
                         .firestore()
                         .doc("users/" + tid)
                         .set({ admin: false }, { merge: true });
+                      firebase
+                        .firestore()
+                        .doc("users/" + tid)
+                        .set({ operations: false }, { merge: true });
+                      firebase
+                        .firestore()
+                        .doc("users/" + tid)
+                        .set({ enterprise: false }, { merge: true });
                     }
 
                     if (paccess === "admin") {
@@ -530,6 +557,14 @@ const authChanged = firebase.auth().onAuthStateChanged((user) => {
                         .firestore()
                         .doc("users/" + tid)
                         .set({ admin: true }, { merge: true });
+                      firebase
+                        .firestore()
+                        .doc("users/" + tid)
+                        .set({ operations: false }, { merge: true });
+                      firebase
+                        .firestore()
+                        .doc("users/" + tid)
+                        .set({ enterprise: false }, { merge: true });
                     }
 
                     if (stid !== undefined && stid !== "-" && stid !== " ") {
