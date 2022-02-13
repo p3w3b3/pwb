@@ -212,6 +212,28 @@
 }
 
 
+{
+  $.fn.digits = function () {
+    return this.each(function () {
+      $(this).text(
+        $(this)
+          .text()
+          .replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")
+      );
+    });
+  };
+
+  setTimeout(() => {
+    $(".currency-sep").digits();
+    $(".currencysep").digits();
+    $(".currency-sep2").digits();
+    $(".currencysep2").digits();
+    $(".sitesheading").digits();
+    $(".ranking-gross").digits();
+  }, 1500);
+}
+
+
 $("#cf6").datepicker({
   onSelect: function () {
     $(this).change();
