@@ -211,23 +211,6 @@
   }
 }
 
-{
-  $.fn.digits = function () {
-    return this.each(function () {
-      $(this).text(
-        $(this)
-          .text()
-          .replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")
-      );
-    });
-  };
-
-  setTimeout(() => {
-    $(".currency-sep").digits();
-    $(".sitesheading").digits();
-    $(".ranking-gross").digits();
-  }, 1500);
-}
 
 $("#cf6").datepicker({
   onSelect: function () {
