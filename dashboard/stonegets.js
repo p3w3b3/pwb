@@ -335,6 +335,8 @@ const authChanged = firebase.auth().onAuthStateChanged((user) => {
               var accessps = myResults[i].data.prereq;
               var accessps2 = myResults[i].data.admin;
               var accessps3 = myResults[i].data.operations;
+              var accessps4 = myResults[i].data.enterprise;
+
 
               var course11 = myResults[i].data.ftbcourse;
               var course22 = myResults[i].data.seccourse;
@@ -379,6 +381,10 @@ const authChanged = firebase.auth().onAuthStateChanged((user) => {
 
               if (!!accessps3) {
                 newItem.find("#accesslevel-" + i)[0].value = "operations";
+              }
+
+              if (!!accessps4) {
+                newItem.find("#accesslevel-" + i)[0].value = "enterprise";
               }
 
               if (!!accessps) {
@@ -491,6 +497,13 @@ const authChanged = firebase.auth().onAuthStateChanged((user) => {
                         .firestore()
                         .doc("users/" + tid)
                         .set({ operations: true }, { merge: true });
+                    }
+                  
+                    if (paccess === "enterprise") {
+                      firebase
+                        .firestore()
+                        .doc("users/" + tid)
+                        .set({ enterprise: true }, { merge: true });
                     }
 
                     if (paccess === "preq") {
