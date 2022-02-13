@@ -504,6 +504,10 @@ const authChanged = firebase.auth().onAuthStateChanged((user) => {
                         .firestore()
                         .doc("users/" + tid)
                         .set({ enterprise: true }, { merge: true });
+                      firebase
+                        .firestore()
+                        .doc("users/" + tid)
+                        .set({ operations: false }, { merge: true });
                     }
 
                     if (paccess === "preq") {
