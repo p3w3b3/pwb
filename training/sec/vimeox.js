@@ -199,6 +199,57 @@ setTimeout(() => {
   });
 }
 
+{
+  document.getElementById("s7p1button").addEventListener("click", (event) => {
+    $(".section1selection").css("background-color", "white");
+    $(".section1div").hide();
+    $("#s7p1video").show();
+    $("#s7p1button").css("background-color", "#e7edf0");
+  });
+}
+{
+  document.getElementById("s7p2button").addEventListener("click", (event) => {
+    $(".section1selection").css("background-color", "white");
+    $(".section1div").hide();
+    $("#s7p2video").show();
+    $("#s7p2button").css("background-color", "#e7edf0");
+  });
+}
+{
+  document.getElementById("s7p3button").addEventListener("click", (event) => {
+    $(".section1selection").css("background-color", "white");
+    $(".section1div").hide();
+    $("#s7p3video").show();
+    $("#s7p3button").css("background-color", "#e7edf0");
+  });
+}
+{
+  document.getElementById("s7p4button").addEventListener("click", (event) => {
+    $(".section1selection").css("background-color", "white");
+    $(".section1div").hide();
+    $("#s7p4video").show();
+    $("#s7p4button").css("background-color", "#e7edf0");
+  });
+}
+{
+  document.getElementById("s7p5button").addEventListener("click", (event) => {
+    $(".section1selection").css("background-color", "white");
+    $(".section1div").hide();
+    $("#s7p5video").show();
+    $("#s7p5button").css("background-color", "#e7edf0");
+  });
+}
+
+{
+  document.getElementById("s6p5button").addEventListener("click", (event) => {
+    $(".section1selection").css("background-color", "white");
+    $(".section1div").hide();
+    $("#s6p5quiz").show();
+    $("#s6p5button").css("background-color", "#e7edf0");
+  });
+}
+
+
 
 const checkcompleted1 = function() {
 let prognum = 0;
