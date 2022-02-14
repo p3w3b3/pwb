@@ -212,7 +212,48 @@ setTimeout(() => {
       $("#f6p6button").css("background-color", "#e7edf0");
     });
   }
-
+  {
+    document.getElementById("f7p1button").addEventListener("click", (event) => {
+      $(".section1selection").css("background-color", "white");
+      $(".section1div").hide();
+      $("#f7p1video").show();
+      $("#f7p1button").css("background-color", "#e7edf0");
+    });
+  }
+  {
+    document.getElementById("f7p2button").addEventListener("click", (event) => {
+      $(".section1selection").css("background-color", "white");
+      $(".section1div").hide();
+      $("#f7p2video").show();
+      $("#f7p2button").css("background-color", "#e7edf0");
+    });
+  }
+  {
+    document.getElementById("f7p3button").addEventListener("click", (event) => {
+      $(".section1selection").css("background-color", "white");
+      $(".section1div").hide();
+      $("#f7p3video").show();
+      $("#f7p3button").css("background-color", "#e7edf0");
+    });
+  }
+  {
+    document.getElementById("f7p4button").addEventListener("click", (event) => {
+      $(".section1selection").css("background-color", "white");
+      $(".section1div").hide();
+      $("#f7p4video").show();
+      $("#f7p4button").css("background-color", "#e7edf0");
+    });
+  }
+  {
+    document.getElementById("f7p5button").addEventListener("click", (event) => {
+      $(".section1selection").css("background-color", "white");
+      $(".section1div").hide();
+      $("#f7p5video").show();
+      $("#f7p5button").css("background-color", "#e7edf0");
+    });
+  }
+  
+  
   const checkcompleted1 = function () {
     let prognumf = 0;
     if (document.querySelector("#f1p1x").style.display == "block") {
@@ -315,6 +356,28 @@ setTimeout(() => {
     document.querySelector("#prognumf6").textContent = prognumf6;
   };
 
+  const checkcompleted7 = function () {
+    let prognumf8 = 0;
+    if (document.querySelector("#f7p1x").style.display == "block") {
+      prognumf8++;
+    }
+    if (document.querySelector("#f7p2x").style.display == "block") {
+      prognumf8++;
+    }
+    if (document.querySelector("#f7p3x").style.display == "block") {
+      prognumf8++;
+    }
+    if (document.querySelector("#f7p4x").style.display == "block") {
+      prognumf8++;
+    }
+    if (document.querySelector("#f7p5x").style.display == "block") {
+      prognumf8++;
+    }
+
+    document.querySelector("#prognumf8").textContent = prognumf8;
+  };
+  
+  
   {
     var iframe = document.querySelector("#f1p1video");
     var player = new Vimeo.Player(iframe);
@@ -650,4 +713,84 @@ setTimeout(() => {
     };
     player.on("ended", finished);
   }
+
+  {
+    var iframe = document.querySelector("#f7p1video");
+    var player = new Vimeo.Player(iframe);
+    var finished = function () {
+      videoended = "true";
+      $("#f7p1").hide();
+      $("#f7p1x").show();
+      firebase
+        .firestore()
+        .doc("users/" + firebase.auth().currentUser.uid)
+        .set({ f7p1: true }, { merge: true });
+      checkcompleted7();
+    };
+    player.on("ended", finished);
+  }
+  {
+    var iframe = document.querySelector("#f7p2video");
+    var player = new Vimeo.Player(iframe);
+    var finished = function () {
+      videoended = "true";
+      $("#f7p2").hide();
+      $("#f7p2x").show();
+      firebase
+        .firestore()
+        .doc("users/" + firebase.auth().currentUser.uid)
+        .set({ f7p2: true }, { merge: true });
+      checkcompleted7();
+    };
+    player.on("ended", finished);
+  }
+  
+  {
+    var iframe = document.querySelector("#f7p3video");
+    var player = new Vimeo.Player(iframe);
+    var finished = function () {
+      videoended = "true";
+      $("#f7p3").hide();
+      $("#f7p3x").show();
+      firebase
+        .firestore()
+        .doc("users/" + firebase.auth().currentUser.uid)
+        .set({ f7p3: true }, { merge: true });
+      checkcompleted7();
+    };
+    player.on("ended", finished);
+  }
+  {
+    var iframe = document.querySelector("#f7p4video");
+    var player = new Vimeo.Player(iframe);
+    var finished = function () {
+      videoended = "true";
+      $("#f7p4").hide();
+      $("#f7p4x").show();
+      firebase
+        .firestore()
+        .doc("users/" + firebase.auth().currentUser.uid)
+        .set({ f7p4: true }, { merge: true });
+      checkcompleted7();
+    };
+    player.on("ended", finished);
+  }
+
+  {
+    var iframe = document.querySelector("#f7p5video");
+    var player = new Vimeo.Player(iframe);
+    var finished = function () {
+      videoended = "true";
+      $("#f7p5").hide();
+      $("#f7p5x").show();
+      firebase
+        .firestore()
+        .doc("users/" + firebase.auth().currentUser.uid)
+        .set({ f7p5: true }, { merge: true });
+      checkcompleted7();
+    };
+    player.on("ended", finished);
+  }
+
+
 }, 2000);
