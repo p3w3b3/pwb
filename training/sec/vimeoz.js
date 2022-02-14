@@ -368,7 +368,7 @@ let prognum8 = 0;
       prognum8++;
     }
 
-document.querySelector("#prognum7").textContent = prognum7;
+document.querySelector("#prognum8").textContent = prognum8;
 }
 
 
