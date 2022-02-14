@@ -46,7 +46,7 @@ auth.onAuthStateChanged(async (user) => {
       let emaild = data['Email']; 
       	  let firstletter = name.substring(0, 1)
         $('.firstletter').html(firstletter);
-    let sm1p1 = data['d1p1'];    
+    let sm1p1 = data['sm1p1'];    
 
 
     if( sm1p1 == true) {
