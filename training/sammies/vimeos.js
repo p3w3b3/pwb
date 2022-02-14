@@ -9,9 +9,9 @@ setTimeout(() => {
 }
 
 const checkcompleted1 = function() {
-let prognum = 0;
+let prognumsm = 0;
     if (document.querySelector("#sm1p1x").style.display == "block") {
-      prognum++;
+      prognumsm++;
     }
     document.querySelector("#prognumsm").textContent = prognumsm;
 }
