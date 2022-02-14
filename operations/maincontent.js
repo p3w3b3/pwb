@@ -148,6 +148,14 @@ $('.generic-heading-ops').removeClass("cur");
 $('#ops11').addClass("cur");
 
 })
+
+  document.querySelector("#ops-in").addEventListener("click", function () {
+    $(".main-section-ops").hide();
+    $("#db-insights").show();
+
+    $(".generic-heading-ops").removeClass("cur");
+    $("#ops-in").addClass("cur");
+  });
  
  
 
