@@ -972,6 +972,41 @@ $('#s6p5x').show()
 prognum6++
 }
 
+    if( s7p1 == true) {
+$('#s7p1').hide()
+$('#s7p1x').show()
+prognum8++
+}
+
+    if( s7p2 == true) {
+$('#s7p2').hide()
+$('#s7p2x').show()
+prognum8++
+}
+
+    if( s7p3 == true) {
+$('#s7p3').hide()
+$('#s7p3x').show()
+prognum8++
+}
+
+    if( s7p3 == true) {
+$('#s7p3').hide()
+$('#s7p3x').show()
+prognum8++
+}
+  
+      if( s7p4 == true) {
+$('#s7p4').hide()
+$('#s7p4x').show()
+prognum8++
+}
+  
+    if( s7p5 == true) {
+$('#s7p5').hide()
+$('#s7p5x').show()
+prognum8++
+}
 
 
 document.querySelector('#prognum').textContent = prognum
