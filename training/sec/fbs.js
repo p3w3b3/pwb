@@ -31,6 +31,7 @@ let prognum4 = 0
 let prognum5 = 0
 let prognum6 = 0
 let prognum7 = 0
+let prognum8 = 0
 
 const signout = () => {
     auth.signOut();
@@ -77,7 +78,13 @@ auth.onAuthStateChanged(async (user) => {
     let s6p4 = data['s6p4']; 
     let s6p5 = data['s6p5']; 
 
+    let s7p1 = data['s7p1']; 
+    let s7p2 = data['s7p2']; 
+    let s7p3 = data['s7p3']; 
+    let s7p4 = data['s7p4']; 
+    let s7p5 = data['s7p5']; 
 
+	  
     if( s1p1 == true) {
 $('#s1p1').hide()
 $('#s1p1x').show()
@@ -200,7 +207,38 @@ $('#s6p5x').show()
 prognum6++
 }
 
-let sp =((prognum+prognum2+prognum3+prognum4+prognum5+prognum6)/23*100)
+
+    if( s7p1 == true) {
+$('#s7p1').hide()
+$('#s7p1x').show()
+prognum8++
+}
+
+    if( s7p2 == true) {
+$('#s7p2').hide()
+$('#s7p2x').show()
+prognum8++
+}
+	  
+    if( s7p3 == true) {
+$('#s7p3').hide()
+$('#s7p3x').show()
+prognum8++
+}
+
+   if( s7p4 == true) {
+$('#s7p4').hide()
+$('#s7p4x').show()
+prognum8++
+}
+	  
+    if( s7p5 == true) {
+$('#s7p5').hide()
+$('#s7p5x').show()
+prognum8++
+}
+	  
+let sp =((prognum+prognum2+prognum3+prognum4+prognum5+prognum6+prognum8)/28*100)
 let spn = Math.round(sp)+'%'
 firebase.firestore().doc("users/"+firebase.auth().currentUser.uid)
   .set({SEC:spn}, {merge:true})
@@ -243,6 +281,7 @@ document.querySelector('#prognum4').textContent = prognum4
 document.querySelector('#prognum5').textContent = prognum5
 document.querySelector('#prognum6').textContent = prognum6
 document.querySelector('#prognum7').textContent = prognum7
+document.querySelector('#prognum8').textContent = prognum8
 
 })})
 
