@@ -241,6 +241,33 @@ $('.mobile-menu-wrapper').click()
 })
 }
 
+document.getElementById("mbtraining10").addEventListener("click", () => {
+$('.mobile-menu-button').removeClass( "current")
+$('#mbtraining10').addClass( "current")
+
+$('.main-section-ops').hide()
+$('#db10').css("display", "flex");
+$('.bottom-bar-dsb').hide()
+$('.middle-box').hide()
+$('#mbox4').css("display", "flex");
+
+$('.mobile-menu-wrapper').click()
+})
+}
+
+document.getElementById("mbtraining11").addEventListener("click", () => {
+$('.mobile-menu-button').removeClass( "current")
+$('#mbtraining11').addClass( "current")
+
+$('.main-section-ops').hide()
+$('#db11').css("display", "flex");
+$('.bottom-bar-dsb').hide()
+$('.middle-box').hide()
+$('#mbox4').css("display", "flex");
+
+$('.mobile-menu-wrapper').click()
+})
+}
 
 }
 
