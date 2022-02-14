@@ -357,8 +357,8 @@ $('#crs02').hide()
               var course22 = myResults[i].data.seccourse;
               var course33 = myResults[i].data.wbwcourse;
               var course44 = myResults[i].data.dlvcourse;
-              var course55 = myResults[i].data.wbwcourse;
-              var course66 = myResults[i].data.dlvcourse;
+              var course55 = myResults[i].data.smcourse;
+              var course66 = myResults[i].data.vcourse;
 
               if (course11 == undefined) {
                 newItem.find("#course1-" + i)[0].checked = false;
