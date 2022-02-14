@@ -318,6 +318,9 @@ let prognumf5 = 0
 let prognumf6 = 0
 let prognumf8 = 0
 
+let prognumsm = 0
+let prognumv = 0
+
 const signout = () => {
 auth.signOut();
 };
