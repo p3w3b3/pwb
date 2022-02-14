@@ -1026,6 +1026,9 @@ let profileuid = curUser.uid
       let course2 = data['seccourse']
       let course3 = data['wbwcourse']
       let course4 = data['dlvcourse']
+      let course5 = data['smcourse']
+      let course6 = data['vcourse']
+
 
 if(course1 == true){
 $('#train1').css('display', 'flex');
@@ -1060,6 +1063,23 @@ if(course4 == true){
 $('#ops9').hide()
 }
 
+if(course5 == true){
+$('#ops10').css('display', 'flex');
+$('#mbtraining10').css('display', 'flex');
+$('#cf2').append(new Option('Sammies', 'Sammies'))
+} else  {
+$('#ops10').hide()
+$('#mbtraining10').hide()
+}
+if(course6 == true){
+$('#ops11').css('display', 'flex');
+$('#mbtraining11').css('display', 'flex');
+$('#cf2').append(new Option('Very Good Burger', 'Very Good Burger'))
+} else  {
+$('#ops11').hide()
+$('#mbtraining11').hide()
+
+}
 
 let sp =((prognum+prognum2+prognum3+prognum4+prognum5+prognum6+prognum8)/28*100)
 let spn = Math.round(sp)+'%'
