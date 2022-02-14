@@ -91,7 +91,7 @@ firebase.firestore().doc("users/"+firebase.auth().currentUser.uid)
 		loader.style.display='flex';
   }
 signOutButton.addEventListener('click', signout);
-document.querySelector('#prognumsm').textContent = prognum
+document.querySelector('#prognumsm').textContent = prognumsm
 
 })})
 
