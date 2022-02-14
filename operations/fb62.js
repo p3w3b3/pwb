@@ -852,8 +852,8 @@ $('#v1p1x').show()
 prognumv++
 }
 
-let sp =((prognumv)/1*100)
-let spnx = Math.round(sp)+'%'
+let spx =((prognumv)/1*100)
+let spnx = Math.round(spx)+'%'
 firebase.firestore().doc("users/"+firebase.auth().currentUser.uid)
   .set({verygoodburger:spnx}, {merge:true})
 
@@ -870,8 +870,8 @@ $('#sm1p1x').show()
 prognumsm++
 }
 
-let sp =((prognumsm)/1*100)
-let spnz = Math.round(sp)+'%'
+let spz =((prognumsm)/1*100)
+let spnz = Math.round(spz)+'%'
 firebase.firestore().doc("users/"+firebase.auth().currentUser.uid)
   .set({sammies:spnz}, {merge:true})
 
