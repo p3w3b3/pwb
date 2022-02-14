@@ -224,36 +224,36 @@ prognum6++
 }
 
     if( s7p1 == true) {
-$('#f7p1').hide()
-$('#f7p1x').show()
+$('#s7p1').hide()
+$('#s7p1x').show()
 prognum8++
 }
 
 
     if( s7p2 == true) {
-$('#f7p2').hide()
-$('#f7p2x').show()
+$('#s7p2').hide()
+$('#s7p2x').show()
 prognum8++
 }
 
 
     if( s7p3 == true) {
-$('#f7p3').hide()
-$('#f7p3x').show()
+$('#s7p3').hide()
+$('#s7p3x').show()
 prognum8++
 }
 
 
     if( s7p4 == true) {
-$('#f7p4').hide()
-$('#f7p4x').show()
+$('#s7p4').hide()
+$('#s7p4x').show()
 prognum8++
 }
 
 
     if( s7p5 == true) {
-$('#f7p5').hide()
-$('#f7p5x').show()
+$('#s7p5').hide()
+$('#sp5x').show()
 prognum8++
 }
 
