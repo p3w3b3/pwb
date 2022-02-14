@@ -130,6 +130,26 @@ $('.generic-heading-ops').removeClass("cur");
 $('#ops9').addClass("cur");
 
 })
+ 
+ document.querySelector("#ops10").addEventListener("click", function() {
+$('.main-section-ops').hide()
+$('#db10').show()
+
+$('.generic-heading-ops').removeClass("cur");
+$('#ops10').addClass("cur");
+
+})
+
+ document.querySelector("#ops11").addEventListener("click", function() {
+$('.main-section-ops').hide()
+$('#db11').show()
+
+$('.generic-heading-ops').removeClass("cur");
+$('#ops11').addClass("cur");
+
+})
+ 
+ 
 
 }
 
