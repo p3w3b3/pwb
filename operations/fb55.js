@@ -87,9 +87,7 @@ document.getElementById("dash-button-8").addEventListener("click", () => {
 $('.dash-sep').hide()
 $('#dashpart7').css("display", "flex");
 })
-
-
-
+  
 
 document.getElementById("mbmenu1").addEventListener("click", () => {
 $('.mobile-menu-button').removeClass( "current")
@@ -285,6 +283,7 @@ let prognum3 = 0
 let prognum4 = 0
 let prognum5 = 0
 let prognum6 = 0
+let prognum8 = 0
 
 let prognumf = 0
 let prognumf2 = 0
@@ -292,6 +291,7 @@ let prognumf3 = 0
 let prognumf4 = 0
 let prognumf5 = 0
 let prognumf6 = 0
+let prognumf8 = 0
 
 const signout = () => {
 auth.signOut();
@@ -609,6 +609,12 @@ $('#f6-quiz-completed').css("display", "flex");
     let f6p6 = data['f6p6']; 
 
 
+    let f7p1 = data['f7p1']; 
+    let f7p2 = data['f7p2']; 
+    let f7p3 = data['f7p3']; 
+    let f7p4 = data['f7p4']; 
+    let f7p5 = data['f7p5']; 
+
 let d1p1 = data["d1p1"];
 let d1p2 = data["d1p2"];
 let d1p3 = data["d1p3"];
@@ -772,6 +778,37 @@ $('#f6p6x').show()
 prognumf6++
 }
 
+    if( f7p1 == true) {
+$('#f7p1').hide()
+$('#f7p1x').show()
+prognumf8++
+}
+  
+    if( f7p2 == true) {
+$('#f7p2').hide()
+$('#f7p2x').show()
+prognumf8++
+}
+  
+    if( f7p3 == true) {
+$('#f7p3').hide()
+$('#f7p3x').show()
+prognumf8++
+}
+    
+    if( f7p4 == true) {
+$('#f7p4').hide()
+$('#f7p4x').show()
+prognumf8++
+}
+  
+    if( f7p5 == true) {
+$('#f7p5').hide()
+$('#f7p5x').show()
+prognumf8++
+}
+
+
 
 document.querySelector('#prognumf').textContent = prognumf
 document.querySelector('#prognumf2').textContent = prognumf2
@@ -779,7 +816,7 @@ document.querySelector('#prognumf3').textContent = prognumf3
 document.querySelector('#prognumf4').textContent = prognumf4
 document.querySelector('#prognumf5').textContent = prognumf5
 document.querySelector('#prognumf6').textContent = prognumf6
-
+document.querySelector('#prognumf8').textContent = prognumf8
 
 
     let s1p1 = data['s1p1'];    
@@ -805,6 +842,13 @@ document.querySelector('#prognumf6').textContent = prognumf6
     let s6p3 = data['s6p3']; 
     let s6p4 = data['s6p4']; 
     let s6p5 = data['s6p5']; 
+
+    let s7p1 = data['s7p1']; 
+    let s7p2 = data['s7p2']; 
+    let s7p3 = data['s7p3']; 
+    let s7p4 = data['s7p4']; 
+    let s7p5 = data['s7p5']; 
+
 
    if( s1p1 == true) {
 $('#s1p1').hide()
@@ -981,12 +1025,12 @@ $('#ops9').hide()
 }
 
 
-let sp =((prognum+prognum2+prognum3+prognum4+prognum5+prognum6)/23*100)
+let sp =((prognum+prognum2+prognum3+prognum4+prognum5+prognum6+prognum8)/28*100)
 let spn = Math.round(sp)+'%'
 firebase.firestore().doc("users/"+firebase.auth().currentUser.uid)
   .set({SEC:spn}, {merge:true})
 
-let fp =((prognumf+prognumf2+prognumf3+prognumf4+prognumf5+prognumf6)/25*100)
+let fp =((prognumf+prognumf2+prognumf3+prognumf4+prognumf5+prognumf6+prognumf8)/30*100)
 let fpn = Math.round(fp)+'%'
 firebase.firestore().doc("users/"+firebase.auth().currentUser.uid)
   .set({FTB:fpn}, {merge:true})
