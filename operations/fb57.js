@@ -1015,6 +1015,7 @@ document.querySelector('#prognum3').textContent = prognum3
 document.querySelector('#prognum4').textContent = prognum4
 document.querySelector('#prognum5').textContent = prognum5
 document.querySelector('#prognum6').textContent = prognum6
+document.querySelector('#prognum8').textContent = prognum8
 
 
 let firstletter = name.substring(0, 1)
