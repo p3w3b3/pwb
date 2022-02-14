@@ -844,6 +844,42 @@ document.querySelector('#prognumf6').textContent = prognumf6
 document.querySelector('#prognumf8').textContent = prognumf8
 
 
+ let v1p1 = data['v1p1'];    
+
+ if( v1p1 == true) {
+$('#v1p1').hide()
+$('#v1p1x').show()
+prognumv++
+}
+
+let sp =((prognumv)/1*100)
+let spnx = Math.round(sp)+'%'
+firebase.firestore().doc("users/"+firebase.auth().currentUser.uid)
+  .set({verygoodburger:spnx}, {merge:true})
+
+document.querySelector('#prognumv').textContent = prognumv
+  
+  
+  
+    let sm1p1 = data['sm1p1'];    
+
+
+    if( sm1p1 == true) {
+$('#sm1p1').hide()
+$('#sm1p1x').show()
+prognumsm++
+}
+
+let sp =((prognumsm)/1*100)
+let spnz = Math.round(sp)+'%'
+firebase.firestore().doc("users/"+firebase.auth().currentUser.uid)
+  .set({sammies:spnz}, {merge:true})
+
+  document.querySelector('#prognumsm').textContent = prognumsm
+
+  
+
+
     let s1p1 = data['s1p1'];    
     let s1p2 = data['s1p2'];    
     let s1p3 = data['s1p3'];    
