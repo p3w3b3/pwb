@@ -239,7 +239,6 @@ $('#mbox4').css("display", "flex");
 
 $('.mobile-menu-wrapper').click()
 })
-}
 
 document.getElementById("mbtraining10").addEventListener("click", () => {
 $('.mobile-menu-button').removeClass( "current")
@@ -253,7 +252,6 @@ $('#mbox4').css("display", "flex");
 
 $('.mobile-menu-wrapper').click()
 })
-}
 
 document.getElementById("mbtraining11").addEventListener("click", () => {
 $('.mobile-menu-button').removeClass( "current")
