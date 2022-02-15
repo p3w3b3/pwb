@@ -30,15 +30,14 @@ document.querySelector(".closeadduser").addEventListener("click", function () {
   $("#createuserpopup").hide();
   $(".signwrapper").hide();
 });
-
 const firebaseConfig = {
-  apiKey: "AIzaSyDApbEuGdjDf-dBlOljBvvXAPlZmUx-D5M",
-  authDomain: "stonegate-system.firebaseapp.com",
-  projectId: "stonegate-system",
-  storageBucket: "stonegate-system.appspot.com",
-  messagingSenderId: "798322604618",
-  appId: "1:798322604618:web:fada6a2e9f09f0319bc4b3",
-  measurementId: "G-1J8XNVRV7Q",
+  apiKey: "AIzaSyB5X0NgXNQ8d3UjqVP5p_xB9Yt8cOk1ut8",
+  authDomain: "peckwater-system.firebaseapp.com",
+  projectId: "peckwater-system",
+  storageBucket: "peckwater-system.appspot.com",
+  messagingSenderId: "620518934310",
+  appId: "1:620518934310:web:84c9c701f5794161d863e7",
+  measurementId: "G-EZSWDWDTB6"
 };
 firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
