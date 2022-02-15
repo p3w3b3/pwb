@@ -237,6 +237,7 @@ $('#crs02').hide()
       });
     } else {
     auth.signOut();
+location.href = '/login'
     }
 
     let currentPath2 = location.href;
