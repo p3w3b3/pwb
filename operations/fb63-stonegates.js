@@ -1058,12 +1058,6 @@ $('#s7p3').hide()
 $('#s7p3x').show()
 prognum8++
 }
-
-    if( s7p3 == true) {
-$('#s7p3').hide()
-$('#s7p3x').show()
-prognum8++
-}
   
       if( s7p4 == true) {
 $('#s7p4').hide()
