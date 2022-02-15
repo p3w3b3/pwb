@@ -554,6 +554,10 @@ $('#crs02').hide()
                         .firestore()
                         .doc("users/" + tid)
                         .set({ operations: true }, { merge: true });
+                      firebase
+                        .firestore()
+                        .doc("users/" + tid)
+                        .set({ prereq: true }, { merge: true });
                     }
 
                     if (paccess === "preq") {
@@ -572,7 +576,7 @@ $('#crs02').hide()
                         .firestore()
                         .doc("users/" + tid)
                         .set({ 
-                        : true }, { merge: true });
+                        prereq: true }, { merge: true });
                       firebase
                         .firestore()
                         .doc("users/" + tid)
