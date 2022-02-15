@@ -556,6 +556,12 @@ let prognumv = 0
           let f6p5 = data["f6p5"];
           let f6p6 = data["f6p6"];
 
+          let f7p1 = data["f7p1"];
+          let f7p2 = data["f7p2"];
+          let f7p3 = data["f7p3"];
+          let f7p4 = data["f7p4"];
+          let f7p5 = data["f7p5"];
+
           let d1p1 = data["d1p1"];
           let d1p2 = data["d1p2"];
           let d1p3 = data["d1p3"];
@@ -1063,7 +1069,7 @@ $('#mbtraining11').hide()
 
 
           let sp =
-            ((prognum + prognum2 + prognum3 + prognum4 + prognum5 + prognum6 + prognum6) /
+            ((prognum + prognum2 + prognum3 + prognum4 + prognum5 + prognum6 + prognum6 + prognum8) /
               28) *
             100;
           let spn = Math.round(sp) + "%";
