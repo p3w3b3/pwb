@@ -241,8 +241,34 @@ $('#mbox4').css("display", "flex");
 
 $('.mobile-menu-wrapper').click()
 })
-}
+  
+  
+document.getElementById("mbtraining10").addEventListener("click", () => {
+$('.mobile-menu-button').removeClass( "current")
+$('#mbtraining10').addClass( "current")
 
+$('.main-section-ops').hide()
+$('#db10').css("display", "flex");
+$('.bottom-bar-dsb').hide()
+$('.middle-box').hide()
+$('#mbox4').css("display", "flex");
+
+$('.mobile-menu-wrapper').click()
+})
+
+document.getElementById("mbtraining11").addEventListener("click", () => {
+$('.mobile-menu-button').removeClass( "current")
+$('#mbtraining11').addClass( "current")
+
+$('.main-section-ops').hide()
+$('#db11').css("display", "flex");
+$('.bottom-bar-dsb').hide()
+$('.middle-box').hide()
+$('#mbox4').css("display", "flex");
+
+$('.mobile-menu-wrapper').click()
+})
+}
 
 }
 
@@ -285,6 +311,7 @@ let prognum3 = 0
 let prognum4 = 0
 let prognum5 = 0
 let prognum6 = 0
+let prognum8 = 0
 
 let prognumf = 0
 let prognumf2 = 0
@@ -292,6 +319,11 @@ let prognumf3 = 0
 let prognumf4 = 0
 let prognumf5 = 0
 let prognumf6 = 0
+let prognumf8 = 0
+
+let prognumsm = 0
+let prognumv = 0
+
 
 const signout = () => {
 auth.signOut();
@@ -607,7 +639,12 @@ $('#f6-quiz-completed').css("display", "flex");
     let f6p4 = data['f6p4']; 
     let f6p5 = data['f6p5']; 
     let f6p6 = data['f6p6']; 
-
+  
+    let f7p1 = data['f7p1']; 
+    let f7p2 = data['f7p2']; 
+    let f7p3 = data['f7p3']; 
+    let f7p4 = data['f7p4']; 
+    let f7p5 = data['f7p5']; 
 
 let d1p1 = data["d1p1"];
 let d1p2 = data["d1p2"];
@@ -772,6 +809,38 @@ $('#f6p6x').show()
 prognumf6++
 }
 
+   if( f7p1 == true) {
+$('#f7p1').hide()
+$('#f7p1x').show()
+prognumf8++
+}
+  
+    if( f7p2 == true) {
+$('#f7p2').hide()
+$('#f7p2x').show()
+prognumf8++
+}
+  
+    if( f7p3 == true) {
+$('#f7p3').hide()
+$('#f7p3x').show()
+prognumf8++
+}
+    
+    if( f7p4 == true) {
+$('#f7p4').hide()
+$('#f7p4x').show()
+prognumf8++
+}
+  
+    if( f7p5 == true) {
+$('#f7p5').hide()
+$('#f7p5x').show()
+prognumf8++
+}
+
+
+
 
 document.querySelector('#prognumf').textContent = prognumf
 document.querySelector('#prognumf2').textContent = prognumf2
@@ -779,8 +848,44 @@ document.querySelector('#prognumf3').textContent = prognumf3
 document.querySelector('#prognumf4').textContent = prognumf4
 document.querySelector('#prognumf5').textContent = prognumf5
 document.querySelector('#prognumf6').textContent = prognumf6
+document.querySelector('#prognumf8').textContent = prognumf8
+
+  
+  
+ let v1p1 = data['v1p1'];    
+
+ if( v1p1 == true) {
+$('#v1p1').hide()
+$('#v1p1x').show()
+prognumv++
+}
+
+let spx =((prognumv)/1*100)
+let spnx = Math.round(spx)+'%'
+firebase.firestore().doc("users/"+firebase.auth().currentUser.uid)
+  .set({verygoodburger:spnx}, {merge:true})
+
+document.querySelector('#prognumv').textContent = prognumv
+  
+  
+  
+    let sm1p1 = data['sm1p1'];    
 
 
+    if( sm1p1 == true) {
+$('#sm1p1').hide()
+$('#sm1p1x').show()
+prognumsm++
+}
+
+let spz =((prognumsm)/1*100)
+let spnz = Math.round(spz)+'%'
+firebase.firestore().doc("users/"+firebase.auth().currentUser.uid)
+  .set({sammies:spnz}, {merge:true})
+
+  document.querySelector('#prognumsm').textContent = prognumsm
+
+  
 
     let s1p1 = data['s1p1'];    
     let s1p2 = data['s1p2'];    
@@ -806,6 +911,14 @@ document.querySelector('#prognumf6').textContent = prognumf6
     let s6p4 = data['s6p4']; 
     let s6p5 = data['s6p5']; 
 
+    let s7p1 = data['s7p1']; 
+    let s7p2 = data['s7p2']; 
+    let s7p3 = data['s7p3']; 
+    let s7p4 = data['s7p4']; 
+    let s7p5 = data['s7p5']; 
+
+  
+  
    if( s1p1 == true) {
 $('#s1p1').hide()
 $('#s1p1x').show()
@@ -928,6 +1041,43 @@ $('#s6p5x').show()
 prognum6++
 }
 
+    if( s7p1 == true) {
+$('#s7p1').hide()
+$('#s7p1x').show()
+prognum8++
+}
+
+    if( s7p2 == true) {
+$('#s7p2').hide()
+$('#s7p2x').show()
+prognum8++
+}
+
+    if( s7p3 == true) {
+$('#s7p3').hide()
+$('#s7p3x').show()
+prognum8++
+}
+
+    if( s7p3 == true) {
+$('#s7p3').hide()
+$('#s7p3x').show()
+prognum8++
+}
+  
+      if( s7p4 == true) {
+$('#s7p4').hide()
+$('#s7p4x').show()
+prognum8++
+}
+  
+    if( s7p5 == true) {
+$('#s7p5').hide()
+$('#s7p5x').show()
+prognum8++
+}
+
+
 
 
 document.querySelector('#prognum').textContent = prognum
@@ -936,7 +1086,7 @@ document.querySelector('#prognum3').textContent = prognum3
 document.querySelector('#prognum4').textContent = prognum4
 document.querySelector('#prognum5').textContent = prognum5
 document.querySelector('#prognum6').textContent = prognum6
-
+document.querySelector('#prognum8').textContent = prognum8
 
 let firstletter = name.substring(0, 1)
 $('.firstletter').html(firstletter);
@@ -946,6 +1096,9 @@ let profileuid = curUser.uid
       let course2 = data['seccourse']
       let course3 = data['wbwcourse']
       let course4 = data['dlvcourse']
+      let course5 = data['smcourse']
+      let course6 = data['vcourse']
+
 
 if(course1 == true){
 $('#train1').css('display', 'flex');
@@ -980,13 +1133,31 @@ if(course4 == true){
 $('#ops9').hide()
 }
 
+if(course5 == true){
+$('#ops10').css('display', 'flex');
+$('#mbtraining10').css('display', 'flex');
+$('#cf2').append(new Option('Sammies', 'Sammies'))
+} else  {
+$('#ops10').hide()
+$('#mbtraining10').hide()
+}
+if(course6 == true){
+$('#ops11').css('display', 'flex');
+$('#mbtraining11').css('display', 'flex');
+$('#cf2').append(new Option('Very Good Burger', 'Very Good Burger'))
+} else  {
+$('#ops11').hide()
+$('#mbtraining11').hide()
 
-let sp =((prognum+prognum2+prognum3+prognum4+prognum5+prognum6)/23*100)
+}
+
+
+let sp =((prognum+prognum2+prognum3+prognum4+prognum5+prognum6+prognum8)/28*100)
 let spn = Math.round(sp)+'%'
 firebase.firestore().doc("users/"+firebase.auth().currentUser.uid)
   .set({SEC:spn}, {merge:true})
 
-let fp =((prognumf+prognumf2+prognumf3+prognumf4+prognumf5+prognumf6)/25*100)
+let fp =((prognumf+prognumf2+prognumf3+prognumf4+prognumf5+prognumf6+prognumf8)/30*100)
 let fpn = Math.round(fp)+'%'
 firebase.firestore().doc("users/"+firebase.auth().currentUser.uid)
   .set({FTB:fpn}, {merge:true})
