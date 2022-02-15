@@ -118,6 +118,41 @@
     $(".generic-heading-ops").removeClass("cur");
     $("#ops9").addClass("cur");
   });
+
+ document.querySelector("#ops10").addEventListener("click", function() {
+$('.main-section-ops').hide()
+$('#db10').show()
+
+$('.generic-heading-ops').removeClass("cur");
+$('#ops10').addClass("cur");
+
+})
+
+ document.querySelector("#ops11").addEventListener("click", function() {
+$('.main-section-ops').hide()
+$('#db11').show()
+
+$('.generic-heading-ops').removeClass("cur");
+$('#ops11').addClass("cur");
+
+})
+
+  document.querySelector("#ops-in").addEventListener("click", function () {
+    $(".main-section-ops").hide();
+    $("#db-insights").show();
+
+    $(".generic-heading-ops").removeClass("cur");
+    $("#ops-in").addClass("cur");
+  });
+ 
+   document.querySelector("#ops4").addEventListener("click", function () {
+    $(".main-section-ops").hide();
+    $("#db4").show();
+
+    $(".generic-heading-ops").removeClass("cur");
+    $("#ops4").addClass("cur");
+  });
+
 }
 
 // mobile
