@@ -236,7 +236,7 @@ $('#crs02').hide()
         
       });
     } else {
-      location.href = "/login";
+    auth.signOut();
     }
 
     let currentPath2 = location.href;
@@ -571,7 +571,8 @@ $('#crs02').hide()
                       firebase
                         .firestore()
                         .doc("users/" + tid)
-                        .set({ prereq: true }, { merge: true });
+                        .set({ 
+                        : true }, { merge: true });
                       firebase
                         .firestore()
                         .doc("users/" + tid)
