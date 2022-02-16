@@ -33,7 +33,7 @@ $('#myres').addClass("selected");
 
 document.querySelector("#myan").addEventListener("click", function() {
 $('.main-section-ops').hide()
-$('#db4').show()
+$('#db-insights').show()
 
 $('.sub-nav').hide()
 $('#sb3').css("display", "flex");
