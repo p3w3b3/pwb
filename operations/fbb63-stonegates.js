@@ -82,15 +82,6 @@ $('.dash-sep').hide()
 $('#dashpart6').css("display", "flex");
 })
 
-
-document.getElementById("dash-button-8").addEventListener("click", () => {
-$('.dash-sep').hide()
-$('#dashpart7').css("display", "flex");
-})
-
-
-
-
 document.getElementById("mbmenu1").addEventListener("click", () => {
 $('.mobile-menu-button').removeClass( "current")
 $('#mbmenu1').addClass( "current")
