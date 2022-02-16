@@ -142,10 +142,8 @@ $('.mobile-menu-button').removeClass( "current")
 $('#mbmenu3').addClass( "current")
 
 $('.main-section-ops').hide()
-$('#db4').css("display", "flex");
+$('#db-insights').css("display", "flex");
 $('.dash-sep').hide()
-$('#dashpart6').css("display", "flex");
-
 $('.bottom-bar-dsb').hide()
 $('#db-bar-3').css("display", "flex");
    
