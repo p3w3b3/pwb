@@ -66,8 +66,6 @@ $('.sub-nav').hide()
 $('#sb5').css("display", "flex");
 
 $('.generic-heading-ops').removeClass("cur");
-$('#ops6').addClass("cur");
-
 $('.nav-selection').removeClass("selected");
 $('#mytra').addClass("selected");
 })
