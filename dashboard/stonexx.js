@@ -121,7 +121,6 @@ const authChanged = firebase.auth().onAuthStateChanged((user) => {
           $("#crs4").hide();
         }
 
-
 if(course5){
 $('#cr01').css('display', 'flex');
 $('#crs01').css('display', 'flex');
@@ -471,7 +470,8 @@ $('#crs02').hide()
                 let course2 = newItem.find("#course2-" + i)[0].checked == true;
                 let course3 = newItem.find("#course3-" + i)[0].checked == true;
                 let course4 = newItem.find("#course4-" + i)[0].checked == true;
-                
+                let course5 = newItem.find("#course5-" + i)[0].checked == true;
+                let course6 = newItem.find("#course6-" + i)[0].checked == true;
 
                 let paccess = newItem.find("#accesslevel-" + i)[0].value;
                 let stid = newItem.find("#stid-" + i)[0].value;
