@@ -62,8 +62,6 @@ $('#myco').addClass("selected");
 
 document.querySelector("#mytra").addEventListener("click", function() {
 $('.main-section-ops').hide()
-$('#db6').show()
-
 $('.sub-nav').hide()
 $('#sb5').css("display", "flex");
 
