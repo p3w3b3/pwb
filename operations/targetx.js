@@ -45,6 +45,19 @@ $('#promo5').css("background-color", "#f16d4d");
 $('#promo6').css("background-color", "#f16d4d");
 }
 
+if(csv === 0) {
+$('#promo1').css("background-color", "#e7e7e7");
+$('#promo2').css("background-color", "#e7e7e7");
+$('#promo3').css("background-color", "#e7e7e7");
+$('#promo4').css("background-color", "#e7e7e7");
+$('#promo5').css("background-color", "#e7e7e7");
+$('#promo6').css("background-color", "#e7e7e7");
+$('#currtarget').text(4)
+
+$('#tsk1').css("background-color", "#fffff");
+
+}
+
 
 if(csv === 1) {
 $('#promo1').css("background-color", "#b6e8d0");
