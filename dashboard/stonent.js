@@ -435,9 +435,9 @@ $('#crs02').hide()
               }
 
               if (datastid == undefined) {
-                newItem.find("#stid-" + i)[0].placeholder = "-";
+                newItem.find("#stid-" + i)[0].textContent = "-";
               } else {
-                newItem.find("#stid-" + i)[0].placeholder = datastid;
+                newItem.find("#stid-" + i)[0].textContent = datastid;
               }
 
               if (pfield1 == undefined) {
