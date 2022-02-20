@@ -217,6 +217,11 @@ $('.mobile-menu-wrapper').click()
   const authChanged = firebase.auth().onAuthStateChanged((user) => {
     let prognumd = 0;
 
+
+
+
+
+
     let prognum = 0;
     let prognum2 = 0;
     let prognum3 = 0;
@@ -253,6 +258,24 @@ let prognumv = 0
           let name = data["Name"];
           let emaild = data["Email"];
           let prereq = data["prereq"];
+
+
+ let profileuid = curUser.uid      
+      
+{
+window.intercomSettings = {
+    api_base: "https://api-iam.intercom.io",
+    app_id: "e84ncf6y",
+    name: "'"+name+"'", // Full name
+    email: "'"+emaild+"'", // Email address
+		user_id: "'"+profileuid+"'" // UID FIREBASE
+  };
+}
+{
+// We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/e84ncf6y'
+(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/e84ncf6y';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+}
+
 
           // if gsign and no name
           if (!!name) {
