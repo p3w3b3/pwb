@@ -260,7 +260,7 @@ let prognumv = 0
           let prereq = data["prereq"];
 
 
- let profileuid = curUser.uid      
+ let profileuids = curUser.uid      
       
 {
 window.intercomSettings = {
@@ -268,7 +268,7 @@ window.intercomSettings = {
     app_id: "e84ncf6y",
     name: "'"+name+"'", // Full name
     email: "'"+emaild+"'", // Email address
-		user_id: "'"+profileuid+"'" // UID FIREBASE
+		user_id: "'"+profileuids+"'" // UID FIREBASE
   };
 }
 {
