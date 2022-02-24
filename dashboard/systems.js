@@ -74,7 +74,7 @@ const authChanged = firebase.auth().onAuthStateChanged((user) => {
         let course6 = data["vcourse"];
 
         
-docuemnt.querySelector('#mystid').textContent = profileuid
+document.querySelector('#mystid').textContent = profileuid
     
         let admin = data["admin"];
 
