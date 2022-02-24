@@ -74,6 +74,12 @@ const authChanged = firebase.auth().onAuthStateChanged((user) => {
         let course5 = data["smcourse"];
         let course6 = data["vcourse"];
         
+
+      let datastid = data["stid"]
+
+        
+document.querySelector('#mystid').textContent = datastid
+
         let admin = data["admin"];
 
         firebase
