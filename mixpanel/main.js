@@ -1,0 +1,43 @@
+
+{
+setTimeout(() => { 
+let unm = document.querySelector('#userName2').textContent
+let umail = document.querySelector('#email').textContent
+let ustid = document.querySelector('#mystid').textContent
+let ufid = document.querySelector('#profile-uid').textContent
+
+mixpanel.init('34ab50f7acd413779598bfe06a25b8c3', {debug: true}); 
+distinct_id = mixpanel.get_distinct_id();
+document.querySelector('#mydistinct').textContent = distinct_id 
+mixpanel.identify(ufid);
+mixpanel.people.set_once({ "Name": unm, "Email": umail,"stid": ustid });
+}, 2500)
+}
+
+setTimeout(() => { 
+  $(document).ready(function() {
+    $(document).on('click', '[data-tracker]', function(e) {
+
+      var trackData = $(this).data('tracker');
+      if (!trackData) { return; }
+
+      var tagData = ParseTagData.tagData(trackData);
+      if (!tagData.action || !tagData.label ) { return; }
+
+      Track.trackEvent('click', { action: tagData.action , label:  tagData.label });
+      });
+
+    var ParseTagData = { tagData : function ( data ) {
+      var tmpData = data.split("|");
+      if (tmpData.length !=2 ) { return ""; }
+      return { "action": tmpData[0] ,"label": tmpData[1] };
+      }
+    };
+
+    var Track= { trackEvent: function (eventType, data) {
+      mixpanel.track( data.action );
+      }
+    };
+  });
+
+}, 5000)
