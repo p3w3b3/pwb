@@ -10,7 +10,7 @@ mixpanel.init('34ab50f7acd413779598bfe06a25b8c3', {debug: true});
 distinct_id = mixpanel.get_distinct_id();
 document.querySelector('#mydistinct').textContent = distinct_id 
 mixpanel.identify(ufid);
-mixpanel.people.set_once({ "Name": unm, "Email": umail,"stid": ustid });
+mixpanel.people.set_once({ "$name": unm, "$email": umail,"stid": ustid });
 }, 2500)
 }
 
