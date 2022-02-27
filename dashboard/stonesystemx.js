@@ -237,6 +237,8 @@ $('#crs02').hide()
           }
           $("#userName2").html(name);
         }
+maincontent.style.display = 'flex'
+loader.style.display = 'none'
 
         let firstletter = name.substring(0, 1);
         $(".firstletter").html(firstletter);
