@@ -277,6 +277,10 @@ window.intercomSettings = {
 }
 
 
+
+maincontent.style.display = 'flex'
+loader.style.display = 'none'
+
           // if gsign and no name
           if (!!name) {
             $("#userName").html(name);
