@@ -373,7 +373,8 @@ $('#userName2').html(name);
 $('#userName').html(name);
 }
    
-   
+maincontent.style.display = 'flex'
+loader.style.display = 'none'
 
 
 {
