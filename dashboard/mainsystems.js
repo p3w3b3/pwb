@@ -238,6 +238,9 @@ $('#crs02').hide()
         let firstletter = name.substring(0, 1);
         $(".firstletter").html(firstletter);
         
+maincontent.style.display = 'flex'
+loader.style.display = 'none'
+
       });
     } else {
     auth.signOut();
