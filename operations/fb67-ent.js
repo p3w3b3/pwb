@@ -278,8 +278,10 @@ window.intercomSettings = {
 
 
 
+$( document ).ready(function() {
 maincontent.style.display = 'flex'
 loader.style.display = 'none'
+}); 
 
           // if gsign and no name
           if (!!name) {
