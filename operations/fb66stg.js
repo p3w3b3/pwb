@@ -372,10 +372,11 @@ window.location.href = '/operations/'+sstid
 $('#userName2').html(name);
 $('#userName').html(name);
 }
-   
+	
+setTimeout(() => {    
 maincontent.style.display = 'flex'
 loader.style.display = 'none'
-
+}, 2000);
 
 {
 document.getElementById("retakesec1").addEventListener("click", () => {
