@@ -729,3 +729,13 @@ let ratingn = (Number(rating.textContent))
 rating.closest(".ranking-bar").style.width = (0.4 + (ratingn - nl) / (nh - nl) * 100 + '%')
 })
 }}
+
+{
+document.getElementById('wf-form-Change-Operating-Hours').addEventListener('submit', function() {
+mixpanel.track("Changed operating hours");
+})
+
+document.getElementById('wf-form-Challenge-Refund').addEventListener('submit', function() {
+mixpanel.track("Requested challenge refund");
+})
+}
