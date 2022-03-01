@@ -1,5 +1,3 @@
-
-setTimeout(() => { 
 {
 let unm = document.querySelector('#userName2').textContent
 let umail = document.querySelector('#email').textContent
@@ -14,8 +12,6 @@ document.querySelector('#mydistinct').textContent = distinct_id
 mixpanel.identify(ufid);
 mixpanel.people.set_once({ "$name": unm, "$email": umail,"stid": ustid });
 }
-
-setTimeout(() => { 
   $(document).ready(function() {
     $(document).on('click', '[data-tracker]', function(e) {
 
@@ -40,7 +36,4 @@ setTimeout(() => {
       }
     };
   });
-}, 2500)
 }
-
-}, 5000)
