@@ -1,5 +1,3 @@
-
-setTimeout(() => { 
 {
 let unm = document.querySelector('#userName2').textContent
 let umail = document.querySelector('#email').textContent
@@ -40,7 +38,4 @@ setTimeout(() => {
       }
     };
   });
-}, 2500)
 }
-
-}, 5000)
