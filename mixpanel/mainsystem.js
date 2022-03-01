@@ -1,4 +1,6 @@
 {
+$(document).ready(function() {
+
 let unm = document.querySelector('#userName2').textContent
 let umail = document.querySelector('#email').textContent
 let ustid = document.querySelector('#mystid').textContent
@@ -36,4 +38,5 @@ mixpanel.people.set_once({ "$name": unm, "$email": umail,"stid": ustid });
       }
     };
   });
+  })
 }
