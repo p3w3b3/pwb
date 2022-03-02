@@ -206,8 +206,6 @@ $('.mobile-menu-wrapper').click()
   const signOutButton2 = document.querySelector("#mobsignout");
   const userName = document.querySelector("#userName");
   const userName2 = document.querySelector("#userName2");
-  const loader = document.querySelector("#loadanimation");
-  const maincontent = document.querySelector("#maincontent");
   var today = new Date();
   var date =
     today.getDate() + "-" + (today.getMonth() + 1) + "-" + today.getFullYear();
@@ -277,11 +275,6 @@ window.intercomSettings = {
 }
 
 
-
-$( document ).ready(function() {
-maincontent.style.display = 'flex'
-loader.style.display = 'none'
-}); 
 
           // if gsign and no name
           if (!!name) {
@@ -399,9 +392,6 @@ loader.style.display = 'none'
 
           if (currentPath !== "/enterprise/all") {
             location.href = "/enterprise/all";
-          } else {
-            maincontent.style.display = "flex";
-            loader.style.display = "none";
           }
 
           // if #actions
@@ -1154,8 +1144,6 @@ $('#mbtraining11').hide()
         if ("/" != currentPath) {
           location.href = "/login";
         }
-        maincontent.style.display = "none";
-        loader.style.display = "flex";
       }
     });
   });
@@ -1643,3 +1631,14 @@ rating.textContent = rr})
 
 
 }
+
+
+{
+const loader = document.querySelector("#loadanimation");
+const maincontent = document.querySelector("#maincontent");
+window.addEventListener("load", function(){
+maincontent.style.display = 'flex'
+loader.style.display = 'none'
+}); 
+}
+
