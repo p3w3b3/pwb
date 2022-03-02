@@ -1685,6 +1685,8 @@ rating.textContent = rr})
 }
 
 {
+const loader = document.querySelector("#loadanimation");
+const maincontent = document.querySelector("#maincontent");
 window.addEventListener("load", function(){
 maincontent.style.display = 'flex'
 loader.style.display = 'none'
