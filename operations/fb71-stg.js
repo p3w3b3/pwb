@@ -373,15 +373,6 @@ $('#userName2').html(name);
 $('#userName').html(name);
 }
 	
-$( document ).ready(function() {
-maincontent.style.display = 'flex'
-loader.style.display = 'none'
-}); 
-	
-	
-	
-	
-
 {
 document.getElementById("retakesec1").addEventListener("click", () => {
 setTimeout(() => { 
@@ -448,11 +439,7 @@ location.reload()
 
 if(currentPath !== '/operations/'+sstid){
 location.href = '/operations/'+sstid
-} else {
-maincontent.style.display='flex';
-loader.style.display='none';
 }
-
  
 // if #actions 
 
@@ -1690,7 +1677,12 @@ rating.forEach((rating) => {
 let r = rating.textContent
 let rr = r.replace(/-/g,'')
 rating.textContent = rr})
-
-
-
+}
+{
+const loader = document.querySelector("#loadanimation");
+const maincontent = document.querySelector("#maincontent");
+window.addEventListener("load", function(){
+maincontent.style.display = 'flex'
+loader.style.display = 'none'
+}); 
 }
