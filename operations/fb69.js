@@ -454,8 +454,10 @@ location.reload()
 if(currentPath !== '/operations/'+sstid){
 location.href = '/operations/'+sstid
 } else {
-maincontent.style.display='flex';
-loader.style.display='none';
+window.addEventListener("load", function(){
+maincontent.style.display = 'flex'
+loader.style.display = 'none'
+}); 
 }
 
  
