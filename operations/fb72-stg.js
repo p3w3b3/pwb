@@ -345,9 +345,9 @@ let sstid = data['stid'].toLowerCase()
 window.intercomSettings = {
     api_base: "https://api-iam.intercom.io",
     app_id: "e84ncf6y",
-    name: "'"+name+"'", // Full name
-    email: "'"+emaild+"'", // Email address
-		user_id: "'"+profileuids+"'" // UID FIREBASE
+    name: name, // Full name
+    email: emaild, // Email address
+    user_id: profileuids // UID FIREBASE
   };
 }
 {
