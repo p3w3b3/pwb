@@ -238,10 +238,6 @@ $('#crs02').hide()
         let firstletter = name.substring(0, 1);
         $(".firstletter").html(firstletter);
         
-$( document ).ready(function() {
-maincontent.style.display = 'flex'
-loader.style.display = 'none'
-}); 
 
       });
     } else {
@@ -725,3 +721,13 @@ location.href = '/login'
     }
   });
 });
+
+
+{
+const loader = document.querySelector("#loadanimation");
+const maincontent = document.querySelector("#maincontent");
+window.addEventListener("load", function(){
+maincontent.style.display = 'flex'
+loader.style.display = 'none'
+}); 
+}
