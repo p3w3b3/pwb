@@ -9,8 +9,6 @@ const signOutButton2 = document.querySelector("#signoutmobile");
 
 const userName = document.querySelector("#userName");
 const userName2 = document.querySelector("#userName2");
-const loader = document.querySelector("#loadanimation");
-const maincontent = document.querySelector("#maincontent");
 var today = new Date();
 var date =
   today.getDate() + "-" + (today.getMonth() + 1) + "-" + today.getFullYear();
@@ -237,10 +235,6 @@ $('#crs02').hide()
           }
           $("#userName2").html(name);
         }
-$( document ).ready(function() {
-maincontent.style.display = 'flex'
-loader.style.display = 'none'
-}); 
 
         let firstletter = name.substring(0, 1);
         $(".firstletter").html(firstletter);
@@ -775,3 +769,11 @@ loader.style.display = 'none'
     }
   });
 });
+{
+const loader = document.querySelector("#loadanimation");
+const maincontent = document.querySelector("#maincontent");
+window.addEventListener("load", function(){
+maincontent.style.display = 'flex'
+loader.style.display = 'none'
+}); 
+}
