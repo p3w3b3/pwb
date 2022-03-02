@@ -362,7 +362,7 @@ window.intercomSettings = {
 }
 	
 	
-$( document ).ready(function() {
+window.addEventListener("load", function(){
 maincontent.style.display = 'flex'
 loader.style.display = 'none'
 }); 
