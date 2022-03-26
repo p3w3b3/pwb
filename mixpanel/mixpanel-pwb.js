@@ -5,14 +5,15 @@ let unm = document.querySelector('#userName2').textContent
 let umail = document.querySelector('#email').textContent
 let ustid = document.querySelector('#mystid').textContent
 let ufid = document.querySelector('#profile-uid').textContent
-    
+let fomdata = document.querySelector('#hiddenfomdata').textContent
+let foms = fomdata.split(/[|]+/)[0]
 if(unm !== 'Loading..') {
 
 mixpanel.init('34ab50f7acd413779598bfe06a25b8c3', {debug: true}); 
 distinct_id = mixpanel.get_distinct_id();
 document.querySelector('#mydistinct').textContent = distinct_id 
 mixpanel.identify(ufid);
-mixpanel.people.set_once({ "$name": unm, "$email": umail,"stid": ustid });
+mixpanel.people.set_once({ "$name": unm, "$email": umail,"stid": ustid,"Fom Manager": foms});
 }
   $(document).ready(function() {
     $(document).on('click', '[data-tracker]', function(e) {
