@@ -9,7 +9,7 @@ let fomdata = document.querySelector('#hiddenfomdata').textContent
 let foms = fomdata.split(/[|]+/)[0]
 if(unm !== 'Loading..') {
 
-mixpanel.init('34ab50f7acd413779598bfe06a25b8c3', {debug: true}); 
+mixpanel.init('bb6d2603674e27d7b31d045acf3ae77f', {debug: true}); 
 distinct_id = mixpanel.get_distinct_id();
 document.querySelector('#mydistinct').textContent = distinct_id 
 mixpanel.identify(ufid);
