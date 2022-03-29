@@ -496,14 +496,14 @@ location.href = '/login'
                   .find("#uButton-" + i)[0]
                   .addEventListener("click", function () {
 
-                    if (uscont == true) {
+                    if (uscont === "us") {
                       firebase
                         .firestore()
                         .doc("users/" + tid)
                         .set({ uscontent: true }, { merge: true });
                     }
 
-                    if (uscont == false) {
+                    if (uscont === "uk") {
                       firebase
                         .firestore()
                         .doc("users/" + tid)
