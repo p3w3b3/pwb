@@ -1,3 +1,4 @@
+window.addEventListener("load", function(){
 { 
 let csv = Number($('#csv').text())
 
@@ -283,3 +284,4 @@ $('#tsk3').css("background-color", "#fcc022");
 
     
 }
+})
