@@ -343,6 +343,9 @@ location.href = '/login'
               newItem.find("#wbwtrue")[0].id = "wbwtrue-" + i;
               newItem.find("#dlvtrue")[0].id = "dlvtrue-" + i;
 
+
+              newItem.find("#country")[0].id = "country-" + i;
+
               newItem.find("#popfieldsecond")[0].id = "popfieldsecond-" + i;
               newItem.find("#popfieldthird")[0].id = "popfieldthird-" + i;
               newItem.find("#popfieldfourth")[0].id = "popfieldfourth-" + i;
@@ -355,7 +358,9 @@ location.href = '/login'
               var pfield5 = myResults[i].data.pdate5;
 
               var datastid = myResults[i].data.stid;
-
+              
+              var countryus = myResults[i].data.uscontent;
+              
               var accessps = myResults[i].data.prereq;
               var accessps2 = myResults[i].data.admin;
               var accessps3 = myResults[i].data.operations;
@@ -367,6 +372,14 @@ location.href = '/login'
               var course55 = myResults[i].data.smcourse;
               var course66 = myResults[i].data.vcourse;
 
+              
+              if (countryus == true) {
+                newItem.find("#country-" + i)[0].value = "us";
+              } else {
+                newItem.find("#country-" + i)[0].value = "uk";
+              }
+              
+              
               if (course11 == undefined) {
                 newItem.find("#course1-" + i)[0].checked = false;
                 newItem.find("#ftbtrue-" + i)[0].textContent = false;
@@ -470,7 +483,9 @@ location.href = '/login'
                 
                 let paccess = newItem.find("#accesslevel-" + i)[0].value;
                 let stid = newItem.find("#stid-" + i)[0].value;
-
+                
+                let uscont = newItem.find("#country-" + i)[0].value;
+                
                 let pdate1 = newItem.find("#popfieldfirst-" + i)[0].value;
                 let pdate2 = newItem.find("#popfieldsecond-" + i)[0].value;
                 let pdate3 = newItem.find("#popfieldthird-" + i)[0].value;
@@ -480,6 +495,21 @@ location.href = '/login'
                 newItem
                   .find("#uButton-" + i)[0]
                   .addEventListener("click", function () {
+
+                    if (uscont == true) {
+                      firebase
+                        .firestore()
+                        .doc("users/" + tid)
+                        .set({ uscontent: true }, { merge: true });
+                    }
+
+                    if (uscont == false) {
+                      firebase
+                        .firestore()
+                        .doc("users/" + tid)
+                        .set({ uscontent: false }, { merge: true });
+                    }
+
                     if (course1) {
                       firebase
                         .firestore()
@@ -595,6 +625,8 @@ location.href = '/login'
                         .doc("users/" + tid)
                         .set({ stid: stid }, { merge: true });
                     }
+
+
 
                     if (!!pdate1) {
                       firebase
