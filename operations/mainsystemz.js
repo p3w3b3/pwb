@@ -45,6 +45,21 @@ $('.nav-selection').removeClass("selected");
 $('#myan').addClass("selected");
 })
 
+
+document.querySelector("#mymarketing").addEventListener("click", function() {
+$('.main-section-ops').hide()
+$('#dbmarketing').show()
+
+$('.sub-nav').hide()
+$('#sb7').css("display", "flex");
+
+$('.generic-heading-ops').removeClass("cur");
+$('#marketingops').addClass("cur")
+
+$('.nav-selection').removeClass("selected");
+$('#mymarketing').addClass("selected");
+})
+
 document.querySelector("#myco").addEventListener("click", function() {
 $('.main-section-ops').hide()
 $('#db5').show()
