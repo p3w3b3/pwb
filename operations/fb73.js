@@ -185,6 +185,29 @@ $('.mobile-menu-wrapper').click()
 })
 
 
+
+document.getElementById("mbmenumarketing").addEventListener("click", () => {
+$('.mobile-menu-button').removeClass( "current")
+$('#mbmenumarketing').addClass( "current")
+
+$('.main-section-ops').hide()
+$('#dbmarketing').css("display", "flex");
+$('.dash-sep').hide()
+$('#dashmarketing').css("display", "flex");
+
+$('.bottom-bar-dsb').hide()
+$('#db-bar-marketing').css("display", "flex");
+   
+   
+$('.middle-box').hide()
+$('#mboxmarketing').css("display", "flex");
+
+
+$('.mobile-menu-wrapper').click()
+})
+	
+	
+
 document.getElementById("mbtraining1").addEventListener("click", () => {
 $('.mobile-menu-button').removeClass( "current")
 $('#mbtraining1').addClass( "current")
