@@ -376,7 +376,8 @@ window.intercomSettings = {
     app_id: "e84ncf6y",
     name: name, // Full name
     email: emaild, // Email address
-    user_id: profileuids // UID FIREBASE
+    user_id: profileuids, // UID FIREBASE
+    custom_launcher_selector:'#intercom-url'
   };
 }
 {
