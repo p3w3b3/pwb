@@ -345,7 +345,7 @@ $('#mx033').hide()
               newItem.find("#course4")[0].id = "course4-" + i;
               newItem.find("#course5")[0].id = "course5-" + i;
               newItem.find("#course6")[0].id = "course6-" + i;
-
+              newItem.find("#course7")[0].id = "course7-" + i;
               newItem.find("#popfieldfirst")[0].id = "popfieldfirst-" + i;
               newItem.find("#stid")[0].id = "stid-" + i;
 
@@ -385,6 +385,8 @@ $('#mx033').hide()
               var course44 = myResults[i].data.dlvcourse;
               var course55 = myResults[i].data.smcourse;
               var course66 = myResults[i].data.vcourse;
+              var course77 = myResults[i].data.mcourse;
+
 
 
               if (course11 == undefined) {
@@ -428,6 +430,11 @@ $('#mx033').hide()
                 newItem.find("#course6-" + i)[0].checked = false;
               } else if (course66 == true) {
                 newItem.find("#course6-" + i)[0].checked = true;
+              }
+              if (course77 == undefined) {
+                newItem.find("#course7-" + i)[0].checked = false;
+              } else if (course77 == true) {
+                newItem.find("#course7-" + i)[0].checked = true;
               }
 
               if (accessps == undefined && accessps == undefined) {
@@ -488,6 +495,8 @@ $('#mx033').hide()
                 let course4 = newItem.find("#course4-" + i)[0].checked == true;
                 let course5 = newItem.find("#course5-" + i)[0].checked == true;
                 let course6 = newItem.find("#course6-" + i)[0].checked == true;
+                let course7 = newItem.find("#course7-" + i)[0].checked == true;
+
 
                 let paccess = newItem.find("#accesslevel-" + i)[0].value;
                 let stid = newItem.find("#stid-" + i)[0].value;
@@ -573,6 +582,17 @@ $('#mx033').hide()
                         .set({ vcourse: false }, { merge: true });
                     }
                   
+                              if (course7) {
+                      firebase
+                        .firestore()
+                        .doc("users/" + tid)
+                        .set({ mcourse: true }, { merge: true });
+                    } else {
+                      firebase
+                        .firestore()
+                        .doc("users/" + tid)
+                        .set({ mcourse: false }, { merge: true });
+                    }
 
                     if (paccess === "operations") {
                       firebase
