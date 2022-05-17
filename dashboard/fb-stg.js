@@ -71,7 +71,7 @@ const authChanged = firebase.auth().onAuthStateChanged((user) => {
         let course4 = data["dlvcourse"];
         let course5 = data["smcourse"];
         let course6 = data["vcourse"];
-        
+        let course7 = data["mcourse"];      
 
       let datastid = data["stid"]
 
@@ -85,7 +85,7 @@ document.querySelector('#mystid').textContent = datastid
           .doc("users/" + firebase.auth().currentUser.uid)
           .set({ prereq: true }, { merge: true });
 
-        if (course1 || course2 || course3 || course4 || course5 || course6) {
+        if (course1 || course2 || course3 || course4 || course5 || course6 || course7) {
           $("#n3").show();
           $("#trainingmob").show();
         } else {
@@ -141,6 +141,18 @@ $('#crs02').css('display', 'flex');
 } else  {
 $('#cr02').hide()
 $('#crs02').hide()
+
+}
+
+if(course7 == true){
+$('#mx33').css('display', 'flex');
+$('#mx02').css('display', 'flex');
+$('#mx033').css('display', 'flex');
+
+} else  {
+$('#mx33').hide()
+$('#mx02').hide()
+$('#mx033').hide()
 
 }
         
