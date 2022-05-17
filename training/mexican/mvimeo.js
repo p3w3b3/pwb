@@ -249,19 +249,19 @@ let mprognum2 = 0;
       mprognum2++;
     }
     if (document.querySelector("#m2p4x").style.display == "block") {
-      prognum2++;
+      mprognum2++;
     }
     if (document.querySelector("#m2p5x").style.display == "block") {
-      prognum2++;
+      mprognum2++;
     }
     if (document.querySelector("#m2p6x").style.display == "block") {
-      prognum2++;
+      mprognum2++;
     }
     if (document.querySelector("#m2p7x").style.display == "block") {
-      prognum2++;
+      mprognum2++;
     }
     if (document.querySelector("#m2p8x").style.display == "block") {
-      prognum2++;
+      mprognum2++;
     }
     document.querySelector("#mprognum2").textContent = mprognum2;
 }
