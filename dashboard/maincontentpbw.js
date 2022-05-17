@@ -72,7 +72,7 @@ const authChanged = firebase.auth().onAuthStateChanged((user) => {
         let course4 = data["dlvcourse"];
         let course5 = data["smcourse"];
         let course6 = data["vcourse"];
-        let course7 = data["mmcourse"];
+        let course7 = data["mcourse"];
    
         let datastid = data["stid"]
 
