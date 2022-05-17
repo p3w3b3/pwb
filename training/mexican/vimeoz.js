@@ -297,7 +297,7 @@ let mprognum4 = 0;
     if (document.querySelector("#m4p4x").style.display == "block") {
       mprognum4++;
     }
-document.querySelector("#prognum4").textContent = mprognum4;
+document.querySelector("#mprognum4").textContent = mprognum4;
 }
 
 const checkcompleted5 = function() {
@@ -305,7 +305,7 @@ let mprognum5 = 0;
     if (document.querySelector("#m5p1x").style.display == "block") {
       mprognum5++;
     }
-document.querySelector("#prognum5").textContent = mprognum5;
+document.querySelector("#mprognum5").textContent = mprognum5;
 }
 {
   var iframe = document.querySelector("#m1p1video");
