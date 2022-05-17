@@ -203,12 +203,6 @@ $('#m4p1').hide()
 $('#m4p1x').show()
 mprognum4++
 }
-
-if( m4p1 == true) {
-$('#m4p1').hide()
-$('#m4p1x').show()
-mprognum4++
-}
     
 if( m4p2 == true) {
 $('#m4p2').hide()
@@ -230,7 +224,7 @@ mprognum4++
 
 if( m5p1 == true) {
 $('#m5p1').hide()
-$('#m4p1x').show()
+$('#m5p1x').show()
 mprognum5++
 }
 
