@@ -67,8 +67,8 @@ setTimeout(() => {
 
 {
   document.getElementById("m2p1button").addEventListener("click", (event) => {
-    $(".section2selection").css("background-color", "white");
-    $(".section2div").hide();
+    $(".section1selection").css("background-color", "white");
+    $(".section1div").hide();
     $("#m2p1video").show();
     $("#m2p1button").css("background-color", "#e7edf0");
   });
@@ -77,8 +77,8 @@ setTimeout(() => {
 
 {
   document.getElementById("m2p2button").addEventListener("click", (event) => {
-    $(".section2selection").css("background-color", "white");
-    $(".section2div").hide();
+    $(".section1selection").css("background-color", "white");
+    $(".section1div").hide();
     $("#m2p2video").show();
     $("#m2p2button").css("background-color", "#e7edf0");
   });
@@ -86,8 +86,8 @@ setTimeout(() => {
 
 {
   document.getElementById("m2p3button").addEventListener("click", (event) => {
-    $(".section2selection").css("background-color", "white");
-    $(".section2div").hide();
+    $(".section1selection").css("background-color", "white");
+    $(".section1div").hide();
     $("#m2p3video").show();
     $("#m2p3button").css("background-color", "#e7edf0");
   });
@@ -95,8 +95,8 @@ setTimeout(() => {
 
 {
   document.getElementById("m2p4button").addEventListener("click", (event) => {
-    $(".section2selection").css("background-color", "white");
-    $(".section2div").hide();
+    $(".section1selection").css("background-color", "white");
+    $(".section1div").hide();
     $("#m2p4video").show();
     $("#m2p4button").css("background-color", "#e7edf0");
   });
@@ -105,8 +105,8 @@ setTimeout(() => {
 
 {
   document.getElementById("m2p5button").addEventListener("click", (event) => {
-    $(".section2selection").css("background-color", "white");
-    $(".section2div").hide();
+    $(".section1selection").css("background-color", "white");
+    $(".section1div").hide();
     $("#m2p5video").show();
     $("#m2p5button").css("background-color", "#e7edf0");
   });
@@ -115,8 +115,8 @@ setTimeout(() => {
 
 {
   document.getElementById("m2p6button").addEventListener("click", (event) => {
-    $(".section2selection").css("background-color", "white");
-    $(".section2div").hide();
+    $(".section1selection").css("background-color", "white");
+    $(".section1div").hide();
     $("#m2p6video").show();
     $("#m2p6button").css("background-color", "#e7edf0");
   });
@@ -124,8 +124,8 @@ setTimeout(() => {
 
 {
   document.getElementById("m2p7button").addEventListener("click", (event) => {
-    $(".section2selection").css("background-color", "white");
-    $(".section2div").hide();
+    $(".section1selection").css("background-color", "white");
+    $(".section1div").hide();
     $("#m2p7video").show();
     $("#m2p7button").css("background-color", "#e7edf0");
   });
@@ -134,8 +134,8 @@ setTimeout(() => {
 
 {
   document.getElementById("m2p8button").addEventListener("click", (event) => {
-    $(".section2selection").css("background-color", "white");
-    $(".section2div").hide();
+    $(".section1selection").css("background-color", "white");
+    $(".section1div").hide();
     $("#m2p8video").show();
     $("#m2p8button").css("background-color", "#e7edf0");
   });
@@ -143,8 +143,8 @@ setTimeout(() => {
 
 {
   document.getElementById("m3p1button").addEventListener("click", (event) => {
-    $(".section3selection").css("background-color", "white");
-    $(".section3div").hide();
+    $(".section1selection").css("background-color", "white");
+    $(".section1div").hide();
     $("#m3p1video").show();
     $("#m3p1button").css("background-color", "#e7edf0");
   });
@@ -152,61 +152,61 @@ setTimeout(() => {
 
 {
   document.getElementById("m3p2button").addEventListener("click", (event) => {
-    $(".section3selection").css("background-color", "white");
-    $(".section3div").hide();
+    $(".section1selection").css("background-color", "white");
+    $(".section1div").hide();
     $("#m3p2video").show();
     $("#m3p2button").css("background-color", "#e7edf0");
   });
 }
 {
   document.getElementById("m3p3button").addEventListener("click", (event) => {
-    $(".section3selection").css("background-color", "white");
-    $(".section3div").hide();
+    $(".section1selection").css("background-color", "white");
+    $(".section1div").hide();
     $("#m3p3video").show();
     $("#m3p3button").css("background-color", "#e7edf0");
   });
 }
 {
   document.getElementById("m3p4button").addEventListener("click", (event) => {
-    $(".section3selection").css("background-color", "white");
-    $(".section3div").hide();
+    $(".section1selection").css("background-color", "white");
+    $(".section1div").hide();
     $("#m3p4video").show();
     $("#m3p4button").css("background-color", "#e7edf0");
   });
 }
 {
   document.getElementById("m4p1button").addEventListener("click", (event) => {
-    $(".section4selection").css("background-color", "white");
-    $(".section4div").hide();
+    $(".section1selection").css("background-color", "white");
+    $(".section1div").hide();
     $("#m4p1video").show();
     $("#m4p1button").css("background-color", "#e7edf0");
   });
 }
 {
   document.getElementById("m4p2button").addEventListener("click", (event) => {
-    $(".section4selection").css("background-color", "white");
-    $(".section4div").hide();
+    $(".section1selection").css("background-color", "white");
+    $(".section1div").hide();
     $("#m4p2video").show();
     $("#m4p2button").css("background-color", "#e7edf0");
   })
 {
   document.getElementById("m4p3button").addEventListener("click", (event) => {
-    $(".section4selection").css("background-color", "white");
-    $(".section4div").hide();
+    $(".section1selection").css("background-color", "white");
+    $(".section1div").hide();
     $("#m4p3video").show();
     $("#m4p3button").css("background-color", "#e7edf0");
   })
 {
   document.getElementById("m4p4button").addEventListener("click", (event) => {
-    $(".section4selection").css("background-color", "white");
-    $(".section4div").hide();
+    $(".section1selection").css("background-color", "white");
+    $(".section1div").hide();
     $("#m4p4video").show();
     $("#m4p4button").css("background-color", "#e7edf0");
   })
 {
   document.getElementById("m5p1button").addEventListener("click", (event) => {
-    $(".section5selection").css("background-color", "white");
-    $(".section5div").hide();
+    $(".section1selection").css("background-color", "white");
+    $(".section1div").hide();
     $("#m5p1video").show();
     $("#m5p1button").css("background-color", "#e7edf0");
   })
