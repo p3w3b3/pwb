@@ -65,16 +65,6 @@ setTimeout(() => {
   });
 }
 
-
-{
-  document.getElementById("m1p8button").addEventListener("click", (event) => {
-    $(".section1selection").css("background-color", "white");
-    $(".section1div").hide();
-    $("#m1p8video").show();
-    $("#m1p8button").css("background-color", "#e7edf0");
-  });
-}
-
 {
   document.getElementById("m2p1button").addEventListener("click", (event) => {
     $(".section2selection").css("background-color", "white");
@@ -692,5 +682,6 @@ document.querySelector("#prognum5").textContent = mprognum5;
     checkcompleted5()
   };
   player.on("ended", finished);
-}  
+}}}}}
+
 }, 2000);
