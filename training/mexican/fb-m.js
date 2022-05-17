@@ -131,12 +131,7 @@ $('#m2p2').hide()
 $('#m2p2x').show()
 mprognum2++
 }
-    
-if( m2p3 == true) {
-$('#m2p3').hide()
-$('#m2p3').show()
-mprognum2++
-}
+  
     
 if( m2p3 == true) {
 $('#m2p3').hide()
