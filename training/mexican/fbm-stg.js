@@ -138,11 +138,6 @@ $('#m2p3').show()
 mprognum2++
 }
     
-if( m2p3 == true) {
-$('#m2p3').hide()
-$('#m2p3x').show()
-mprognum2++
-}
     
 if( m2p4 == true) {
 $('#m2p4').hide()
