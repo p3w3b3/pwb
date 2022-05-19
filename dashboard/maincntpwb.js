@@ -73,6 +73,7 @@ const authChanged = firebase.auth().onAuthStateChanged((user) => {
         let course5 = data["smcourse"];
         let course6 = data["vcourse"];
         let course7 = data["mcourse"];
+        let course8 = data['rcourse'];
    
         let datastid = data["stid"]
 
@@ -87,7 +88,7 @@ document.querySelector('#mystid').textContent = datastid
           .set({ prereq: true }, { merge: true });
         
         
-        if (course1 || course2 || course3 || course4 || course5 || course6 || course7) {
+        if (course1 || course2 || course3 || course4 || course5 || course6 || course7 || course8) {
           $("#n3").show();
           $("#trainingmob").show();
         } else {
@@ -157,6 +158,18 @@ $('#mx02').hide()
 $('#mx033').hide()
 
 }       
+
+ if(course8 == true){
+$('#rx33').css('display', 'flex');
+$('#rx02').css('display', 'flex');
+$('#rx033').css('display', 'flex');
+
+} else  {
+$('#rx33').hide()
+$('#rx02').hide()
+$('#rx033').hide()
+
+}    
         
         if (!!admin) {
           $("#n5").show();
@@ -344,6 +357,7 @@ location.href = '/login'
               newItem.find("#course5")[0].id = "course5-" + i;
               newItem.find("#course6")[0].id = "course6-" + i;
               newItem.find("#course7")[0].id = "course7-" + i;
+              newItem.find("#course8")[0].id = "course8-" + i;
               newItem.find("#popfieldfirst")[0].id = "popfieldfirst-" + i;
               newItem.find("#stid")[0].id = "stid-" + i;
 
@@ -387,6 +401,8 @@ location.href = '/login'
               var course55 = myResults[i].data.smcourse;
               var course66 = myResults[i].data.vcourse;
               var course77 = myResults[i].data.mcourse;
+              var course88 = myResults[i].data.rcourse;
+
 
               
               if (countryus == true) {
@@ -447,6 +463,12 @@ location.href = '/login'
                 newItem.find("#course7-" + i)[0].checked = true;
               }
 
+              if (course88 == undefined) {
+                newItem.find("#course8-" + i)[0].checked = false;
+              } else if (course88 == true) {
+                newItem.find("#course8-" + i)[0].checked = true;
+              }
+
               if (accessps == undefined && accessps == undefined) {
                 newItem.find("#accesslevel-" + i)[0].value = "";
               }
@@ -502,6 +524,7 @@ location.href = '/login'
                 let course5 = newItem.find("#course5-" + i)[0].checked == true;
                 let course6 = newItem.find("#course6-" + i)[0].checked == true;
                 let course7 = newItem.find("#course7-" + i)[0].checked == true;
+                let course8 = newItem.find("#course8-" + i)[0].checked == true;
 
                 
                 let paccess = newItem.find("#accesslevel-" + i)[0].value;
@@ -617,6 +640,17 @@ location.href = '/login'
                         .set({ mcourse: false }, { merge: true });
                     }
                   
+                              if (course8) {
+                      firebase
+                        .firestore()
+                        .doc("users/" + tid)
+                        .set({ rcourse: true }, { merge: true });
+                    } else {
+                      firebase
+                        .firestore()
+                        .doc("users/" + tid)
+                        .set({ rcourse: false }, { merge: true });
+                    }
                   
                   
 
