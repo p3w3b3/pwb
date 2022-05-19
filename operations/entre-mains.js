@@ -137,6 +137,27 @@ $('#ops11').addClass("cur");
 
 })
 
+ document.querySelector("#opsfiesta").addEventListener("click", function() {
+$('.main-section-ops').hide()
+$('#dbfiesta').show()
+
+$('.generic-heading-ops').removeClass("cur");
+$('#opsfiesta').addClass("cur");
+
+})
+
+ document.querySelector("#opsrebelrito").addEventListener("click", function() {
+$('.main-section-ops').hide()
+$('#dbrebelrito').show()
+
+$('.generic-heading-ops').removeClass("cur");
+$('#opsrebelrito').addClass("cur");
+
+})
+
+
+  
+
   document.querySelector("#ops-in").addEventListener("click", function () {
     $(".main-section-ops").hide();
     $("#db-insights").show();
