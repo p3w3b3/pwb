@@ -257,6 +257,33 @@ $('#mbox4').css("display", "flex");
 
 $('.mobile-menu-wrapper').click()
 })
+	
+document.getElementById("mbfiesta").addEventListener("click", () => {
+$('.mobile-menu-button').removeClass( "current")
+$('#mbfiesta').addClass( "current")
+
+$('.main-section-ops').hide()
+$('#dbfiesta').css("display", "flex");
+$('.bottom-bar-dsb').hide()
+$('.middle-box').hide()
+$('#mbox4').css("display", "flex");
+
+$('.mobile-menu-wrapper').click()
+})
+
+document.getElementById("mbrebelrito").addEventListener("click", () => {
+$('.mobile-menu-button').removeClass( "current")
+$('#mbrebelrito').addClass( "current")
+
+$('.main-section-ops').hide()
+$('#dbrebelrito').css("display", "flex");
+$('.bottom-bar-dsb').hide()
+$('.middle-box').hide()
+$('#mbox4').css("display", "flex");
+
+$('.mobile-menu-wrapper').click()
+})
+	
 }
 
 }
@@ -1080,6 +1107,378 @@ document.querySelector('#prognum5').textContent = prognum5
 document.querySelector('#prognum6').textContent = prognum6
 document.querySelector('#prognum8').textContent = prognum8
 
+	   let rprognum = 0;
+    let rprognum2 = 0;
+    let rprognum3 = 0;
+    let rprognum4 = 0;
+    let rprognum5 = 0;
+
+  	let r1p1 = data["r1p1"];
+        let r1p2 = data["r1p2"];
+        let r1p3 = data["r1p3"];
+        let r1p4 = data["r1p4"];
+        let r1p5 = data["r1p5"];
+        let r1p6 = data["r1p6"];
+        let r1p7 = data["r1p7"];
+
+        let r2p1 = data["r2p1"];
+        let r2p2 = data["r2p2"];
+        let r2p3 = data["r2p3"];
+        let r2p4 = data["r2p4"];
+        let r2p5 = data["r2p5"];
+        let r2p6 = data["r2p6"];
+        let r2p7 = data["r2p7"];
+        let r2p8 = data["r2p8"];
+
+        let r3p1 = data["r3p1"];
+        let r3p2 = data["r3p2"];
+        let r3p3 = data["r3p3"];
+        let r3p4 = data["r3p4"];
+
+        let r4p1 = data["r4p1"];
+        let r4p2 = data["r4p2"];
+        let r4p3 = data["r4p3"];
+        let r4p4 = data["r4p4"];
+
+        let r5p1 = data["r5p1"];
+
+        if (r1p1 == true) {
+          $("#r1p1").hide();
+          $("#r1p1x").show();
+          rprognum++;
+        }
+        if (r1p2 == true) {
+          $("#r1p2").hide();
+          $("#r1p2x").show();
+          rprognum++;
+        }
+
+        if (r1p3 == true) {
+          $("#r1p3").hide();
+          $("#r1p3x").show();
+          rprognum++;
+        }
+
+        if (r1p4 == true) {
+          $("#r1p4").hide();
+          $("#r1p4x").show();
+          rprognum++;
+        }
+
+        if (r1p5 == true) {
+          $("#r1p5").hide();
+          $("#r1p5x").show();
+          rprognum++;
+        }
+
+        if (r1p6 == true) {
+          $("#r1p6").hide();
+          $("#r1p6x").show();
+          rprognum++;
+        }
+
+        if (r1p7 == true) {
+          $("#r1p7").hide();
+          $("#r1p7x").show();
+          rprognum++;
+        }
+
+        if (r2p1 == true) {
+          $("#r2p1").hide();
+          $("#r2p1x").show();
+          rprognum2++;
+        }
+
+        if (r2p2 == true) {
+          $("#r2p2").hide();
+          $("#r2p2x").show();
+          rprognum2++;
+        }
+
+        if (r2p3 == true) {
+          $("#r2p3").hide();
+          $("#r2p3x").show();
+          rprognum2++;
+        }
+
+        if (r2p4 == true) {
+          $("#r2p4").hide();
+          $("#r2p4x").show();
+          rprognum2++;
+        }
+
+        if (r2p5 == true) {
+          $("#r2p5").hide();
+          $("#r2p5x").show();
+          rprognum2++;
+        }
+
+        if (r2p6 == true) {
+          $("#r2p6").hide();
+          $("#r2p6x").show();
+          rprognum2++;
+        }
+
+        if (r2p7 == true) {
+          $("#r2p7").hide();
+          $("#r2p7x").show();
+          rprognum2++;
+        }
+
+        if (r2p8 == true) {
+          $("#r2p8").hide();
+          $("#r2p8x").show();
+          rprognum2++;
+        }
+
+        if (r3p1 == true) {
+          $("#r3p1").hide();
+          $("#r3p1x").show();
+          rprognum3++;
+        }
+
+        if (r3p2 == true) {
+          $("#r3p2").hide();
+          $("#r3p2x").show();
+          rprognum3++;
+        }
+
+        if (r3p3 == true) {
+          $("#r3p3").hide();
+          $("#r3p3x").show();
+          rprognum3++;
+        }
+
+        if (r3p4 == true) {
+          $("#r3p4").hide();
+          $("#r3p4x").show();
+          rprognum3++;
+        }
+
+        if (r4p1 == true) {
+          $("#r4p1").hide();
+          $("#r4p1x").show();
+          rprognum4++;
+        }
+
+        if (r4p2 == true) {
+          $("#r4p2").hide();
+          $("#r4p2x").show();
+          rprognum4++;
+        }
+
+        if (r4p3 == true) {
+          $("#r4p3").hide();
+          $("#r4p3x").show();
+          rprognum4++;
+        }
+
+        if (r4p4 == true) {
+          $("#r4p4").hide();
+          $("#r4p4x").show();
+          rprognum4++;
+        }
+
+        if (r5p1 == true) {
+          $("#r5p1").hide();
+          $("#r5p1x").show();
+          rprognum5++;
+        }
+
+    document.querySelector("#rprognum").textContent = rprognum;
+    document.querySelector("#rprognum2").textContent = rprognum2;
+    document.querySelector("#rprognum3").textContent = rprognum3;
+    document.querySelector("#rprognum4").textContent = rprognum4;
+    document.querySelector("#rprognum5").textContent = rprognum5;
+	
+	
+
+let mprognum = 0
+let mprognum2 = 0
+let mprognum3 = 0
+let mprognum4 = 0
+let mprognum5 = 0
+
+    let m1p1 = data['m1p1'];    
+    let m1p2 = data['m1p2'];    
+    let m1p3 = data['m1p3'];    
+    let m1p4 = data['m1p4']; 
+    let m1p5 = data['m1p5'];    
+    let m1p6 = data['m1p6'];    
+    let m1p7 = data['m1p7'];    
+     
+    let m2p1 = data['m2p1'];    
+    let m2p2 = data['m2p2'];    
+    let m2p3 = data['m2p3'];
+    let m2p4 = data['m2p4'];
+    let m2p5 = data['m2p5'];    
+    let m2p6 = data['m2p6'];    
+    let m2p7 = data['m2p7'];
+    let m2p8 = data['m2p8'];
+
+    let m3p1 = data['m3p1'];    
+    let m3p2 = data['m3p2'];    
+    let m3p3 = data['m3p3'];
+    let m3p4 = data['m3p4'];
+    
+    let m4p1 = data['m4p1'];    
+    let m4p2 = data['m4p2'];    
+    let m4p3 = data['m4p3'];
+    let m4p4 = data['m4p4'];
+
+    let m5p1 = data['m5p1'];
+
+    if( m1p1 == true) {
+$('#m1p1').hide()
+$('#m1p1x').show()
+mprognum++
+}
+    if( m1p2 == true) {
+$('#m1p2').hide()
+$('#m1p2x').show()
+mprognum++
+}
+
+    if( m1p3 == true) {
+$('#m1p3').hide()
+$('#m1p3x').show()
+mprognum++
+}
+
+    if( m1p4 == true) {
+$('#m1p4').hide()
+$('#m1p4x').show()
+mprognum++
+}
+
+    if( m1p5 == true) {
+$('#m1p5').hide()
+$('#m1p5x').show()
+mprognum++
+}
+
+    if( m1p6 == true) {
+$('#m1p6').hide()
+$('#m1p6x').show()
+mprognum++
+}
+
+    if( m1p7 == true) {
+$('#m1p7').hide()
+$('#m1p7x').show()
+mprognum++
+}
+  
+if( m2p1 == true) {
+$('#m2p1').hide()
+$('#m2p1x').show()
+mprognum2++
+}
+    
+if( m2p2 == true) {
+$('#m2p2').hide()
+$('#m2p2x').show()
+mprognum2++
+}
+  
+    
+if( m2p3 == true) {
+$('#m2p3').hide()
+$('#m2p3x').show()
+mprognum2++
+}
+    
+if( m2p4 == true) {
+$('#m2p4').hide()
+$('#m2p4x').show()
+mprognum2++
+}
+
+if( m2p5 == true) {
+$('#m2p5').hide()
+$('#m2p5x').show()
+mprognum2++
+}
+
+if( m2p6 == true) {
+$('#m2p6').hide()
+$('#m2p6x').show()
+mprognum2++
+}
+    
+if( m2p7 == true) {
+$('#m2p7').hide()
+$('#m2p7x').show()
+mprognum2++
+}
+
+if( m2p8 == true) {
+$('#m2p8').hide()
+$('#m2p8x').show()
+mprognum2++
+}
+
+if( m3p1 == true) {
+$('#m3p1').hide()
+$('#m3p1x').show()
+mprognum3++
+}
+    
+if( m3p2 == true) {
+$('#m3p2').hide()
+$('#m3p2x').show()
+mprognum3++
+}
+
+if( m3p3 == true) {
+$('#m3p3').hide()
+$('#m3p3x').show()
+mprognum3++
+}
+
+if( m3p4 == true) {
+$('#m3p4').hide()
+$('#m3p4x').show()
+mprognum3++
+}
+
+if( m4p1 == true) {
+$('#m4p1').hide()
+$('#m4p1x').show()
+mprognum4++
+}
+    
+if( m4p2 == true) {
+$('#m4p2').hide()
+$('#m4p2x').show()
+mprognum4++
+}
+  
+if( m4p3 == true) {
+$('#m4p3').hide()
+$('#m4p3x').show()
+mprognum4++
+}  
+
+if( m4p4 == true) {
+$('#m4p4').hide()
+$('#m4p4x').show()
+mprognum4++
+}
+
+if( m5p1 == true) {
+$('#m5p1').hide()
+$('#m5p1x').show()
+mprognum5++
+}
+document.querySelector('#mprognum').textContent = mprognum
+document.querySelector('#mprognum2').textContent = mprognum2
+document.querySelector('#mprognum3').textContent = mprognum3
+document.querySelector('#mprognum4').textContent = mprognum4
+document.querySelector('#mprognum5').textContent = mprognum5
+
+	
+	
 let firstletter = name.substring(0, 1)
 $('.firstletter').html(firstletter);
 let restaurant = data['Restaurant']; 
@@ -1090,6 +1489,8 @@ let profileuid = curUser.uid
       let course4 = data['dlvcourse']
       let course5 = data['smcourse']
       let course6 = data['vcourse']
+      let course7 = data['mcourse']
+      let course8 = data['rcourse']
 
 
 if(course1 == true){
@@ -1142,6 +1543,23 @@ $('#ops11').hide()
 $('#mbtraining11').hide()
 
 }
+if(course7 == true){
+$('#opsfiesta').css('display', 'flex');
+$('#mbfiesta').css('display', 'flex');
+$('#cf2').append(new Option('Fiesta Mexico', 'Fiesta Mexico'))
+} else  {
+$('#opsfiesta').hide()
+$('#mbfiesta').hide()
+}
+if(course8 == true){
+$('#opsrebelrito').css('display', 'flex');
+$('#mbrebelrito').css('display', 'flex');
+$('#cf2').append(new Option('Rebel Rito', 'Rebel Rito'))
+} else  {
+$('#opsrebelrito').hide()
+$('#mbrebelrito').hide()
+}
+
 
 
 let sp =((prognum+prognum2+prognum3+prognum4+prognum5+prognum6+prognum8)/28*100)
