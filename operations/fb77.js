@@ -1564,6 +1564,9 @@ let profileuid = curUser.uid
       let course6 = data['vcourse']
       let course7 = data['mcourse']
       let course8 = data['rcourse']
+      let course9 = data['nyamcourse']
+      let course10= data['lockedcourse']
+      let course11= data['cluckcourse']
 
 if(course1 == true){
 $('#train1').css('display', 'flex');
@@ -1630,6 +1633,41 @@ $('#cf2').append(new Option('Rebel Rito', 'Rebel Rito'))
 $('#opsrebelrito').hide()
 $('#mbrebelrito').hide()
 }
+
+if(course9 == true){
+$('#opsnyam').css('display', 'flex');
+$('#mbnomnyam').css('display', 'flex');
+$('#cf2').append(new Option('Nom Nyam Chicken ', 'Nom Nyam Chicken'))
+} else  {
+$('#opsnyam').hide()
+$('#mbnomnyam').hide()
+}
+	
+if(course10 == true){
+$('#opslockedloaded').css('display', 'flex');
+$('#mblockednloaded').css('display', 'flex');
+$('#cf2').append(new Option('Locked N Loaded', 'Locked N Loaded'))
+} else  {
+$('#opslockedloaded').hide()
+$('#mblockednloaded').hide()
+}
+
+if(course11 == true){
+$('#opscluckrun').css('display', 'flex');
+$('#mbclucknrun').css('display', 'flex');
+$('#cf2').append(new Option('Cluck N Run', 'Cluck N Run'))
+} else  {
+$('#opscluckrun').hide()
+$('#mbclucknrun').hide()
+}
+
+
+
+
+
+
+
+
 
 
 
