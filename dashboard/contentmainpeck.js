@@ -389,6 +389,10 @@ location.href = '/login'
               newItem.find("#course6")[0].id = "course6-" + i;
               newItem.find("#course7")[0].id = "course7-" + i;
               newItem.find("#course8")[0].id = "course8-" + i;
+              newItem.find("#course9")[0].id = "course9-" + i;
+              newItem.find("#course10")[0].id = "course10-" + i;
+              newItem.find("#course11")[0].id = "course11-" + i;
+
               newItem.find("#popfieldfirst")[0].id = "popfieldfirst-" + i;
               newItem.find("#stid")[0].id = "stid-" + i;
 
@@ -433,7 +437,9 @@ location.href = '/login'
               var course66 = myResults[i].data.vcourse;
               var course77 = myResults[i].data.mcourse;
               var course88 = myResults[i].data.rcourse;
-
+              var course99 = myResults[i].data.nyamcourse;
+              var course100 = myResults[i].data.lockedcourse;
+              var course111 = myResults[i].data.cluckcourse;
 
               
               if (countryus == true) {
@@ -499,6 +505,21 @@ location.href = '/login'
               } else if (course88 == true) {
                 newItem.find("#course8-" + i)[0].checked = true;
               }
+              if (course99 == undefined) {
+                newItem.find("#course9-" + i)[0].checked = false;
+              } else if (course99 == true) {
+                newItem.find("#course9-" + i)[0].checked = true;
+              }
+              if (course100 == undefined) {
+                newItem.find("#course10-" + i)[0].checked = false;
+              } else if (course100 == true) {
+                newItem.find("#course10-" + i)[0].checked = true;
+              }
+              if (course111 == undefined) {
+                newItem.find("#course11-" + i)[0].checked = false;
+              } else if (course111 == true) {
+                newItem.find("#course11-" + i)[0].checked = true;
+              }
 
               if (accessps == undefined && accessps == undefined) {
                 newItem.find("#accesslevel-" + i)[0].value = "";
@@ -556,7 +577,9 @@ location.href = '/login'
                 let course6 = newItem.find("#course6-" + i)[0].checked == true;
                 let course7 = newItem.find("#course7-" + i)[0].checked == true;
                 let course8 = newItem.find("#course8-" + i)[0].checked == true;
-
+                let course9 = newItem.find("#course9-" + i)[0].checked == true;
+                let course10 = newItem.find("#course10-" + i)[0].checked == true;
+                let course11 = newItem.find("#course11-" + i)[0].checked == true;
                 
                 let paccess = newItem.find("#accesslevel-" + i)[0].value;
                 let stid = newItem.find("#stid-" + i)[0].value;
@@ -682,7 +705,41 @@ location.href = '/login'
                         .doc("users/" + tid)
                         .set({ rcourse: false }, { merge: true });
                     }
+
+                              if (course9) {
+                      firebase
+                        .firestore()
+                        .doc("users/" + tid)
+                        .set({ nyamcourse: true }, { merge: true });
+                    } else {
+                      firebase
+                        .firestore()
+                        .doc("users/" + tid)
+                        .set({ nyamcourse: false }, { merge: true });
+                    }
+                              if (course10) {
+                      firebase
+                        .firestore()
+                        .doc("users/" + tid)
+                        .set({ lockedcourse: true }, { merge: true });
+                    } else {
+                      firebase
+                        .firestore()
+                        .doc("users/" + tid)
+                        .set({ lockedcourse: false }, { merge: true });
+                    }
                   
+                              if (course11) {
+                      firebase
+                        .firestore()
+                        .doc("users/" + tid)
+                        .set({ cluckcourse: true }, { merge: true });
+                    } else {
+                      firebase
+                        .firestore()
+                        .doc("users/" + tid)
+                        .set({ cluckcourse: false }, { merge: true });
+                    }
                   
 
                     if (paccess === "operations") {
