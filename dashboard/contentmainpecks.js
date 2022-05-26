@@ -91,13 +91,13 @@ document.querySelector('#mystid').textContent = datastid
           .set({ prereq: true }, { merge: true });
         
         
-        if (course1 || course2 || course3 || course4 || course5 || course6 || course7 || course8 || course9 || course10 || course11 ) {
-          $("#n3").show();
-          $("#trainingmob").show();
-        } else {
-          $("#n3").hide();
-          $("#trainingmob").hide();
-        }
+if (!!course1 || !!course2 || !!course3 || !!course4 || !!course5 || !!course6 || !!course7 || !!course8 || !!course9 || !!course10 || !!course11 ) {
+$('#n3').show()
+$('#trainingmob').show()
+} else { 
+$('#n3').hide()
+$('#trainingmob').hide()
+}
 
         if (course1) {
           $("#cr1").css("display", "flex");
