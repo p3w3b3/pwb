@@ -922,4 +922,4 @@ loader.style.display = 'none'
 }); 
 }
 
-}, 1000);
+}, 500);
