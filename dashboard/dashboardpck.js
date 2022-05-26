@@ -91,7 +91,7 @@ document.querySelector('#mystid').textContent = datastid
           .set({ prereq: true }, { merge: true });
         
         
-if (!!course1 || !!course2 || !!course3 || !!course4 || !!course5 || !!course6 || !!course7 || !!course8 || !!course9 || !!course10 || !!course11 ) {
+if (course1||course2 ||course3||course4||course5||course6||course7||course8||course9||course10||course11 ) {
 $('#n3').show()
 $('#trainingmob').show()
 } else { 
@@ -141,7 +141,7 @@ $('#crs01').hide()
 
 }
 
-if(course6 == true){
+if(course6){
 $('#cr02').css('display', 'flex');
 $('#crs02').css('display', 'flex');
 } else  {
@@ -150,7 +150,7 @@ $('#crs02').hide()
 
 }
         
- if(course7 == true){
+ if(course7){
 $('#mx33').css('display', 'flex');
 $('#mx02').css('display', 'flex');
 $('#mx033').css('display', 'flex');
@@ -162,7 +162,7 @@ $('#mx033').hide()
 
 }       
 
- if(course8 == true){
+ if(course8){
 $('#rx33').css('display', 'flex');
 $('#rx02').css('display', 'flex');
 $('#rx033').css('display', 'flex');
@@ -172,7 +172,7 @@ $('#rx33').hide()
 $('#rx02').hide()
 $('#rx033').hide()
 }    
-if(course9 == true){
+if(course9){
 $("#locked33").css("display", "flex");
 $("#locked44").css("display", "flex");
 $("#locked55").css("display", "flex");
@@ -182,7 +182,7 @@ $('#locked44').hide()
 $('#locked55').hide()
 }
 	
-if(course10 == true){
+if(course10){
 $("#nyam33").css("display", "flex");
 $("#nyam44").css("display", "flex");
 $("#nyam55").css("display", "flex");
@@ -192,7 +192,7 @@ $('#nyam44').hide()
 $('#nyam55').hide()
 }
 	
-if(course11 == true){
+if(course11){
 $("#cluck33").css("display", "flex");
 $("#cluck44").css("display", "flex");
 $("#cluck55").css("display", "flex");
