@@ -351,6 +351,7 @@ location.href = '/login'
       $(".nav-button").css("border-color", "transparent");
       $("#n5").css("border-color", "white");
     }
+setTimeout(() => { 
     {
       {
         const db = firebase.firestore();
@@ -920,3 +921,5 @@ maincontent.style.display = 'flex'
 loader.style.display = 'none'
 }); 
 }
+
+}, 1000);
