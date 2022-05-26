@@ -290,6 +290,45 @@ $('.mobile-menu-wrapper').click()
 })
 
 
+document.getElementById("mbclucknrun").addEventListener("click", () => {
+$('.mobile-menu-button').removeClass( "current")
+$('#mbclucknrun').addClass( "current")
+
+$('.main-section-ops').hide()
+$('#dbcluck').css("display", "flex");
+$('.bottom-bar-dsb').hide()
+$('.middle-box').hide()
+$('#mbox4').css("display", "flex");
+
+$('.mobile-menu-wrapper').click()
+})
+
+document.getElementById("mblockednloaded").addEventListener("click", () => {
+$('.mobile-menu-button').removeClass( "current")
+$('#mblockednloaded').addClass( "current")
+
+$('.main-section-ops').hide()
+$('#dbloaded').css("display", "flex");
+$('.bottom-bar-dsb').hide()
+$('.middle-box').hide()
+$('#mbox4').css("display", "flex");
+
+$('.mobile-menu-wrapper').click()
+})
+
+document.getElementById("mbnomnyam").addEventListener("click", () => {
+$('.mobile-menu-button').removeClass( "current")
+$('#mbnomnyam').addClass( "current")
+
+$('.main-section-ops').hide()
+$('#dbnomnyam').css("display", "flex");
+$('.bottom-bar-dsb').hide()
+$('.middle-box').hide()
+$('#mbox4').css("display", "flex");
+
+$('.mobile-menu-wrapper').click()
+})
+
 
 document.getElementById("mbfiesta").addEventListener("click", () => {
 $('.mobile-menu-button').removeClass( "current")
