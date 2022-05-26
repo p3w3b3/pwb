@@ -74,6 +74,9 @@ const authChanged = firebase.auth().onAuthStateChanged((user) => {
         let course6 = data["vcourse"];
         let course7 = data["mcourse"];
         let course8 = data['rcourse'];
+        let course9 = data['nyamcourse']
+        let course10 = data['lockedcourse']
+        let course11 = data['cluckcourse']
    
         let datastid = data["stid"]
 
@@ -88,7 +91,7 @@ document.querySelector('#mystid').textContent = datastid
           .set({ prereq: true }, { merge: true });
         
         
-        if (course1 || course2 || course3 || course4 || course5 || course6 || course7 || course8) {
+        if (course1 || course2 || course3 || course4 || course5 || course6 || course7 || course8 || course9 || course10 || course11 ) {
           $("#n3").show();
           $("#trainingmob").show();
         } else {
@@ -168,8 +171,36 @@ $('#rx033').css('display', 'flex');
 $('#rx33').hide()
 $('#rx02').hide()
 $('#rx033').hide()
-
 }    
+if(course9 == true){
+$("#locked33").css("display", "flex");
+$("#locked44").css("display", "flex");
+$("#locked55").css("display", "flex");
+} else {
+$('#locked33').hide()
+$('#locked44').hide()
+$('#locked55').hide()
+}
+	
+if(course10 == true){
+$("#nyam33").css("display", "flex");
+$("#nyam44").css("display", "flex");
+$("#nyam55").css("display", "flex");
+} else  {
+$('#nyam33').hide()
+$('#nyam44').hide()
+$('#nyam55').hide()
+}
+	
+if(course11 == true){
+$("#cluck33").css("display", "flex");
+$("#cluck44").css("display", "flex");
+$("#cluck55").css("display", "flex");
+} else  {
+$('#cluck33').hide()
+$('#cluck44').hide()
+$('#cluck55').hide()
+}
         
         if (!!admin) {
           $("#n5").show();
