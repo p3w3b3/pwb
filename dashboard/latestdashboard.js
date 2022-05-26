@@ -91,13 +91,13 @@ document.querySelector('#mystid').textContent = datastid
           .set({ prereq: true }, { merge: true });
         
         
-if (course1||course2 ||course3||course4||course5||course6||course7||course8||course9||course10||course11 ) {
-$('#n3').show()
-$('#trainingmob').show()
-} else { 
-$('#n3').hide()
-$('#trainingmob').hide()
-}
+        if (course1 || course2 || course3 || course4 || course5 || course6 || course7 || course8 || course9 || course10 || course11 ) {
+          $("#n3").show();
+          $("#trainingmob").show();
+        } else {
+          $("#n3").hide();
+          $("#trainingmob").hide();
+        }
 
         if (course1) {
           $("#cr1").css("display", "flex");
@@ -141,7 +141,7 @@ $('#crs01').hide()
 
 }
 
-if(course6){
+if(course6 == true){
 $('#cr02').css('display', 'flex');
 $('#crs02').css('display', 'flex');
 } else  {
@@ -150,7 +150,7 @@ $('#crs02').hide()
 
 }
         
- if(course7){
+ if(course7 == true){
 $('#mx33').css('display', 'flex');
 $('#mx02').css('display', 'flex');
 $('#mx033').css('display', 'flex');
@@ -162,7 +162,7 @@ $('#mx033').hide()
 
 }       
 
- if(course8){
+ if(course8 == true){
 $('#rx33').css('display', 'flex');
 $('#rx02').css('display', 'flex');
 $('#rx033').css('display', 'flex');
@@ -172,7 +172,7 @@ $('#rx33').hide()
 $('#rx02').hide()
 $('#rx033').hide()
 }    
-if(course9){
+if(course9 == true){
 $("#locked33").css("display", "flex");
 $("#locked44").css("display", "flex");
 $("#locked55").css("display", "flex");
@@ -182,7 +182,7 @@ $('#locked44').hide()
 $('#locked55').hide()
 }
 	
-if(course10){
+if(course10 == true){
 $("#nyam33").css("display", "flex");
 $("#nyam44").css("display", "flex");
 $("#nyam55").css("display", "flex");
@@ -192,7 +192,7 @@ $('#nyam44').hide()
 $('#nyam55').hide()
 }
 	
-if(course11){
+if(course11 == true){
 $("#cluck33").css("display", "flex");
 $("#cluck44").css("display", "flex");
 $("#cluck55").css("display", "flex");
@@ -351,7 +351,6 @@ location.href = '/login'
       $(".nav-button").css("border-color", "transparent");
       $("#n5").css("border-color", "white");
     }
-setTimeout(() => { 
     {
       {
         const db = firebase.firestore();
@@ -390,10 +389,6 @@ setTimeout(() => {
               newItem.find("#course6")[0].id = "course6-" + i;
               newItem.find("#course7")[0].id = "course7-" + i;
               newItem.find("#course8")[0].id = "course8-" + i;
-              newItem.find("#course9")[0].id = "course9-" + i;
-              newItem.find("#course10")[0].id = "course10-" + i;
-              newItem.find("#course11")[0].id = "course11-" + i;
-
               newItem.find("#popfieldfirst")[0].id = "popfieldfirst-" + i;
               newItem.find("#stid")[0].id = "stid-" + i;
 
@@ -438,9 +433,7 @@ setTimeout(() => {
               var course66 = myResults[i].data.vcourse;
               var course77 = myResults[i].data.mcourse;
               var course88 = myResults[i].data.rcourse;
-              var course99 = myResults[i].data.nyamcourse;
-              var course100 = myResults[i].data.lockedcourse;
-              var course111 = myResults[i].data.cluckcourse;
+
 
               
               if (countryus == true) {
@@ -506,21 +499,6 @@ setTimeout(() => {
               } else if (course88 == true) {
                 newItem.find("#course8-" + i)[0].checked = true;
               }
-              if (course99 == undefined) {
-                newItem.find("#course9-" + i)[0].checked = false;
-              } else if (course99 == true) {
-                newItem.find("#course9-" + i)[0].checked = true;
-              }
-              if (course100 == undefined) {
-                newItem.find("#course10-" + i)[0].checked = false;
-              } else if (course100 == true) {
-                newItem.find("#course10-" + i)[0].checked = true;
-              }
-              if (course111 == undefined) {
-                newItem.find("#course11-" + i)[0].checked = false;
-              } else if (course111 == true) {
-                newItem.find("#course11-" + i)[0].checked = true;
-              }
 
               if (accessps == undefined && accessps == undefined) {
                 newItem.find("#accesslevel-" + i)[0].value = "";
@@ -578,9 +556,7 @@ setTimeout(() => {
                 let course6 = newItem.find("#course6-" + i)[0].checked == true;
                 let course7 = newItem.find("#course7-" + i)[0].checked == true;
                 let course8 = newItem.find("#course8-" + i)[0].checked == true;
-                let course9 = newItem.find("#course9-" + i)[0].checked == true;
-                let course10 = newItem.find("#course10-" + i)[0].checked == true;
-                let course11 = newItem.find("#course11-" + i)[0].checked == true;
+
                 
                 let paccess = newItem.find("#accesslevel-" + i)[0].value;
                 let stid = newItem.find("#stid-" + i)[0].value;
@@ -706,41 +682,7 @@ setTimeout(() => {
                         .doc("users/" + tid)
                         .set({ rcourse: false }, { merge: true });
                     }
-
-                              if (course9) {
-                      firebase
-                        .firestore()
-                        .doc("users/" + tid)
-                        .set({ nyamcourse: true }, { merge: true });
-                    } else {
-                      firebase
-                        .firestore()
-                        .doc("users/" + tid)
-                        .set({ nyamcourse: false }, { merge: true });
-                    }
-                              if (course10) {
-                      firebase
-                        .firestore()
-                        .doc("users/" + tid)
-                        .set({ lockedcourse: true }, { merge: true });
-                    } else {
-                      firebase
-                        .firestore()
-                        .doc("users/" + tid)
-                        .set({ lockedcourse: false }, { merge: true });
-                    }
                   
-                              if (course11) {
-                      firebase
-                        .firestore()
-                        .doc("users/" + tid)
-                        .set({ cluckcourse: true }, { merge: true });
-                    } else {
-                      firebase
-                        .firestore()
-                        .doc("users/" + tid)
-                        .set({ cluckcourse: false }, { merge: true });
-                    }
                   
 
                     if (paccess === "operations") {
@@ -921,5 +863,3 @@ maincontent.style.display = 'flex'
 loader.style.display = 'none'
 }); 
 }
-
-}, 500);
