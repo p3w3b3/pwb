@@ -179,6 +179,36 @@ $('#opsrebelrito').addClass("cur");
 })
 
 
+ document.querySelector("#opsnyam").addEventListener("click", function() {
+$('.main-section-ops').hide()
+$('#dbnomnyam').show()
+
+$('.generic-heading-ops').removeClass("cur");
+$('#opsnyam').addClass("cur");
+
+})
+
+
+ document.querySelector("#opslockedloaded").addEventListener("click", function() {
+$('.main-section-ops').hide()
+$('#dbloaded').show()
+
+$('.generic-heading-ops').removeClass("cur");
+$('#opslockedloaded').addClass("cur");
+
+})
+
+ document.querySelector("#opscluckrun").addEventListener("click", function() {
+$('.main-section-ops').hide()
+$('#dbcluck').show()
+
+$('.generic-heading-ops').removeClass("cur");
+$('#opscluckrun').addClass("cur");
+
+})
+
+
+
   document.querySelector("#ops-in").addEventListener("click", function () {
     $(".main-section-ops").hide();
     $("#db-insights").show();
