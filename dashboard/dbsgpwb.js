@@ -73,7 +73,10 @@ const authChanged = firebase.auth().onAuthStateChanged((user) => {
         let course6 = data["vcourse"];
         let course7 = data["mcourse"];      
         let course8 = data["rcourse"];
-      let datastid = data["stid"]
+        let course9 = data['nyamcourse']
+        let course10 = data['lockedcourse']
+        let course11 = data['cluckcourse']
+        let datastid = data["stid"]
 
         
 document.querySelector('#mystid').textContent = datastid
@@ -168,6 +171,36 @@ $('#rx033').hide()
 
 }
         
+if(course9 == true){
+$("#locked33").css("display", "flex");
+$("#locked44").css("display", "flex");
+$("#locked55").css("display", "flex");
+} else {
+$('#locked33').hide()
+$('#locked44').hide()
+$('#locked55').hide()
+}
+	
+if(course10 == true){
+$("#nyam33").css("display", "flex");
+$("#nyam44").css("display", "flex");
+$("#nyam55").css("display", "flex");
+} else  {
+$('#nyam33').hide()
+$('#nyam44').hide()
+$('#nyam55').hide()
+}
+	
+if(course11 == true){
+$("#cluck33").css("display", "flex");
+$("#cluck44").css("display", "flex");
+$("#cluck55").css("display", "flex");
+} else  {
+$('#cluck33').hide()
+$('#cluck44').hide()
+$('#cluck55').hide()
+}
+
         
         if (!!admin) {
           $("#n5").show();
@@ -359,6 +392,9 @@ $('#rx033').hide()
               newItem.find("#course6")[0].id = "course6-" + i;
               newItem.find("#course7")[0].id = "course7-" + i;
               newItem.find("#course8")[0].id = "course8-" + i;
+              newItem.find("#course9")[0].id = "course9-" + i;
+              newItem.find("#course10")[0].id = "course10-" + i;
+              newItem.find("#course11")[0].id = "course11-" + i;
               newItem.find("#popfieldfirst")[0].id = "popfieldfirst-" + i;
               newItem.find("#stid")[0].id = "stid-" + i;
 
@@ -400,7 +436,9 @@ $('#rx033').hide()
               var course66 = myResults[i].data.vcourse;
               var course77 = myResults[i].data.mcourse;
               var course88 = myResults[i].data.rcourse;
-
+              var course99 = myResults[i].data.nyamcourse;
+              var course100 = myResults[i].data.lockedcourse;
+              var course111 = myResults[i].data.cluckcourse;
 
               if (course11 == undefined) {
                 newItem.find("#course1-" + i)[0].checked = false;
@@ -453,6 +491,24 @@ $('#rx033').hide()
                 newItem.find("#course8-" + i)[0].checked = false;
               } else if (course88 == true) {
                 newItem.find("#course8-" + i)[0].checked = true;
+              }
+
+              if (course99 == undefined) {
+                newItem.find("#course9-" + i)[0].checked = false;
+              } else if (course99 == true) {
+                newItem.find("#course9-" + i)[0].checked = true;
+              }
+
+              if (course100 == undefined) {
+                newItem.find("#course10-" + i)[0].checked = false;
+              } else if (course100 == true) {
+                newItem.find("#course10-" + i)[0].checked = true;
+              }
+
+              if (course111 == undefined) {
+                newItem.find("#course11-" + i)[0].checked = false;
+              } else if (course111 == true) {
+                newItem.find("#course11-" + i)[0].checked = true;
               }
 
               if (accessps == undefined && accessps == undefined) {
@@ -515,7 +571,9 @@ $('#rx033').hide()
                 let course6 = newItem.find("#course6-" + i)[0].checked == true;
                 let course7 = newItem.find("#course7-" + i)[0].checked == true;
                 let course8 = newItem.find("#course8-" + i)[0].checked == true;
-
+                let course9 = newItem.find("#course9-" + i)[0].checked == true;
+                let course10 = newItem.find("#course10-" + i)[0].checked == true;
+                let course11 = newItem.find("#course11-" + i)[0].checked == true;
                 let paccess = newItem.find("#accesslevel-" + i)[0].value;
                 let stid = newItem.find("#stid-" + i)[0].value;
 
@@ -622,6 +680,41 @@ $('#rx033').hide()
                         .firestore()
                         .doc("users/" + tid)
                         .set({ rcourse: false }, { merge: true });
+                    }
+                              if (course9) {
+                      firebase
+                        .firestore()
+                        .doc("users/" + tid)
+                        .set({ nyamcourse: true }, { merge: true });
+                    } else {
+                      firebase
+                        .firestore()
+                        .doc("users/" + tid)
+                        .set({ nyamcourse: false }, { merge: true });
+                    }
+
+                              if (course10) {
+                      firebase
+                        .firestore()
+                        .doc("users/" + tid)
+                        .set({ lockedcourse: true }, { merge: true });
+                    } else {
+                      firebase
+                        .firestore()
+                        .doc("users/" + tid)
+                        .set({ lockedcourse: false }, { merge: true });
+                    }
+
+                              if (course11) {
+                      firebase
+                        .firestore()
+                        .doc("users/" + tid)
+                        .set({ cluckcourse: true }, { merge: true });
+                    } else {
+                      firebase
+                        .firestore()
+                        .doc("users/" + tid)
+                        .set({ cluckcourse: false }, { merge: true });
                     }
 
                     if (paccess === "operations") {
@@ -827,7 +920,7 @@ $('#rx033').hide()
       setTimeout(() => {
         $(".training-table").css("opacity", "1.0");
         $("#training-table").remove();
-      }, 2500);
+      }, 3500);
     }
   });
 });
