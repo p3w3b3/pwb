@@ -915,7 +915,7 @@ location.href = '/login'
       setTimeout(() => {
         $(".training-table").css("opacity", "1.0");
         $("#training-table").remove();
-      }, 2500);
+      }, 3500);
     }
   });
 });
