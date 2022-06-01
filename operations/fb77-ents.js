@@ -1,15 +1,5 @@
 {
   {
-    document.getElementById("dash-button-1").addEventListener("click", () => {
-      $(".dash-sep").hide();
-      $("#dashpart1").css("display", "flex");
-    });
-
-    document.getElementById("dash-button-2").addEventListener("click", () => {
-      $(".dash-sep").hide();
-      $("#dashpart2").css("display", "flex");
-    });
-
     document.getElementById("dash-button-3").addEventListener("click", () => {
       $(".dash-sep").hide();
       $("#dashpart3").css("display", "flex");
