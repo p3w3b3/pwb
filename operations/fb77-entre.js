@@ -1,6 +1,6 @@
 {
   {
-    document.getElementById("dash-button-3").addEventListener("click", () => {
+    document.getElementById("dash-button-1").addEventListener("click", () => {
       $(".dash-sep").hide();
       $("#dashpart3").css("display", "flex");
     });
