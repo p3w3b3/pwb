@@ -202,6 +202,19 @@ $('#mbox4').css("display", "flex");
 
 $('.mobile-menu-wrapper').click()
 })
+	  
+document.getElementById("mbrealrito").addEventListener("click", () => {
+$('.mobile-menu-button').removeClass( "current")
+$('#mbrealrito').addClass( "current")
+
+$('.main-section-ops').hide()
+$('#db12rr').css("display", "flex");
+$('.bottom-bar-dsb').hide()
+$('.middle-box').hide()
+$('#mbox4').css("display", "flex");
+
+$('.mobile-menu-wrapper').click()
+})
     
 document.getElementById("mbclucknrun").addEventListener("click", () => {
 $('.mobile-menu-button').removeClass( "current")
@@ -843,6 +856,194 @@ prognumf8++
 
 
 
+    let rrprognum = 0;
+    let rrprognum2 = 0;
+    let rrprognum3 = 0;
+    let rrprognum4 = 0;
+    let rrprognum5 = 0;
+
+
+        let rr1p1 = data["rr1p1"];
+        let rr1p2 = data["rr1p2"];
+        let rr1p3 = data["rr1p3"];
+        let rr1p4 = data["rr1p4"];
+        let rr1p5 = data["rr1p5"];
+        let rr1p6 = data["rr1p6"];
+        let rr1p7 = data["rr1p7"];
+
+        let rr2p1 = data["rr2p1"];
+        let rr2p2 = data["rr2p2"];
+        let rr2p3 = data["rr2p3"];
+        let rr2p4 = data["rr2p4"];
+        let rr2p5 = data["rr2p5"];
+        let rr2p6 = data["rr2p6"];
+        let rr2p7 = data["rr2p7"];
+        let rr2p8 = data["rr2p8"];
+
+        let rr3p1 = data["rr3p1"];
+        let rr3p2 = data["rr3p2"];
+        let rr3p3 = data["rr3p3"];
+        let rr3p4 = data["rr3p4"];
+
+        let rr4p1 = data["rr4p1"];
+        let rr4p2 = data["rr4p2"];
+        let rr4p3 = data["rr4p3"];
+        let rr4p4 = data["rr4p4"];
+
+        let rr5p1 = data["rr5p1"];
+
+        if (rr1p1 == true) {
+          $("#rr1p1").hide();
+          $("#rr1p1x").show();
+          rrprognum++;
+        }
+        if (rr1p2 == true) {
+          $("#rr1p2").hide();
+          $("#rr1p2x").show();
+          rrprognum++;
+        }
+
+        if (rr1p3 == true) {
+          $("#rr1p3").hide();
+          $("#rr1p3x").show();
+          rrprognum++;
+        }
+
+        if (rr1p4 == true) {
+          $("#rr1p4").hide();
+          $("#rr1p4x").show();
+          rrprognum++;
+        }
+
+        if (rr1p5 == true) {
+          $("#rr1p5").hide();
+          $("#rr1p5x").show();
+          rrprognum++;
+        }
+
+        if (rr1p6 == true) {
+          $("#rr1p6").hide();
+          $("#rr1p6x").show();
+          rrprognum++;
+        }
+
+        if (rr1p7 == true) {
+          $("#rr1p7").hide();
+          $("#rr1p7x").show();
+          rrprognum++;
+        }
+
+        if (rr2p1 == true) {
+          $("#rr2p1").hide();
+          $("#rr2p1x").show();
+          rrprognum2++;
+        }
+
+        if (rr2p2 == true) {
+          $("#rr2p2").hide();
+          $("#rr2p2x").show();
+          rrprognum2++;
+        }
+
+        if (rr2p3 == true) {
+          $("#rr2p3").hide();
+          $("#rr2p3x").show();
+          rrprognum2++;
+        }
+
+        if (rr2p4 == true) {
+          $("#rr2p4").hide();
+          $("#rr2p4x").show();
+          rrprognum2++;
+        }
+
+        if (rr2p5 == true) {
+          $("#rr2p5").hide();
+          $("#rr2p5x").show();
+          rrprognum2++;
+        }
+
+        if (rr2p6 == true) {
+          $("#rr2p6").hide();
+          $("#rr2p6x").show();
+          rrprognum2++;
+        }
+
+        if (rr2p7 == true) {
+          $("#rr2p7").hide();
+          $("#rr2p7x").show();
+          rrprognum2++;
+        }
+
+        if (rr2p8 == true) {
+          $("#rr2p8").hide();
+          $("#rr2p8x").show();
+          rrprognum2++;
+        }
+
+        if (rr3p1 == true) {
+          $("#rr3p1").hide();
+          $("#rr3p1x").show();
+          rrprognum3++;
+        }
+
+        if (rr3p2 == true) {
+          $("#rr3p2").hide();
+          $("#rr3p2x").show();
+          rrprognum3++;
+        }
+
+        if (rr3p3 == true) {
+          $("#rr3p3").hide();
+          $("#rr3p3x").show();
+          rrprognum3++;
+        }
+
+        if (rr3p4 == true) {
+          $("#rr3p4").hide();
+          $("#rr3p4x").show();
+          rrprognum3++;
+        }
+
+        if (rr4p1 == true) {
+          $("#rr4p1").hide();
+          $("#rr4p1x").show();
+          rrprognum4++;
+        }
+
+        if (rr4p2 == true) {
+          $("#rr4p2").hide();
+          $("#rr4p2x").show();
+          rrprognum4++;
+        }
+
+        if (rr4p3 == true) {
+          $("#rr4p3").hide();
+          $("#rr4p3x").show();
+          rrprognum4++;
+        }
+
+        if (rr4p4 == true) {
+          $("#rr4p4").hide();
+          $("#rr4p4x").show();
+          rrprognum4++;
+        }
+
+        if (rr5p1 == true) {
+          $("#rr5p1").hide();
+          $("#rr5p1x").show();
+          rrprognum5++;
+        }
+
+
+
+      document.querySelector("#rrprognum").textContent = rrprognum;
+      document.querySelector("#rrprognum2").textContent = rrprognum2;
+      document.querySelector("#rrprognum3").textContent = rrprognum3;
+      document.querySelector("#rrprognum4").textContent = rrprognum4;
+      document.querySelector("#rrprognum5").textContent = rrprognum5;
+
+
   
   
  let v1p1 = data['v1p1'];    
@@ -1464,6 +1665,7 @@ document.querySelector('#mprognum5').textContent = mprognum5
           let course9 = data['nyamcourse']
           let course10 = data['lockedcourse']
           let course11 = data['cluckcourse']
+          let course12 = data['rebelritocourse']
 
           
           if (course1 == true) {
@@ -1560,6 +1762,15 @@ $('#opscluckrun').hide()
 $('#mbclucknrun').hide()
 }
 
+		
+if(course12 == true){
+$('#opsrealrito').css('display', 'flex');
+$('#mbrealrito').css('display', 'flex');
+$('#cf2').append(new Option('Rebel Rito', 'Rebel Rito'))
+} else  {
+$('#opsrealrito').hide()
+$('#mbrealrito').hide()
+}
 		
 
           let sp =
