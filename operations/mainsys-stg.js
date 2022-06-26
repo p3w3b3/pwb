@@ -182,6 +182,16 @@ $('#opsnyam').addClass("cur");
 
 })
 
+})
+
+
+ document.querySelector("#opsrealrito").addEventListener("click", function() {
+$('.main-section-ops').hide()
+$('#db12rr').show()
+
+$('.generic-heading-ops').removeClass("cur");
+$('#opsrealrito').addClass("cur");
+})
 
  document.querySelector("#opslockedloaded").addEventListener("click", function() {
 $('.main-section-ops').hide()
