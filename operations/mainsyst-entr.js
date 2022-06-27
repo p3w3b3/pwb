@@ -146,8 +146,6 @@ $('#opsfiesta').addClass("cur");
 
 })
 
-})
-
 
  document.querySelector("#opsrealrito").addEventListener("click", function() {
 $('.main-section-ops').hide()
