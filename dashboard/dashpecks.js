@@ -78,8 +78,6 @@ const authChanged = firebase.auth().onAuthStateChanged((user) => {
         let course10 = data['lockedcourse']
         let course11 = data['cluckcourse']
         let course12 = data['rebelritocourse']
-        let course11 = data['cluckcourse']
-        let course12 = data['rebelritocourse']
    	let course13 = data['ktowncourse']
     	let course14 = data['chicboxcourse']
         let datastid = data["stid"]
