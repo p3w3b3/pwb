@@ -31,7 +31,6 @@
     let kprognum5 = 0
     let kprognum6 = 0
     let kprognum7 = 0
-    let kprognum8 = 0
     
     const signout = () => {
         auth.signOut();
@@ -211,34 +210,34 @@
         if( k7p1 == true) {
     $('#k7p1').hide()
     $('#k7p1x').show()
-    kprognum8++
+    kprognum7++
     }
     
         if( k7p2 == true) {
     $('#k7p2').hide()
     $('#k7p2x').show()
-    kprognum8++
+    kprognum7++
     }
           
         if( k7p3 == true) {
     $('#k7p3').hide()
     $('#k7p3x').show()
-    kprognum8++
+    kprognum7++
     }
     
        if( k7p4 == true) {
     $('#k7p4').hide()
     $('#k7p4x').show()
-    kprognum8++
+    kprognum7++
     }
           
         if( k7p5 == true) {
     $('#k7p5').hide()
     $('#k7p5x').show()
-    kprognum8++
+    kprognum7++
     }
           
-    let sp =((kprognum+kprognum2+kprognum3+kprognum4+kprognum5+kprognum6+kprognum8)/28*100)
+    let sp =((kprognum+kprognum2+kprognum3+kprognum4+kprognum5+kprognum6+kprognum7)/28*100)
     let spn = Math.round(sp)+'%'
     firebase.firestore().doc("users/"+firebase.auth().currentUser.uid)
       .set({KTOWN:spn}, {merge:true})
@@ -281,7 +280,6 @@
     document.querySelector('#kprognum5').textContent = kprognum5
     document.querySelector('#kprognum6').textContent = kprognum6
     document.querySelector('#kprognum7').textContent = kprognum7
-    document.querySelector('#kprognum8').textContent = kprognum8
     
     })})
     
