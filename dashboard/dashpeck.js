@@ -78,6 +78,10 @@ const authChanged = firebase.auth().onAuthStateChanged((user) => {
         let course10 = data['lockedcourse']
         let course11 = data['cluckcourse']
         let course12 = data['rebelritocourse']
+        let course11 = data['cluckcourse']
+        let course12 = data['rebelritocourse']
+   	let course13 = data['ktowncourse']
+    	let course14 = data['chicboxcourse']
         let datastid = data["stid"]
 
         
@@ -90,8 +94,8 @@ document.querySelector('#mystid').textContent = datastid
           .doc("users/" + firebase.auth().currentUser.uid)
           .set({ prereq: true }, { merge: true });
         
-        
-        if (course1 || course2 || course3 || course4 || course5 || course6 || course7 || course8 || course9 || course10 || course11 || course12 ) {
+       
+        if (course1 || course2 || course3 || course4 || course5 || course6 || course7 || course8 || course9 || course10 || course11 || course12 || course13 || course14 ) {
           $("#n3").show();
           $("#trainingmob").show();
         } else {
@@ -213,6 +217,28 @@ $('#rrx33').hide()
 $('#rrx02').hide()
 $('#rrx033').hide()
 }  
+	      
+if(course13 == true){
+$('#kt2').css('display', 'flex');
+$('#kt22').css('display', 'flex');
+$('#kt222').css('display', 'flex');
+
+} else  {
+$('#kt2').hide()
+$('#kt22').hide()
+$('#kt222').hide()
+}
+
+if(course14 == true){
+$('#cb2').css('display', 'flex');
+$('#cb22').css('display', 'flex');
+$('#cb222').css('display', 'flex');
+
+} else  {
+$('#cb2').hide()
+$('#cb22').hide()
+$('#cb222').hide()
+}
         
         if (!!admin) {
           $("#n5").show();
@@ -405,6 +431,8 @@ location.href = '/login'
               newItem.find("#course10")[0].id = "course10-" + i;
               newItem.find("#course11")[0].id = "course11-" + i;
 	      newItem.find("#course12")[0].id = "course12-" + i;
+              newItem.find("#course13")[0].id = "course13-" + i;
+	      newItem.find("#course14")[0].id = "course14-" + i;
               newItem.find("#popfieldfirst")[0].id = "popfieldfirst-" + i;
               newItem.find("#stid")[0].id = "stid-" + i;
 
@@ -453,8 +481,9 @@ location.href = '/login'
               var course100 = myResults[i].data.lockedcourse;
               var course111 = myResults[i].data.cluckcourse;
               var course122 = myResults[i].data.rebelritocourse;
+              var course133 = myResults[i].data.ktowncourse;
+              var course144 = myResults[i].data.chicboxcourse;
 
-              
               if (countryus == true) {
                 newItem.find("#country-" + i)[0].value = "us";
               } else {
@@ -549,6 +578,20 @@ location.href = '/login'
               }
 
 
+              if (course133 == undefined) {
+                newItem.find("#course13-" + i)[0].checked = false;
+              } else if (course88 == true) {
+                newItem.find("#course13-" + i)[0].checked = true;
+              }
+
+
+              if (course144 == undefined) {
+                newItem.find("#course14-" + i)[0].checked = false;
+              } else if (course88 == true) {
+                newItem.find("#course14-" + i)[0].checked = true;
+              }
+
+
               if (accessps == undefined && accessps == undefined) {
                 newItem.find("#accesslevel-" + i)[0].value = "";
               }
@@ -608,7 +651,9 @@ location.href = '/login'
                 let course9 = newItem.find("#course9-" + i)[0].checked == true;
                 let course10 = newItem.find("#course10-" + i)[0].checked == true;
                 let course11 = newItem.find("#course11-" + i)[0].checked == true;
-                let course12 = newItem.find("#course12-" + i)[0].checked == true;          
+                let course12 = newItem.find("#course12-" + i)[0].checked == true; 
+                let course13 = newItem.find("#course13-" + i)[0].checked == true;
+                let course14 = newItem.find("#course14-" + i)[0].checked == true;          
  
                 let paccess = newItem.find("#accesslevel-" + i)[0].value;
                 let stid = newItem.find("#stid-" + i)[0].value;
@@ -781,6 +826,30 @@ location.href = '/login'
                         .firestore()
                         .doc("users/" + tid)
                         .set({ rebelritocourse: false }, { merge: true });
+                    }
+
+                              if (course13) {
+                      firebase
+                        .firestore()
+                        .doc("users/" + tid)
+                        .set({ ktowncourse: true }, { merge: true });
+                    } else {
+                      firebase
+                        .firestore()
+                        .doc("users/" + tid)
+                        .set({ ktowncourse: false }, { merge: true });
+                    }
+
+                              if (course14) {
+                      firebase
+                        .firestore()
+                        .doc("users/" + tid)
+                        .set({ chicboxcourse: true }, { merge: true });
+                    } else {
+                      firebase
+                        .firestore()
+                        .doc("users/" + tid)
+                        .set({ chicboxcourse: false }, { merge: true });
                     }
                   
                   
