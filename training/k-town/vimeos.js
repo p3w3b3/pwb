@@ -252,123 +252,123 @@ setTimeout(() => {
     
     
     const checkcompleted1 = function() {
-    let prognum = 0;
+    let kprognum = 0;
         if (document.querySelector("#k1p1x").style.display == "block") {
-          prognum++;
+          kprognum++;
         }
         if (document.querySelector("#k1p2x").style.display == "block") {
-          prognum++;
+          kprognum++;
         }
         if (document.querySelector("#k1p3x").style.display == "block") {
-          prognum++;
+          kprognum++;
         }
         if (document.querySelector("#k1p4x").style.display == "block") {
-          prognum++;
+          kprognum++;
         }
-        document.querySelector("#prognum").textContent = prognum;
+        document.querySelector("#kprognum").textContent = kprognum;
     }
     
     const checkcompleted2 = function() {
-    let prognum2 = 0;
+    let kprognum2 = 0;
         if (document.querySelector("#k2p1x").style.display == "block") {
-          prognum2++;
+          kprognum2++;
         }
         if (document.querySelector("#k2p2x").style.display == "block") {
-          prognum2++;
+          kprognum2++;
         }
         if (document.querySelector("#k2p3x").style.display == "block") {
-          prognum2++;
+          kprognum2++;
         }
         if (document.querySelector("#k2p4x").style.display == "block") {
-          prognum2++;
+          kprognum2++;
         }
-        document.querySelector("#prognum2").textContent = prognum2;
+        document.querySelector("#kprognum2").textContent = kprognum2;
     }
     
     const checkcompleted3 = function() {
-    let prognum3 = 0;
+    let kprognum3 = 0;
         if (document.querySelector("#k3p1x").style.display == "block") {
-          prognum3++;
+          kprognum3++;
         }
         if (document.querySelector("#k3p2x").style.display == "block") {
-          prognum3++;
+          kprognum3++;
         }
         if (document.querySelector("#k3p3x").style.display == "block") {
-          prognum3++;
+          kprognum3++;
         }
         if (document.querySelector("#k3p4x").style.display == "block") {
-          prognum3++;
+          kprognum3++;
         }
         if (document.querySelector("#k3p5x").style.display == "block") {
-          prognum3++;
+          kprognum3++;
         }
         if (document.querySelector("#k3p6x").style.display == "block") {
-          prognum3++;
+          kprognum3++;
         }
-    document.querySelector("#prognum3").textContent = prognum3;
+    document.querySelector("#kprognum3").textContent = kprognum3;
     }
     
     const checkcompleted4 = function() {
-    let prognum4 = 0;
+    let kprognum4 = 0;
         if (document.querySelector("#k4p1x").style.display == "block") {
-          prognum4++;
+          kprognum4++;
         }
         if (document.querySelector("#k4p2x").style.display == "block") {
-          prognum4++;
+          kprognum4++;
         }
         if (document.querySelector("#k4p3x").style.display == "block") {
-          prognum4++;
+          kprognum4++;
         }
-    document.querySelector("#prognum4").textContent = prognum4;
+    document.querySelector("#kprognum4").textContent = kprognum4;
     }
     
     const checkcompleted5 = function() {
-    let prognum5 = 0;
+    let kprognum5 = 0;
         if (document.querySelector("#k5p1x").style.display == "block") {
-          prognum5++;
+          kprognum5++;
         }
-    document.querySelector("#prognum5").textContent = prognum5;
+    document.querySelector("#kprognum5").textContent = kprognum5;
     }
     const checkcompleted6 = function() {
-    let prognum6 = 0;
+    let kprognum6 = 0;
         if (document.querySelector("#k6p1x").style.display == "block") {
-          prognum6++;
+          kprognum6++;
         }
         if (document.querySelector("#k6p2x").style.display == "block") {
-          prognum6++;
+          kprognum6++;
         }
         if (document.querySelector("#k6p3x").style.display == "block") {
-          prognum6++;
+          kprognum6++;
         }
         if (document.querySelector("#k6p4x").style.display == "block") {
-          prognum6++;
+          kprognum6++;
         }
         if (document.querySelector("#k6p5x").style.display == "block") {
-          prognum6++;
+          kprognum6++;
         }
     
-    document.querySelector("#prognum6").textContent = prognum6;
+    document.querySelector("#kprognum6").textContent = kprognum6;
     }
     
     const checkcompleted7 = function() {
-    let prognum8 = 0;
+    let kprognum8 = 0;
         if (document.querySelector("#k7p1x").style.display == "block") {
-          prognum8++;
+          kprognum8++;
         }
         if (document.querySelector("#k7p2x").style.display == "block") {
-          prognum8++;
+          kprognum8++;
         }
         if (document.querySelector("#k7p3x").style.display == "block") {
-          prognum8++;
+          kprognum8++;
         }
         if (document.querySelector("#k7p4x").style.display == "block") {
-          prognum8++;
+          kprognum8++;
         }
         if (document.querySelector("#k7p5x").style.display == "block") {
-          prognum8++;
+          kprognum8++;
         }
     
-    document.querySelector("#prognum8").textContent = prognum8;
+    document.querySelector("#kprognum8").textContent = kprognum8;
     }
     
     
@@ -762,4 +762,4 @@ setTimeout(() => {
     }  
     
     }, 2000);
-   
+    
