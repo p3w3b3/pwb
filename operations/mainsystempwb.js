@@ -178,7 +178,26 @@ $('#opsrebelrito').addClass("cur");
 
 })
 
+document.querySelector("#opsktown").addEventListener("click", function() {
+$('.main-section-ops').hide()
+$('#dbktown').show()
 
+$('.generic-heading-ops').removeClass("cur");
+$('#opsktown').addClass("cur");
+
+})
+
+
+
+document.querySelector("#opscbox").addEventListener("click", function() {
+$('.main-section-ops').hide()
+$('#dbcbox').show()
+
+$('.generic-heading-ops').removeClass("cur");
+$('#opscbox').addClass("cur");
+
+})
+ 
  document.querySelector("#opsrealrito").addEventListener("click", function() {
 $('.main-section-ops').hide()
 $('#db12rr').show()
