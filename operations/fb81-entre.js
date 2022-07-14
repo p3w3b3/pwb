@@ -241,6 +241,34 @@ $('#mbox4').css("display", "flex");
 
 $('.mobile-menu-wrapper').click()
 })
+	  
+	  
+document.getElementById("mbcbox").addEventListener("click", () => {
+$('.mobile-menu-button').removeClass( "current")
+$('#mbcbox').addClass( "current")
+
+$('.main-section-ops').hide()
+$('#dbcbox').css("display", "flex");
+$('.bottom-bar-dsb').hide()
+$('.middle-box').hide()
+$('#mbox4').css("display", "flex");
+
+$('.mobile-menu-wrapper').click()
+})
+
+
+document.getElementById("mbktown").addEventListener("click", () => {
+$('.mobile-menu-button').removeClass( "current")
+$('#mbktown').addClass( "current")
+
+$('.main-section-ops').hide()
+$('#dbktown').css("display", "flex");
+$('.bottom-bar-dsb').hide()
+$('.middle-box').hide()
+$('#dbktown').css("display", "flex");
+
+$('.mobile-menu-wrapper').click()
+})
 
 document.getElementById("mbnomnyam").addEventListener("click", () => {
 $('.mobile-menu-button').removeClass( "current")
@@ -1045,6 +1073,891 @@ prognumf8++
 
 
   
+		
+		
+		
+		
+
+    let kprognum = 0
+    let kprognum2 = 0
+    let kprognum3 = 0
+    let kprognum4 = 0
+    let kprognum5 = 0
+    let kprognum6 = 0
+    let kprognum7 = 0
+
+ let k1p1 = data['k1p1'];    
+        let k1p2 = data['k1p2'];    
+        let k1p3 = data['k1p3'];    
+        let k1p4 = data['k1p4']; 
+
+        let k2p1 = data['k2p1'];    
+        let k2p2 = data['k2p2'];    
+        let k2p3 = data['k2p3'];        
+        let k2p4 = data['k2p4']; 
+        let k3p1 = data['k3p1'];    
+        let k3p2 = data['k3p2']; 
+        let k3p3 = data['k3p3'];    
+        let k3p4 = data['k3p4']; 
+        let k3p5 = data['k3p5'];    
+        let k3p6 = data['k3p6'];    
+        let k4p1 = data['k4p1']; 
+        let k4p2 = data['k4p2']; 
+        let k4p3 = data['k4p3'];  
+        let k5p1 = data['k5p1'];  
+        let k6p1 = data['k6p1']; 
+        let k6p2 = data['k6p2']; 
+        let k6p3 = data['k6p3']; 
+        let k6p4 = data['k6p4']; 
+        let k6p5 = data['k6p5']; 
+
+        let k7p1 = data['k7p1']; 
+        let k7p2 = data['k7p2']; 
+        let k7p3 = data['k7p3']; 
+        let k7p4 = data['k7p4']; 
+        let k7p5 = data['k7p5']; 
+
+
+        if( k1p1 == true) {
+    $('#k1p1').hide()
+    $('#k1p1x').show()
+    kprognum++
+    }
+        if( k1p2 == true) {
+    $('#k1p2').hide()
+    $('#k1p2x').show()
+    kprognum++
+    }
+
+        if( k1p3 == true) {
+    $('#k1p3').hide()
+    $('#k1p3x').show()
+    kprognum++
+    }
+
+        if( k1p4 == true) {
+    $('#k1p4').hide()
+    $('#k1p4x').show()
+    kprognum++
+    }
+
+        if( k2p1 == true) {
+    $('#k2p1').hide()
+    $('#k2p1x').show()
+    kprognum2++
+    }
+        if( k2p2 == true) {
+    $('#k2p2').hide()
+    $('#k2p2x').show()
+    kprognum2++
+    }
+        if( k2p3 == true) {
+    $('#k2p3').hide()
+    $('#k2p3x').show()
+    kprognum2++
+    }
+
+        if( k2p4 == true) {
+    $('#k2p4').hide()
+    $('#k2p4x').show()
+    kprognum2++
+    }
+
+        if( k3p1 == true) {
+    $('#k3p1').hide()
+    $('#k3p1x').show()
+    kprognum3++
+    }
+        if( k3p2 == true) {
+    $('#k3p2').hide()
+    $('#k3p2x').show()
+    kprognum3++
+    }
+        if( k3p3 == true) {
+    $('#k3p3').hide()
+    $('#k3p3x').show()
+    kprognum3++
+    }
+        if( k3p4 == true) {
+    $('#k3p4').hide()
+    $('#k3p4x').show()
+    kprognum3++
+    }
+        if( k3p5 == true) {
+    $('#k3p5').hide()
+    $('#k3p5x').show()
+    kprognum3++
+    }
+        if( k3p6 == true) {
+    $('#k3p6').hide()
+    $('#k3p6x').show()
+    kprognum3++
+    }
+        if( k4p1 == true) {
+    $('#k4p1').hide()
+    $('#k4p1x').show()
+    kprognum4++
+    }
+        if( k4p2 == true) {
+    $('#k4p2').hide()
+    $('#k4p2x').show()
+    kprognum4++
+    }
+        if( k4p3 == true) {
+    $('#k4p3').hide()
+    $('#k4p3x').show()
+    kprognum4++
+    }
+
+        if( k5p1 == true) {
+    $('#k5p1').hide()
+    $('#k5p1x').show()
+    kprognum5++
+    }
+        if( k6p1 == true) {
+    $('#k6p1').hide()
+    $('#k6p1x').show()
+    kprognum6++
+    }
+        if( k6p2 == true) {
+    $('#k6p2').hide()
+    $('#k6p2x').show()
+    kprognum6++
+    }
+        if( k6p3 == true) {
+    $('#k6p3').hide()
+    $('#k6p3x').show()
+    kprognum6++
+    }
+        if( k6p4 == true) {
+    $('#k6p4').hide()
+    $('#k6p4x').show()
+    kprognum6++
+    }
+        if( k6p5 == true) {
+    $('#k6p5').hide()
+    $('#k6p5x').show()
+    kprognum6++
+    }
+
+
+        if( k7p1 == true) {
+    $('#k7p1').hide()
+    $('#k7p1x').show()
+    kprognum7++
+    }
+
+        if( k7p2 == true) {
+    $('#k7p2').hide()
+    $('#k7p2x').show()
+    kprognum7++
+    }
+
+        if( k7p3 == true) {
+    $('#k7p3').hide()
+    $('#k7p3x').show()
+    kprognum7++
+    }
+
+       if( k7p4 == true) {
+    $('#k7p4').hide()
+    $('#k7p4x').show()
+    kprognum7++
+    }
+
+        if( k7p5 == true) {
+    $('#k7p5').hide()
+    $('#k7p5x').show()
+    kprognum7++
+    }
+
+
+
+    let spk =((kprognum+kprognum2+kprognum3+kprognum4+kprognum5+kprognum6+kprognum7)/28*100)
+    let spnk = Math.round(spk)+'%'
+    firebase.firestore().doc("users/"+firebase.auth().currentUser.uid)
+      .set({KTOWN:spnk}, {merge:true})
+
+
+
+    document.querySelector('#kprognum').textContent = kprognum
+    document.querySelector('#kprognum2').textContent = kprognum2
+    document.querySelector('#kprognum3').textContent = kprognum3
+    document.querySelector('#kprognum4').textContent = kprognum4
+    document.querySelector('#kprognum5').textContent = kprognum5
+    document.querySelector('#kprognum6').textContent = kprognum6
+    document.querySelector('#kprognum7').textContent = kprognum7
+
+
+
+
+	{
+    document.getElementById('k1-quiz').addEventListener('submit', function() {
+
+    let k1q1 = document.querySelector('#k1-quiz-1').value == 'correct'
+    let k1q2 = document.querySelector('#k1-quiz-2').value == 'correct'
+    let k1q3 = document.querySelector('#k1-quiz-3').value == 'correct'
+    let k1q4 = document.querySelector('#k1-quiz-4').value == 'correct'
+    let k1q5 = document.querySelector('#k1-quiz-5').value == 'correct'
+    let k1q6 = document.querySelector('#k1-quiz-6').value == 'correct'
+    let k1q7 = document.querySelector('#k1-quiz-7').value == 'correct'
+
+
+    let percentage = 0
+    if(k1q1) { percentage++}
+    if(k1q2) { percentage++}
+    if(k1q3) { percentage++}
+    if(k1q4) { percentage++}
+    if(k1q5) { percentage++}
+    if(k1q6) { percentage++}
+    if(k1q7) { percentage++}
+
+    let correct = Math.round((percentage * 14.28))
+    document.getElementById('k1p5percentage').textContent = correct+'%'
+
+    if(k1q1 && k1q2 && k1q3 && k1q4 && k1q5 && k1q6 && k1q7 ) {
+    $('#k1-quiz-incorrect').hide()
+    $('#k1-quiz-correct').css("display", "flex");
+    $('#k2p4x').show()
+    $('#k2p4').hide()
+
+    firebase.firestore().doc("users/"+firebase.auth().currentUser.uid)
+    .set({k2p4:true},{merge:true})
+
+    let kprognum2 = 0
+    if (document.querySelector('#k2p4x').style.display == 'block'){kprognum2++}
+    if (document.querySelector('#k2p2x').style.display == 'block'){kprognum2++}
+    if (document.querySelector('#k2p3x').style.display == 'block'){kprognum2++}
+    if (document.querySelector('#k2p4x').style.display == 'block'){kprognum2++}
+    document.querySelector('#kprognum2').textContent = kprognum2
+
+    }
+
+    else {
+    $('#k1-quiz-incorrect').css("display", "flex");
+    $('#k1-quiz-correct').hide()
+    }
+
+    })
+    }
+
+
+    {
+    document.getElementById('k3-quiz').addEventListener('submit', function() {
+
+    let k3q1 = document.querySelector('#k3-quiz-1').value == 'correct'
+    let k3q2 = document.querySelector('#k3-quiz-2').value == 'correct'
+    let k3q3 = document.querySelector('#k3-quiz-3').value == 'correct'
+    let k3q4 = document.querySelector('#k3-quiz-4').value == 'correct'
+    let k3q5 = document.querySelector('#k3-quiz-5').value == 'correct'
+    let k3q6 = document.querySelector('#k3-quiz-6').value == 'correct'
+
+
+    let percentage = 0
+    if(k3q1) { percentage++}
+    if(k3q2) { percentage++}
+    if(k3q3) { percentage++}
+    if(k3q4) { percentage++}
+    if(k3q5) { percentage++}
+    if(k3q6) { percentage++}
+    let correct = Math.round((percentage * 16.66))
+    document.getElementById('k3p6percentage').textContent = correct+'%'
+
+    if(k3q1 && k3q2 && k3q3 && k3q4 && k3q5 && k3q6 ) {
+    $('#k3-quiz-incorrect').hide()
+    $('#k3-quiz-correct').css("display", "flex");
+    $('#k3p6x').show()
+    $('#k3p6').hide()
+
+    firebase.firestore().doc("users/"+firebase.auth().currentUser.uid)
+    .set({k3p6:true},{merge:true})
+
+    let kprognum3 = 0
+    if (document.querySelector('#k3p1x').style.display == 'block'){kprognum3++}
+    if (document.querySelector('#k3p2x').style.display == 'block'){kprognum3++}
+    if (document.querySelector('#k3p3x').style.display == 'block'){kprognum3++}
+    if (document.querySelector('#k3p4x').style.display == 'block'){kprognum3++}
+    if (document.querySelector('#k3p5x').style.display == 'block'){kprognum3++}
+    if (document.querySelector('#k3p6x').style.display == 'block'){kprognum3++}
+    document.querySelector('#kprognum3').textContent = kprognum3
+
+    }
+
+    else {
+    $('#k3-quiz-incorrect').css("display", "flex");
+    $('#k3-quiz-correct').hide()
+    console.log('incorrect')
+    }
+
+    })
+
+    }
+
+
+    {
+    document.getElementById('k4-quiz').addEventListener('submit', function() {
+
+    let k4q1 = document.querySelector('#k4-quiz-1').value == 'correct'
+    let k4q2 = document.querySelector('#k4-quiz-2').value == 'correct'
+    let k4q3 = document.querySelector('#k4-quiz-3').value == 'correct'
+    let k4q4 = document.querySelector('#k4-quiz-4').value == 'correct'
+    let k4q5 = document.querySelector('#k4-quiz-5').value == 'correct'
+    let k4q6 = document.querySelector('#k4-quiz-6').value == 'correct'
+
+    let percentage = 0
+    if(k4q1) { percentage++}
+    if(k4q2) { percentage++}
+    if(k4q3) { percentage++}
+    if(k4q4) { percentage++}
+    if(k4q5) { percentage++}
+    if(k4q6) { percentage++}
+    let correct = Math.round((percentage * 16.66))
+    document.getElementById('k4p3percentage').textContent = correct+'%'
+
+    if(k4q1 && k4q2 && k4q3 && k4q4 && k4q5 && k4q6 ) {
+    $('#k4-quiz-incorrect').hide()
+    $('#k4-quiz-correct').css("display", "flex");
+    $('#k4p3x').show()
+    $('#k4p3').hide()
+
+    firebase.firestore().doc("users/"+firebase.auth().currentUser.uid)
+    .set({k4p3:true},{merge:true})
+
+    let kprognum4 = 0
+    if (document.querySelector('#k4p1x').style.display == 'block'){kprognum4++}
+    if (document.querySelector('#k4p2x').style.display == 'block'){kprognum4++}
+    if (document.querySelector('#k4p3x').style.display == 'block'){kprognum4++}
+    document.querySelector('#kprognum4').textContent = kprognum4
+
+    }
+
+    else {
+    $('#k4-quiz-incorrect').css("display", "flex");
+    $('#k4-quiz-correct').hide()
+    }
+
+    })
+    }
+
+    {
+    document.getElementById('k6-quiz').addEventListener('submit', function() {
+
+    let k6q1 = document.querySelector('#k6-quiz-1').value == 'correct'
+    let k6q2 = document.querySelector('#k6-quiz-2').value == 'correct'
+    let k6q3 = document.querySelector('#k6-quiz-3').value == 'correct'
+    let k6q4 = document.querySelector('#k6-quiz-4').value == 'correct'
+    let k6q5 = document.querySelector('#k6-quiz-5').value == 'correct'
+    let k6q6 = document.querySelector('#k6-quiz-6').value == 'correct'
+    let k6q7 = document.querySelector('#k6-quiz-7').value == 'correct'
+
+    let percentage = 0
+    if(k6q1) { percentage++}
+    if(k6q2) { percentage++}
+    if(k6q3) { percentage++}
+    if(k6q4) { percentage++}
+    if(k6q5) { percentage++}
+    if(k6q6) { percentage++}
+    if(k6q7) { percentage++}
+    let correct = Math.round((percentage * 14.28))
+    document.getElementById('k6p5percentage').textContent = correct+'%'
+
+    if(k6q1 && k6q2 && k6q3 && k6q4 && k6q5 && k6q6 && k6q7) {
+    $('#k6-quiz-incorrect').hide()
+    $('#k6-quiz-correct').css("display", "flex");
+    $('#k6p5x').show()
+    $('#k6p5').hide()
+
+    firebase.firestore().doc("users/"+firebase.auth().currentUser.uid)
+    .set({k6p5:true},{merge:true})
+
+    let kprognum6 = 0
+    if (document.querySelector('#k6p1x').style.display == 'block'){kprognum6++}
+    if (document.querySelector('#k6p2x').style.display == 'block'){kprognum6++}
+    if (document.querySelector('#k6p3x').style.display == 'block'){kprognum6++}
+    if (document.querySelector('#k6p4x').style.display == 'block'){kprognum6++}
+    if (document.querySelector('#k6p5x').style.display == 'block'){kprognum6++}
+    document.querySelector('#kprognum6').textContent = kprognum6
+
+    }
+
+    else {
+    $('#k6-quiz-incorrect').css("display", "flex");
+    $('#k6-quiz-correct').hide()
+    }
+
+    })
+    }
+
+
+
+
+
+    let cbprognum = 0
+    let cbprognum2 = 0
+    let cbprognum3 = 0
+    let cbprognum4 = 0
+    let cbprognum5 = 0
+    let cbprognum6 = 0
+    let cbprognum7 = 0
+
+ let cb1p1 = data['cb1p1'];    
+        let cb1p2 = data['cb1p2'];    
+        let cb1p3 = data['cb1p3'];    
+        let cb1p4 = data['cb1p4']; 
+
+        let cb2p1 = data['cb2p1'];    
+        let cb2p2 = data['cb2p2'];    
+        let cb2p3 = data['cb2p3'];
+        let cb2p4 = data['cb2p4']
+
+        let cb3p1 = data['cb3p1'];    
+        let cb3p2 = data['cb3p2']; 
+        let cb3p3 = data['cb3p3'];    
+        let cb3p4 = data['cb3p4']; 
+        let cb3p5 = data['cb3p5'];    
+        let cb3p6 = data['cb3p6'];    
+
+        let cb4p1 = data['cb4p1'];  
+        let cb4p2 = data['cb4p2'];  
+        let cb4p3 = data['cb4p3'];  
+
+
+        let cb5p1 = data['cb5p1'];  
+        let cb5p2 = data['cb5p2'];  
+
+
+        let cb6p1 = data['cb6p1']; 
+        let cb6p2 = data['cb6p2']; 
+        let cb6p3 = data['cb6p3']; 
+        let cb6p4 = data['cb6p4']; 
+        let cb6p5 = data['cb6p5']; 
+        let cb6p6 = data['cb6p6']; 
+
+
+        let cb7p1 = data['cb7p1']; 
+        let cb7p2 = data['cb7p2']; 
+        let cb7p3 = data['cb7p3']; 
+        let cb7p4 = data['cb7p4']; 
+        let cb7p5 = data['cb7p5']; 
+
+        if( cb1p1 == true) {
+    $('#cb1p1').hide()
+    $('#cb1p1x').show()
+    cbprognum++
+    }
+        if( cb1p2 == true) {
+    $('#cb1p2').hide()
+    $('#cb1p2x').show()
+    cbprognum++
+    }
+
+        if( cb1p3 == true) {
+    $('#cb1p3').hide()
+    $('#cb1p3x').show()
+    cbprognum++
+    }
+
+        if( cb1p4 == true) {
+    $('#cb1p4').hide()
+    $('#cb1p4x').show()
+    cbprognum++
+    }
+        if( cb2p1 == true) {
+    $('#cb2p1').hide()
+    $('#cb2p1x').show()
+    cbprognum2++
+    }
+        if( cb2p2 == true) {
+    $('#cb2p2').hide()
+    $('#cb2p2x').show()
+    cbprognum2++
+    }
+        if( cb2p3 == true) {
+    $('#cb2p3').hide()
+    $('#cb2p3x').show()
+    cbprognum2++
+    }
+
+        if( cb2p4 == true) {
+    $('#cb2p4').hide()
+    $('#cb2p4x').show()
+    cbprognum2++
+    }
+
+        if( cb3p1 == true) {
+    $('#cb3p1').hide()
+    $('#cb3p1x').show()
+    cbprognum3++
+    }
+        if( cb3p2 == true) {
+    $('#cb3p2').hide()
+    $('#cb3p2x').show()
+    cbprognum3++
+    }
+        if( cb3p3 == true) {
+    $('#cb3p3').hide()
+    $('#cb3p3x').show()
+    cbprognum3++
+    }
+        if( cb3p4 == true) {
+    $('#cb3p4').hide()
+    $('#cb3p4x').show()
+    cbprognum3++
+    }
+        if( cb3p5 == true) {
+    $('#cb3p5').hide()
+    $('#cb3p5x').show()
+    cbprognum3++
+    }
+        if( cb3p6 == true) {
+    $('#cb3p6').hide()
+    $('#cb3p6x').show()
+    cbprognum3++
+    }
+        if( cb4p1 == true) {
+    $('#cb4p1').hide()
+    $('#cb4p1x').show()
+    cbprognum4++
+    }
+        if( cb4p2 == true) {
+    $('#cb4p2').hide()
+    $('#cb4p2x').show()
+    cbprognum4++
+    }
+        if( cb4p3 == true) {
+    $('#cb4p3').hide()
+    $('#cb4p3x').show()
+    cbprognum4++
+    }
+
+        if( cb5p1 == true) {
+    $('#cb5p1').hide()
+    $('#cb5p1x').show()
+    cbprognum5++
+    }
+        if( cb5p2 == true) {
+    $('#cb5p2').hide()
+    $('#cb5p2x').show()
+    cbprognum5++
+    }
+        if( cb6p1 == true) {
+    $('#cb6p1').hide()
+    $('#cb6p1x').show()
+    cbprognum6++
+    }
+        if( cb6p2 == true) {
+    $('#cb6p2').hide()
+    $('#cb6p2x').show()
+    cbprognum6++
+    }
+        if( cb6p3 == true) {
+    $('#cb6p3').hide()
+    $('#cb6p3x').show()
+    cbprognum6++
+    }
+        if( cb6p4 == true) {
+    $('#cb6p4').hide()
+    $('#cb6p4x').show()
+    cbprognum6++
+    }
+        if( cb6p5 == true) {
+    $('#cb6p5').hide()
+    $('#cb6p5x').show()
+    cbprognum6++
+    }
+        if( cb6p6 == true) {
+    $('#cb6p6').hide()
+    $('#cb6p6x').show()
+    cbprognum6++
+    }
+
+        if( cb7p1 == true) {
+    $('#cb7p1').hide()
+    $('#cb7p1x').show()
+    cbprognum7++
+    }
+
+
+        if( cb7p2 == true) {
+    $('#cb7p2').hide()
+    $('#cb7p2x').show()
+    cbprognum7++
+    }
+
+
+        if( cb7p3 == true) {
+    $('#cb7p3').hide()
+    $('#cb7p3x').show()
+    cbprognum7++
+    }
+
+
+        if( cb7p4 == true) {
+    $('#cb7p4').hide()
+    $('#cb7p4x').show()
+    cbprognum7++
+    }
+
+
+        if( cb7p5 == true) {
+    $('#cb7p5').hide()
+    $('#sp5x').show()
+    cbprognum7++
+    }
+
+
+    let spck =((cbprognum+cbprognum2+cbprognum3+cbprognum4+cbprognum5+cbprognum6+cbprognum7)/30*100)
+    let spnck = Math.round(spck)+'%'
+    firebase.firestore().doc("users/"+firebase.auth().currentUser.uid)
+      .set({CBN:spnck}, {merge:true})
+
+
+
+
+    document.querySelector('#cbprognum').textContent = cbprognum
+    document.querySelector('#cbprognum2').textContent = cbprognum2
+    document.querySelector('#cbprognum3').textContent = cbprognum3
+    document.querySelector('#cbprognum4').textContent = cbprognum4
+    document.querySelector('#cbprognum5').textContent = cbprognum5
+    document.querySelector('#cbprognum6').textContent = cbprognum6
+    document.querySelector('#cbprognum7').textContent = cbprognum7
+
+
+
+
+
+
+    {
+    document.getElementById('cb1-quiz').addEventListener('submit', function() {
+
+    let cb1q1 = document.querySelector('#cb1-quiz-1').value == 'correct'
+    let cb1q2 = document.querySelector('#cb1-quiz-2').value == 'correct'
+    let cb1q3 = document.querySelector('#cb1-quiz-3').value == 'correct'
+    let cb1q4 = document.querySelector('#cb1-quiz-4').value == 'correct'
+    let cb1q5 = document.querySelector('#cb1-quiz-5').value == 'correct'
+    let cb1q6 = document.querySelector('#cb1-quiz-6').value == 'correct'
+    let cb1q7 = document.querySelector('#cb1-quiz-7').value == 'correct'
+
+
+    let percentage = 0
+    if(cb1q1) { percentage++}
+    if(cb1q2) { percentage++}
+    if(cb1q3) { percentage++}
+    if(cb1q4) { percentage++}
+    if(cb1q5) { percentage++}
+    if(cb1q6) { percentage++}
+    if(cb1q7) { percentage++}
+
+    let correct = Math.round((percentage * 14.28))
+    document.getElementById('cb1p5percentage').textContent = correct+'%'
+
+    if(cb1q1 && cb1q2 && cb1q3 && cb1q4 && cb1q5 && cb1q6 && cb1q7 ) {
+    $('#cb1-quiz-incorrect').hide()
+    $('#cb1-quiz-correct').css("display", "flex");
+    $('#cb2p4x').show()
+    $('#cb2p4').hide()
+
+    firebase.firestore().doc("users/"+firebase.auth().currentUser.uid)
+    .set({cb2p4:true},{merge:true})
+
+    let cbprognum2 = 0
+    if (document.querySelector('#cb2p1x').style.display == 'block'){cbprognum2++}
+    if (document.querySelector('#cb2p2x').style.display == 'block'){cbprognum2++}
+    if (document.querySelector('#cb2p3x').style.display == 'block'){cbprognum2++}
+    if (document.querySelector('#cb2p4x').style.display == 'block'){cbprognum2++}
+    document.querySelector('#cbprognum2').textContent = cbprognum2
+
+    }
+
+    else {
+    $('#cb1-quiz-incorrect').css("display", "flex");
+    $('#cb1-quiz-correct').hide()
+    }
+
+    })
+    }
+
+
+    {
+    document.getElementById('cb3-quiz').addEventListener('submit', function() {
+
+    let cb3q1 = document.querySelector('#cb3-quiz-1').value == 'correct'
+    let cb3q2 = document.querySelector('#cb3-quiz-2').value == 'correct'
+    let cb3q3 = document.querySelector('#cb3-quiz-3').value == 'correct'
+    let cb3q4 = document.querySelector('#cb3-quiz-4').value == 'correct'
+    let cb3q5 = document.querySelector('#cb3-quiz-5').value == 'correct'
+    let cb3q6 = document.querySelector('#cb3-quiz-6').value == 'correct'
+
+
+    let percentage = 0
+    if(cb3q1) { percentage++}
+    if(cb3q2) { percentage++}
+    if(cb3q3) { percentage++}
+    if(cb3q4) { percentage++}
+    if(cb3q5) { percentage++}
+    if(cb3q6) { percentage++}
+    let correct = Math.round((percentage * 16.66))
+    document.getElementById('cb3p6percentage').textContent = correct+'%'
+
+    if(cb3q1 && cb3q2 && cb3q3 && cb3q4 && cb3q5 && cb3q6 ) {
+    $('#cb3-quiz-incorrect').hide()
+    $('#cb3-quiz-correct').css("display", "flex");
+    $('#cb3p6x').show()
+    $('#cb3p6').hide()
+
+    firebase.firestore().doc("users/"+firebase.auth().currentUser.uid)
+    .set({cb3p6:true},{merge:true})
+
+    let cbprognum3 = 0
+    if (document.querySelector('#cb3p1x').style.display == 'block'){cbprognum3++}
+    if (document.querySelector('#cb3p2x').style.display == 'block'){cbprognum3++}
+    if (document.querySelector('#cb3p3x').style.display == 'block'){cbprognum3++}
+    if (document.querySelector('#cb3p4x').style.display == 'block'){cbprognum3++}
+    if (document.querySelector('#cb3p5x').style.display == 'block'){cbprognum3++}
+    if (document.querySelector('#cb3p6x').style.display == 'block'){cbprognum3++}
+    document.querySelector('#cbprognum3').textContent = cbprognum3
+
+    }
+
+    else {
+    $('#cb3-quiz-incorrect').css("display", "flex");
+    $('#cb3-quiz-correct').hide()
+    console.log('incorrect')
+    }
+
+    })
+
+    }
+
+
+    {
+    document.getElementById('cb4-quiz').addEventListener('submit', function() {
+
+    let cb4q1 = document.querySelector('#cb4-quiz-1').value == 'correct'
+    let cb4q2 = document.querySelector('#cb4-quiz-2').value == 'correct'
+    let cb4q3 = document.querySelector('#cb4-quiz-3').value == 'correct'
+    let cb4q4 = document.querySelector('#cb4-quiz-4').value == 'correct'
+    let cb4q5 = document.querySelector('#cb4-quiz-5').value == 'correct'
+    let cb4q6 = document.querySelector('#cb4-quiz-6').value == 'correct'
+
+    let percentage = 0
+    if(cb4q1) { percentage++}
+    if(cb4q2) { percentage++}
+    if(cb4q3) { percentage++}
+    if(cb4q4) { percentage++}
+    if(cb4q5) { percentage++}
+    if(cb4q6) { percentage++}
+    let correct = Math.round((percentage * 16.66))
+    document.getElementById('cb4p3percentage').textContent = correct+'%'
+
+    if(cb4q1 && cb4q2 && cb4q3 && cb4q4 && cb4q5 && cb4q6 ) {
+    $('#cb4-quiz-incorrect').hide()
+    $('#cb4-quiz-correct').css("display", "flex");
+    $('#cb4p3x').show()
+    $('#cb4p3').hide()
+
+    firebase.firestore().doc("users/"+firebase.auth().currentUser.uid)
+    .set({f4p3:true},{merge:true})
+
+    let cbprognum4 = 0
+    if (document.querySelector('#cb4p1x').style.display == 'block'){cbprognum4++}
+    if (document.querySelector('#cb4p2x').style.display == 'block'){cbprognum4++}
+    if (document.querySelector('#cb4p3x').style.display == 'block'){cbprognum4++}
+    document.querySelector('#cbprognum4').textContent = cbprognum4
+
+    }
+
+    else {
+    $('#cb4-quiz-incorrect').css("display", "flex");
+    $('#cb4-quiz-correct').hide()
+    }
+
+    })
+    }
+
+
+
+    {
+    document.getElementById('cb6-quiz').addEventListener('submit', function() {
+
+    let cb6q1 = document.querySelector('#cb6-quiz-1').value == 'correct'
+    let cb6q2 = document.querySelector('#cb6-quiz-2').value == 'correct'
+    let cb6q3 = document.querySelector('#cb6-quiz-3').value == 'correct'
+    let cb6q4 = document.querySelector('#cb6-quiz-4').value == 'correct'
+    let cb6q5 = document.querySelector('#cb6-quiz-5').value == 'correct'
+    let cb6q6 = document.querySelector('#cb6-quiz-6').value == 'correct'
+    let cb6q7 = document.querySelector('#cb6-quiz-7').value == 'correct'
+    let cb6q8 = document.querySelector('#cb6-quiz-8').value == 'correct'
+
+
+    let percentage = 0
+    if(cb6q1) { percentage++}
+    if(cb6q2) { percentage++}
+    if(cb6q3) { percentage++}
+    if(cb6q4) { percentage++}
+    if(cb6q5) { percentage++}
+    if(cb6q6) { percentage++}
+    if(cb6q7) { percentage++}
+    if(cb6q8) { percentage++}
+    let correct = Math.round((percentage * 12.50))
+    document.getElementById('cb6p5percentage').textContent = correct+'%'
+
+    if(cb6q1 && cb6q2 && cb6q3 && cb6q4 && cb6q5 && cb6q6 && cb6q7 && cb6q8) {
+    $('#cb6-quiz-incorrect').hide()
+    $('#cb6-quiz-correct').css("display", "flex");
+    $('#cb6p6x').show()
+    $('#cb6p6').hide()
+
+    firebase.firestore().doc("users/"+firebase.auth().currentUser.uid)
+    .set({cb6p6:true},{merge:true})
+
+    let cbprognum6 = 0
+    if (document.querySelector('#cb6p1x').style.display == 'block'){cbprognum6++}
+    if (document.querySelector('#cb6p2x').style.display == 'block'){cbprognum6++}
+    if (document.querySelector('#cb6p3x').style.display == 'block'){cbprognum6++}
+    if (document.querySelector('#cb6p4x').style.display == 'block'){cbprognum6++}
+    if (document.querySelector('#cb6p5x').style.display == 'block'){cbprognum6++}
+    if (document.querySelector('#cb6p6x').style.display == 'block'){cbprognum6++}
+    document.querySelector('#cbprognum6').textContent = cbprognum6
+
+    }
+
+    else {
+    $('#cb6-quiz-incorrect').css("display", "flex");
+    $('#cb6-quiz-correct').hide()
+    }
+
+    })
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
   
  let v1p1 = data['v1p1'];    
 
@@ -1453,6 +2366,20 @@ prognum8++
 	
 	
 
+		
+
+
+
+
+
+
+
+
+
+
+
+
+		
 let mprognum = 0
 let mprognum2 = 0
 let mprognum3 = 0
@@ -1666,7 +2593,8 @@ document.querySelector('#mprognum5').textContent = mprognum5
           let course10 = data['lockedcourse']
           let course11 = data['cluckcourse']
           let course12 = data['rebelritocourse']
-
+	  let course13 = data['ktowncourse']
+          let course14 = data['chicboxcourse']
           
           if (course1 == true) {
             $("#train1").css("display", "flex");
@@ -1770,6 +2698,25 @@ $('#cf2').append(new Option('Rebel Rito', 'Rebel Rito'))
 } else  {
 $('#opsrealrito').hide()
 $('#mbrealrito').hide()
+}
+		
+
+if(course13 == true){
+$('#opsktown').css('display', 'flex');
+$('#mbktown').css('display', 'flex');
+$('#cf2').append(new Option('K-Town', 'K-Town'))
+} else  {
+$('#opsktown').hide()
+$('#mbktown').hide()
+}
+
+if(course14 == true){
+$('#opscbox').css('display', 'flex');
+$('#mbcbox').css('display', 'flex');
+$('#cf2').append(new Option('Chic Box', 'Chic Box'))
+} else  {
+$('#opscbox').hide()
+$('#mbcbox').hide()
 }
 		
 
