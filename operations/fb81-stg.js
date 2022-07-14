@@ -232,6 +232,34 @@ $('.mobile-menu-wrapper').click()
 })
 
 
+document.getElementById("mbcbox").addEventListener("click", () => {
+$('.mobile-menu-button').removeClass( "current")
+$('#mbcbox').addClass( "current")
+
+$('.main-section-ops').hide()
+$('#dbcbox').css("display", "flex");
+$('.bottom-bar-dsb').hide()
+$('.middle-box').hide()
+$('#mbox4').css("display", "flex");
+
+$('.mobile-menu-wrapper').click()
+})
+
+	
+document.getElementById("mbktown").addEventListener("click", () => {
+$('.mobile-menu-button').removeClass( "current")
+$('#mbktown').addClass( "current")
+
+$('.main-section-ops').hide()
+$('#dbktown').css("display", "flex");
+$('.bottom-bar-dsb').hide()
+$('.middle-box').hide()
+$('#dbktown').css("display", "flex");
+
+$('.mobile-menu-wrapper').click()
+})
+
+
 document.getElementById("mbtraining2").addEventListener("click", () => {
 $('.mobile-menu-button').removeClass( "current")
 $('#mbtraining2').addClass( "current")
