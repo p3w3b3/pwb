@@ -2648,6 +2648,8 @@ let profileuid = curUser.uid
       let course10 = data['lockedcourse']
       let course11 = data['cluckcourse']
       let course12 = data['rebelritocourse']
+      let course13 = data['ktowncourse']
+      let course14 = data['chicboxcourse']
 
 if(course1 == true){
 $('#train1').css('display', 'flex');
@@ -2750,6 +2752,27 @@ $('#cf2').append(new Option('Rebel Rito', 'Rebel Rito'))
 $('#opsrealrito').hide()
 $('#mbrealrito').hide()
 }
+
+
+if(course13 == true){
+$('#opsktown').css('display', 'flex');
+$('#mbktown').css('display', 'flex');
+$('#cf2').append(new Option('K-Town', 'K-Town'))
+} else  {
+$('#opsktown').hide()
+$('#mbktown').hide()
+}
+	
+if(course14 == true){
+$('#opscbox').css('display', 'flex');
+$('#mbcbox').css('display', 'flex');
+$('#cf2').append(new Option('Chic Box', 'Chic Box'))
+} else  {
+$('#opscbox').hide()
+$('#mbcbox').hide()
+}
+	
+
 
 let sp =((prognum+prognum2+prognum3+prognum4+prognum5+prognum6+prognum8)/28*100)
 let spn = Math.round(sp)+'%'
