@@ -170,7 +170,7 @@ $('.main-section-ops').hide()
 $('#dbktown').show()
 
 $('.generic-heading-ops').removeClass("cur");
-$('#opscbox').addClass("cur");
+$('#opsktown').addClass("cur");
 
 })
 
