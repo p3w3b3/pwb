@@ -1354,7 +1354,7 @@ document.querySelector('#prognumf8').textContent = prognumf8
     let cbprognum4 = 0
     let cbprognum5 = 0
     let cbprognum6 = 0
-    let cbprognum8 = 0
+    let cbprognum7 = 0
     
  let cb1p1 = data['cb1p1'];    
         let cb1p2 = data['cb1p2'];    
@@ -1530,39 +1530,39 @@ document.querySelector('#prognumf8').textContent = prognumf8
         if( cb7p1 == true) {
     $('#cb7p1').hide()
     $('#cb7p1x').show()
-    cbprognum8++
+    cbprognum7++
     }
     
     
         if( cb7p2 == true) {
     $('#cb7p2').hide()
     $('#cb7p2x').show()
-    cbprognum8++
+    cbprognum7++
     }
     
     
         if( cb7p3 == true) {
     $('#cb7p3').hide()
     $('#cb7p3x').show()
-    cbprognum8++
+    cbprognum7++
     }
     
     
         if( cb7p4 == true) {
     $('#cb7p4').hide()
     $('#cb7p4x').show()
-    cbprognum8++
+    cbprognum7++
     }
     
     
         if( cb7p5 == true) {
     $('#cb7p5').hide()
     $('#sp5x').show()
-    cbprognum8++
+    cbprognum7++
     }
     
     
-    let spck =((cbprognum+cbprognum2+cbprognum3+cbprognum4+cbprognum5+cbprognum6+cbprognum8)/30*100)
+    let spck =((cbprognum+cbprognum2+cbprognum3+cbprognum4+cbprognum5+cbprognum6+cbprognum7)/30*100)
     let spnck = Math.round(spck)+'%'
     firebase.firestore().doc("users/"+firebase.auth().currentUser.uid)
       .set({CBN:spnck}, {merge:true})
@@ -1576,7 +1576,7 @@ document.querySelector('#prognumf8').textContent = prognumf8
     document.querySelector('#cbprognum4').textContent = cbprognum4
     document.querySelector('#cbprognum5').textContent = cbprognum5
     document.querySelector('#cbprognum6').textContent = cbprognum6
-    document.querySelector('#cbprognum8').textContent = cbprognum8
+    document.querySelector('#cbprognum7').textContent = cbprognum7
 	
 	
 	
