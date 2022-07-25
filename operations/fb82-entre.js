@@ -362,6 +362,7 @@ let prognumv = 0
 window.intercomSettings = {
     api_base: "https://api-iam.intercom.io",
     app_id: "e84ncf6y",
+    hide_default_launcher: true,
     name: name, // Full name
     email: emaild, // Email address
     user_id: profileuids // UID FIREBASE
