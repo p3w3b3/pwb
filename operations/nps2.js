@@ -1,3 +1,4 @@
+{
 setTimeout(() => { 
 $(document).ready(function(){
 {
@@ -56,3 +57,4 @@ document.querySelector('#question3input').value = i
 })}})
 
 , 5000})
+}
