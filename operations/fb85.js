@@ -540,11 +540,3 @@
   }); 
   }
   
-{
-window.addEventListener("load", function(){
-Intercom('onShow', function() {
-mixpanel.track("Intercom Chat - Opened")
-})
-});
-
-}
