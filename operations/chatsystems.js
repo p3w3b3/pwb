@@ -12,4 +12,4 @@ kare.onEscalate(function(callbackEvent, messageBody) {
 Intercom('show');
 kare.close()
 });
-}, "1000")
+}, "2000")
