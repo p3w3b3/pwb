@@ -369,8 +369,10 @@
   }
    
   if(course4 == true){
-  $('#train44').css('display', 'flex');
+   $('#mbtraining4').css('display', 'flex');
+   $('#train44').css('display', 'flex');
   } else  {
+  $('#mbtraining4').hide()
   $('#train44').hide()
   }
   
