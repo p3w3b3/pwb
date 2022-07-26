@@ -344,122 +344,113 @@
   
   if(course1 == true){
   $('#train1').css('display', 'flex');
+  $('#train11').css('display', 'flex');
   $('#mbtraining2').css('display', 'flex');
-  
-  $('#cf2').append(new Option('Flip The Bird', 'Flip The Bird'))
   } else  {
   $('#train1').hide()
+  $('#train11').hide()
   $('#mbtraining2').hide()
   }
+    
   if(course2 == true){
-  $('#ops7').css('display', 'block');
+  $('#train22').css('display', 'block');
   $('#mbtraining1').css('display', 'flex');
-  
-  $('#cf2').append(new Option('Seoul Chikin', 'Seoul Chikin'))
   } else  {
-  $('#ops7').hide()
+  $('#train22').hide()
   $('#mbtraining1').hide()
-  
   }
+   
   if(course3 == true){
   $('#mbtraining3').css('display', 'flex');
-  $('#ops8').css('display', 'block');
-  $('#cf2').append(new Option('Wham Bam Wings', 'Wham Bam Wings'))
+  $('#train33').css('display', 'block');
   } else  {
   $('#mbtraining3').hide()
-  $('#ops8').hide()
+  $('#train33').hide()
   }
+   
   if(course4 == true){
-   $('#ops9').css('display', 'flex');
+  $('#train44').css('display', 'flex');
   } else  {
-  $('#ops9').hide()
+  $('#train44').hide()
   }
   
   if(course5 == true){
-  $('#ops10').css('display', 'flex');
+  $('#train55').css('display', 'flex');
   $('#mbtraining10').css('display', 'flex');
-  $('#cf2').append(new Option('Sammies', 'Sammies'))
   } else  {
-  $('#ops10').hide()
+  $('#train55').hide()
   $('#mbtraining10').hide()
   }
+  
   if(course6 == true){
-  $('#ops11').css('display', 'flex');
+  $('#train66').css('display', 'flex');
   $('#mbtraining11').css('display', 'flex');
-  $('#cf2').append(new Option('Very Good Burger', 'Very Good Burger'))
   } else  {
-  $('#ops11').hide()
+  $('#train66').hide()
   $('#mbtraining11').hide()
   }
+   
   if(course7 == true){
-  $('#opsfiesta').css('display', 'flex');
+  $('#train77').css('display', 'flex');
   $('#mbfiesta').css('display', 'flex');
-  $('#cf2').append(new Option('Fiesta Mexico', 'Fiesta Mexico'))
   } else  {
-  $('#opsfiesta').hide()
+  $('#train77').hide()
   $('#mbfiesta').hide()
   }
+   
   if(course8 == true){
-  $('#opsrebelrito').css('display', 'flex');
+  $('#train88').css('display', 'flex');
   $('#mbrebelrito').css('display', 'flex');
-  $('#cf2').append(new Option('Rebel Rito', 'Rebel Rito'))
   } else  {
-  $('#opsrebelrito').hide()
+  $('#train88').hide()
   $('#mbrebelrito').hide()
   }
   
   if(course9 == true){
-  $('#opsnyam').css('display', 'flex');
+  $('#train99').css('display', 'flex');
   $('#mbnomnyam').css('display', 'flex');
-  $('#cf2').append(new Option('Nom Nyam Chicken ', 'Nom Nyam Chicken'))
   } else  {
-  $('#opsnyam').hide()
+  $('#train99').hide()
   $('#mbnomnyam').hide()
   }
     
   if(course10 == true){
-  $('#opslockedloaded').css('display', 'flex');
+  $('#train100').css('display', 'flex');
   $('#mblockednloaded').css('display', 'flex');
-  $('#cf2').append(new Option('Locked N Loaded', 'Locked N Loaded'))
   } else  {
-  $('#opslockedloaded').hide()
+  $('#train100').hide()
   $('#mblockednloaded').hide()
   }
   
   if(course11 == true){
-  $('#opscluckrun').css('display', 'flex');
+  $('#train111').css('display', 'flex');
   $('#mbclucknrun').css('display', 'flex');
-  $('#cf2').append(new Option('Cluck N Run', 'Cluck N Run'))
   } else  {
-  $('#opscluckrun').hide()
+  $('#train111').hide()
   $('#mbclucknrun').hide()
   }
   
   if(course12 == true){
-  $('#opsrealrito').css('display', 'flex');
+  $('#train122').css('display', 'flex');
   $('#mbrealrito').css('display', 'flex');
-  $('#cf2').append(new Option('Rebel Rito', 'Rebel Rito'))
   } else  {
-  $('#opsrealrito').hide()
+  $('#train122').hide()
   $('#mbrealrito').hide()
   }
   
-  
   if(course13 == true){
-  $('#opsktown').css('display', 'flex');
+  $('#train133').css('display', 'flex');
   $('#mbktown').css('display', 'flex');
-  $('#cf2').append(new Option('K-Town', 'K-Town'))
   } else  {
-  $('#opsktown').hide()
+  $('#train133').hide()
   $('#mbktown').hide()
   }
   
   if(course14 == true){
-  $('#opscbox').css('display', 'flex');
+  $('#train144').css('display', 'flex');
   $('#mbcbox').css('display', 'flex');
-  $('#cf2').append(new Option('Chic Box', 'Chic Box'))
   } else  {
-  $('#opscbox').hide()
+  $('#train144').hide()
   $('#mbcbox').hide()
   }
   
