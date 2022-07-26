@@ -75,17 +75,6 @@ $('#myco').addClass("selected");
 })
 
 
-document.querySelector("#mytra").addEventListener("click", function() {
-$('.main-section-ops').hide()
-$('.sub-nav').hide()
-$('#sb5').css("display", "flex");
-
-$('.generic-heading-ops').removeClass("cur");
-$('.nav-selection').removeClass("selected");
-$('#mytra').addClass("selected");
-})
-
-
 document.querySelector("#ops2").addEventListener("click", function() {
 $('.main-section-ops').hide()
 $('#db2').show()
