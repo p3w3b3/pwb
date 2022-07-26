@@ -353,7 +353,7 @@
   }
     
   if(course2 == true){
-  $('#train22').css('display', 'block');
+  $('#train22').css('display', 'flex');
   $('#mbtraining1').css('display', 'flex');
   } else  {
   $('#train22').hide()
@@ -362,7 +362,7 @@
    
   if(course3 == true){
   $('#mbtraining3').css('display', 'flex');
-  $('#train33').css('display', 'block');
+  $('#train33').css('display', 'flex');
   } else  {
   $('#mbtraining3').hide()
   $('#train33').hide()
