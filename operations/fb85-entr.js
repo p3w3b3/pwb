@@ -145,6 +145,14 @@
           let prereq = data["prereq"];
 
 
+let rtrue = data['rated']; 
+if(!!rtrue) {
+document.querySelector('#npsdiv').style.display = 'none'
+} else {
+document.querySelector('#npsdiv').style.display = 'flex'
+}
+
+
  let profileuids = curUser.uid      
       
 {
