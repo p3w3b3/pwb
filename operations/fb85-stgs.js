@@ -453,15 +453,20 @@ firebase.firestore().doc("users/"+firebase.auth().currentUser.uid)
 .set({Timestamp:date}, {merge:true})
 
   
+
 if(!!emaild) {
 $('#email').html(emaild);
-} else {  
+if(emaild.length>20){
+$('#email').html(emaild.slice(0,20)+"...")
+}} else {  
 firebase.firestore().doc("users/"+firebase.auth().currentUser.uid)
 .set({Email:user.email}, {merge:true})
 $('#email').html(emaild);
 }
 })
 
+	
+	
 } else {
 console.log('user logged out');
 signOutButton.style.display="none";
