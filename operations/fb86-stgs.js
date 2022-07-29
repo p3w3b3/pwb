@@ -452,6 +452,12 @@ document.querySelector('#profile-restaurant').textContent=restaurant;
 firebase.firestore().doc("users/"+firebase.auth().currentUser.uid)
 .set({Timestamp:date}, {merge:true})
 
+let rtrue = data['rated']; 
+if(!!rtrue) {
+document.querySelector('#npsdiv').style.display = 'none'
+} else {
+document.querySelector('#npsdiv').style.display = 'flex'
+}
   
 
 if(!!emaild) {
