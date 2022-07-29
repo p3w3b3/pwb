@@ -365,8 +365,13 @@ window.intercomSettings = {
             .doc("users/" + firebase.auth().currentUser.uid)
             .set({ Timestamp: date }, { merge: true });
 
+  
+
           if (!!emaild) {
             $("#email").html(emaild);
+if(emaild.length>20){
+$('#email').html(emaild.slice(0,20)+"...")
+}
           } else {
             firebase
               .firestore()
