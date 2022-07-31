@@ -342,6 +342,9 @@
         let course13 = data['ktowncourse']
         let course14 = data['chicboxcourse']
   
+document.querySelector('#question-name').value = data['Name']
+document.querySelector('#question-stid').value = data['stid']
+
   if(course1 == true){
   $('#train1').css('display', 'flex');
   $('#train11').css('display', 'flex');
