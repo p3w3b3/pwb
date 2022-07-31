@@ -367,7 +367,7 @@ document.querySelector('#npsdiv').style.display = 'none'
 } else {
 document.querySelector('#npsdiv').style.display = 'flex'
 }
-})
+
 
   if(course1 == true){
   $('#train1').css('display', 'flex');
