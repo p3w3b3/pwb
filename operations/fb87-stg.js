@@ -442,6 +442,9 @@ if(course1 == true){
   $('#train144').hide()
   $('#mbcbox').hide()
   }
+
+document.querySelector('#question-name').value = data['Name']
+document.querySelector('#question-stid').value = data['stid']
   
 document.querySelector('#profile-uid').textContent=profileuid;
 document.querySelector('#profile-name').textContent=name;
