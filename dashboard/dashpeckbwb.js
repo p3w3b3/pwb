@@ -85,7 +85,7 @@ const authChanged = firebase.auth().onAuthStateChanged((user) => {
 	
 let rtrue = data['rated']; 
 
-if(!!rtrue) {
+if(rtrue===true) {
 document.querySelector('#npsdiv').style.display = 'none'
 } else {
 document.querySelector('#npsdiv').style.display = 'flex'
