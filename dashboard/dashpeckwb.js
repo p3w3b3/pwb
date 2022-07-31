@@ -82,6 +82,18 @@ const authChanged = firebase.auth().onAuthStateChanged((user) => {
     	let course14 = data['chicboxcourse']
         let datastid = data["stid"]
 
+	
+let rtrue = data['rated']; 
+
+if(!!rtrue) {
+document.querySelector('#npsdiv').style.display = 'none'
+} else {
+document.querySelector('#npsdiv').style.display = 'flex'
+}
+
+document.querySelector('#question-name').value = data['Name']
+document.querySelector('#question-stid').value = data['stid']
+
         
 document.querySelector('#mystid').textContent = datastid
     
