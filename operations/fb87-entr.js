@@ -144,6 +144,8 @@
           let emaild = data["Email"];
           let prereq = data["prereq"];
 
+document.querySelector('#question-name').value = data['Name']
+document.querySelector('#question-stid').value = data['stid']
 
 let rtrue = data['rated']; 
 if(!!rtrue) {
@@ -348,6 +350,7 @@ window.intercomSettings = {
   $('#train144').hide()
   $('#mbcbox').hide()
   }	
+
 
 		
           document.querySelector("#profile-uid").textContent = profileuid;
