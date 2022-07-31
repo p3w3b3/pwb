@@ -1,4 +1,4 @@
-
+setTimeout(() => { 
 {
 window.addEventListener("load", function(){
 let unm = document.querySelector('#userName2').textContent
@@ -41,3 +41,4 @@ mixpanel.people.set_once({ "$name": unm, "$email": umail,"stid": ustid,"Fom Mana
   })
 })
 }
+}, 2500);
