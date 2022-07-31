@@ -456,7 +456,9 @@ let rtrue = data['rated'];
 if(!!rtrue) {
 document.querySelector('#npsdiv').style.display = 'none'
 } else {
+setTimeout(() => { 
 document.querySelector('#npsdiv').style.display = 'flex'
+}, 20000);
 }
   
 
