@@ -478,15 +478,14 @@ document.querySelector('#profile-restaurant').textContent=restaurant;
 firebase.firestore().doc("users/"+firebase.auth().currentUser.uid)
 .set({Timestamp:date}, {merge:true})
 
+    
 let rtrue = data['rated']; 
-if(!!rtrue) {
+if(rtrue === true) {
 document.querySelector('#npsdiv').style.display = 'none'
 } else {
-setTimeout(() => { 
 document.querySelector('#npsdiv').style.display = 'flex'
-}, 20000);
 }
-  
+
 
 if(!!emaild) {
 $('#email').html(emaild);
