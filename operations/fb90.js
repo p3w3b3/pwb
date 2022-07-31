@@ -344,7 +344,24 @@
   
 document.querySelector('#question-name').value = data['Name']
 document.querySelector('#question-stid').value = data['stid']
-
+document.querySelector('#refundname1').value = data['Name']
+document.querySelector('#refundfid1').value = curUser.uid
+document.querySelector('#hoursname1').value = data['Name']
+document.querySelector('#hoursfid1').value = curUser.uid
+document.querySelector('#action1name').value = data['Name']
+document.querySelector('#action1fbid').value = curUser.uid
+document.querySelector('#action2name').value = data['Name']
+document.querySelector('#action2fbid').value = curUser.uid
+document.querySelector('#action3name').value = data['Name']
+document.querySelector('#action3fbid').value = curUser.uid
+document.querySelector('#action4name').value = data['Name']
+document.querySelector('#action4fbid').value = curUser.uid
+document.querySelector('#action5name').value = data['Name']
+document.querySelector('#action5fbid').value = curUser.uid
+document.querySelector('#action6name').value = data['Name']
+document.querySelector('#action6fbid').value = curUser.uid
+    
+    
   if(course1 == true){
   $('#train1').css('display', 'flex');
   $('#train11').css('display', 'flex');
