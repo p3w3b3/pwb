@@ -361,7 +361,14 @@ document.querySelector('#action5fbid').value = curUser.uid
 document.querySelector('#action6name').value = data['Name']
 document.querySelector('#action6fbid').value = curUser.uid
     
-    
+let rtrue = data['rated']; 
+if(rtrue === true) {
+document.querySelector('#npsdiv').style.display = 'none'
+} else {
+document.querySelector('#npsdiv').style.display = 'flex'
+}
+})
+
   if(course1 == true){
   $('#train1').css('display', 'flex');
   $('#train11').css('display', 'flex');
