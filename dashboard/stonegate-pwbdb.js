@@ -958,12 +958,14 @@ $('#cb222').hide()
               });
 
               newItem
-                .find("#uButton-" + i)[0]
-                .addEventListener("click", function () {
+                .find("#uButton-" + i)[0].addEventListener("click", function () {
+		  document.querySelector("#uButton-"+i).innerHTML = "Saving..."
+    		  setTimeout(() => {
                   $("#uPopup-" + i).hide();
                   $(".tracking-wrapper").hide();
+  		  document.querySelector("#uButton-"+i).innerHTML = "Save"
+		  }, 7500);
                 });
-
               var ftbn = parseInt(myResults[i].data.FTB);
               var secn = parseInt(myResults[i].data.SEC);
               var wbwn = parseInt(myResults[i].data.WBW);
