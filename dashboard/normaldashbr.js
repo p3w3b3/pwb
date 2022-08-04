@@ -955,13 +955,11 @@ location.href = '/login'
 
               newItem
                 .find("#uButton-" + i)[0].addEventListener("click", function () {
-		  $(".tracking-success").css("display", "flex");
-		  $(".tracking-form").hide()
+		  document.querySelector("#uButton-"+i).innerHTML = "Saving..."
     		  setTimeout(() => {
                   $("#uPopup-" + i).hide();
                   $(".tracking-wrapper").hide();
-		  $(".tracking-form").css("display", "flex");
-		  $(".tracking-success").hide();
+  		  document.querySelector("#uButton-"+i).innerHTML = "Save"
 		  }, 7500);
                 });
 
