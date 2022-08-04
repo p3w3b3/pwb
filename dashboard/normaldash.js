@@ -399,6 +399,7 @@ location.href = '/login'
       $(".nav-button").css("border-color", "transparent");
       $("#n5").css("border-color", "white");
     }
+
     {
       {
         const db = firebase.firestore();
@@ -953,10 +954,14 @@ location.href = '/login'
               });
 
               newItem
-                .find("#uButton-" + i)[0]
-                .addEventListener("click", function () {
+                .find("#uButton-" + i)[0].addEventListener("click", function () {
+		  $(".tracking-success").css("display", "flex");
+		  $(".tracking-form").hide()
+    		  setTimeout(() => {
                   $("#uPopup-" + i).hide();
                   $(".tracking-wrapper").hide();
+		  $(".tracking-form").css("display", "flex");
+		  }, 7500);
                 });
 
               var ftbn = parseInt(myResults[i].data.FTB);
