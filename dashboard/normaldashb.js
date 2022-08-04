@@ -961,6 +961,7 @@ location.href = '/login'
                   $("#uPopup-" + i).hide();
                   $(".tracking-wrapper").hide();
 		  $(".tracking-form").css("display", "flex");
+		  $(".tracking-success").hide();
 		  }, 7500);
                 });
 
