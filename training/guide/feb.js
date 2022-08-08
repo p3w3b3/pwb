@@ -17,6 +17,8 @@ appId: "1:620518934310:web:84c9c701f5794161d863e7",
 measurementId: "G-EZSWDWDTB6",
 };
 
+mixpanel.init('34ab50f7acd413779598bfe06a25b8c3', {debug: true}); 
+ 
 firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 const authChanged = firebase.auth().onAuthStateChanged((user) => {
@@ -417,6 +419,7 @@ $("#trackermob").show();
 $("#n5").hide();
 $("#trackermob").hide();
 }
+  
 const auth = firebase.auth();
 const signout2 = () => {
 auth.signOut2();
