@@ -55,7 +55,7 @@ firebase
 .set({ Name: user.displayName }, { merge: true });
 {
 setTimeout(() => {
-window.location.href = "/dashboard/training/the-smokehouse-wingery";
+location.reload();
 }, 2000);
 }
 $("#userName2").html(name);
