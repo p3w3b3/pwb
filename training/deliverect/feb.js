@@ -51,6 +51,7 @@ auth.onAuthStateChanged(async (user) => {
     let s1p3 = data['d1p3'];    
     let s1p4 = data['d1p4']; 
     let restaurant = data['Restaurant']; 
+    let curUser = firebase.auth().currentUser;
     let profileuid = curUser.uid      
     let admin = data["admin"];
     let course1 = data["ftbcourse"];
@@ -674,3 +675,4 @@ signOutButton.addEventListener('click', signout);
 document.querySelector('#prognum').textContent = prognum
 
 })})}
+    
